@@ -1,0 +1,32 @@
+﻿// This is the main SCSS file for the States of Jersey Web Standards Stylesheet
+
+
+// Existing GovJe Stylesheet - REMOVE THIS WHEN COMPLETE
+@import "existing/govje";
+
+
+// Base
+@import "base/reset";
+@import "base/colour";
+@import "base/typography";
+
+// Components
+@import "components/buttons";
+@import "components/navigation";
+
+// Helpers
+@import "helpers/mixins";
+@import "helpers/variables";
+
+// Layout
+@import "layout/grid";
+@import "layout/header";
+@import "layout/sidebar";
+
+// Pages
+@import "pages/home";
+
+
+// Third-party Vendors
+@import "vendors/bootstrap";
+
