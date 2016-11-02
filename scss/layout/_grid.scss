@@ -1,1 +1,25 @@
-﻿
+.hidemobile {
+    display: block;
+    @media (max-width: $screen-phone) {
+        display: none;
+    }
+}
+
+.tabletWidth {
+    @media (min-width: $screen-tablet) {
+        padding-left: 22px !important;
+        padding-right: 22px !important;
+    }
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+textarea {
+    width: 100%;
+}

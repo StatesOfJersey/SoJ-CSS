@@ -1,0 +1,193 @@
+.ServicesAZmobile,
+.FormsAZmobile {
+    padding-left: 0;
+}
+
+.ServicesAZ,
+.FormsAZ {
+    border: solid 1px $keyline;
+    overflow: hidden;
+    height: 79px;
+    margin: 0 0 30px 0;
+    padding: 1px 0;
+    @media (max-width: 991px) {
+        height: 157px;
+    }
+    div.title {
+        display: block;
+        float: left;
+        height: 75px;
+        text-align: center;
+        padding-top: 12px;
+        h3 {
+            margin: 0;
+            padding: 5px 5px;
+            font-size: 22px;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 700;
+            line-height: 22px;
+        }
+    }
+    ul {
+        float: right;
+        // display: inline-block;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        li {
+            // display: inline-block;
+            background-color: $Content-Background;
+            border-right: 3px solid $GovJEWhite;
+            line-height: 78px;
+            height: 100%;
+            width: 3.845%;
+            text-align: center;
+            float: left;
+        }
+        li:hover {
+            color: white;
+            background-color: $GovJeRed;
+            a {
+                color: white;
+                height: 78px;
+                width: 100%;
+            }
+        }
+        a {
+            color: $text-color;
+            font-size: 25px;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+            height: 75px;
+            width: 100%;
+            display: block;
+            cursor: pointer;
+        }
+    }
+    ul#AtoZ {
+        width: 100%;
+        @media (max-width: 991px) {
+            height: 156px;
+        }
+        li {
+            border-left: 4px solid white;
+            width: 3.840%;
+            text-transform: uppercase;
+            @media (max-width: 991px) {
+                border-bottom: 2px solid white;
+                height: 78px;
+                width: 7.65%;
+            }
+        }
+        li.active {
+            background-color: $GovJeRed;
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+.ServicesAZTablet {
+    @media (max-width: 747px) {
+        display: none;
+    }
+    border: solid 1px $keyline;
+    overflow: hidden;
+    height: 165px;
+    margin: 40px 0 30px 0;
+    padding: 1px 0;
+    div.title {
+        display: block;
+        float: left;
+        width: 15%;
+        height: 155px;
+        text-align: center;
+        padding-top: 45px;
+        padding-left: 10px;
+        h3 {
+            margin: 0;
+            padding: 5px 5px;
+            font-size: 22px;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 700;
+            line-height: 30px;
+        }
+    }
+    div.links {
+        float: right;
+        width: 85%;
+        text-align: right;
+    }
+    hr {
+        border: none;
+        height: 2px;
+        margin: 0;
+        color: $GovJEWhite;
+    }
+    ul {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            background-color: $Content-Background;
+            line-height: 78px;
+            height: 100%;
+            width: 7%;
+            text-align: center;
+        }
+        li:hover {
+            color: white;
+            background-color: $GovJeRed;
+            a {
+                color: white;
+            }
+        }
+        a {
+            color: $text-color;
+            font-size: 25px;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+            height: 80px;
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+#ServicesAZlist,
+#AToZFormsList {
+    margin-bottom: 50px;
+    h2 {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    ul {
+        padding: 0;
+        margin: 0 0 0 15px;
+        li {
+            font-size: 17px;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            @media (max-width: $screen-desktop) {
+                padding: 0 0 20px 0;
+            }
+        }
+    }
+}
+
+#panAtoZ {
+    .showall {
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+    .FormsAZ {
+        margin-bottom: 5px;
+    }
+}

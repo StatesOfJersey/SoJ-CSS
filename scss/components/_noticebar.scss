@@ -1,0 +1,39 @@
+section#noticeBar {
+    background-color: $noticebar-Background;
+    width: 100%;
+    padding: 9px 0;
+    color: white;
+    a {
+        font-family: proxima-nova, sans-serif;
+        text-decoration: underline;
+        color: $GovJEWhite;
+        &:hover {
+            color: $red-hover;
+        }
+        &:visited {
+            color: $GovJEWhite;
+        }
+    }
+    p {
+        display: block;
+        color: white;
+        margin-top: 5px;
+        margin-bottom: 7px;
+        line-height: 20px;
+        font-size: 18px;
+        font-family: proxima-nova, sans-serif;
+    }
+    p.publicNotice {
+        display: block;
+        color: white;
+        margin-top: 5px;
+        margin-bottom: 7px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        line-height: 20px;
+        font-size: 20px;
+        @media (min-width: $screen-phone) {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,307 @@
+h1.title {
+    font-size: 36px;
+    margin-top: 0;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    margin-bottom: 18px;
+    @media (max-width: $screen-tablet) {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+    @media (max-width:$screen-phone) {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+}
+
+section#InfoModule {
+    border: 1px solid $text-color;
+    padding: 15px;
+    margin-bottom: 20px;
+    @media (max-width: $screen-tablet) {
+        margin-top: 10px;
+    }
+    @media (max-width:$screen-phone) {
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    h2 {
+        font-size: em(22px, 14px);
+        font-weight: 700;
+        margin: 0 0 5px 0;
+        padding: 0;
+    }
+    p {
+        font-size: em(18px, 14px);
+        margin: 0;
+    }
+    a {
+        font-size: em(18px, 18px);
+        color: $GovJeRed;
+        &:hover {
+            color: $text-color;
+        }
+        &:visited {
+            color: $GovJeRed;
+        }
+    }
+}
+
+article.pagecontent {
+    margin-bottom: 35px;
+    font-size: em(18px, 14px);
+    float: left;
+    width: 100%;
+    .ms-asset-icon {
+        margin-right: 5px;
+    }
+    a {
+        color: $GovJeRed;
+        &:hover {
+            color: $text-color;
+        }
+    }
+    p {
+        font-size: em(18px, 18px);
+    }
+    h2.pageSummary {
+        font-size: em(20px, 18px);
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    img {
+        max-width: 100%;
+    }
+    /*h2 {
+        margin: 20px 0 10px 0;
+        font-size: 32px;
+        font-weight: 600;
+        text-decoration: none;
+        clear: left;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            color: $text-color;
+            cursor: auto;
+        }
+    }*/
+    /*content fix*/
+    h2 {
+        margin: 30px 0 10px 0;
+        font-size: 28px;
+        text-decoration: none;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 600;
+        a {
+            text-decoration: none;
+            color: $text-color;
+            cursor: auto;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 600;
+        }
+        @media (max-width:$screen-tablet) {
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+        @media (max-width:$screen-phone) {
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+    }
+    h2:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    h3 {
+        font-size: em(20px, 18px);
+        font-family: proxima-nova, sans-serif;
+        font-weight: 600;
+        a {
+            text-decoration: none;
+            color: $text-color;
+            cursor: auto;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 600;
+        }
+    }
+    h4,
+    p.noReport {
+        font-size: em(20px, 18px);
+        font-family: proxima-nova, sans-serif;
+        font-weight: 600;
+        a {
+            text-decoration: none;
+            color: $text-color;
+            cursor: auto;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 600;
+        }
+    }
+    hr {
+        margin: 30px 0 20px 0;
+    }
+    ul#inthissection {
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    ul {
+        margin-left: 15px;
+        @media (max-width: $screen-phone) {
+            margin-left: 0;
+        }
+    }
+    table {
+        text-align: left;
+    }
+    dl {
+        width: 100%;
+        clear: both;
+        display: table;
+    }
+    dt {
+        display: table-cell;
+        font-size: 16px;
+        float: left;
+        color: $text-color;
+        border-top: solid 1px $keyline;
+        width: 40%;
+        padding: 10px 0 10px 0;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        clear: both;
+    }
+    dt:first-of-type {
+        border-top-style: none;
+    }
+    dt:last-of-type {
+        padding-bottom: 25px;
+    }
+    dd {
+        display: table-cell;
+        float: left;
+        color: $text-color;
+        font-size: 16px;
+        border-top: solid 1px $keyline;
+        width: 55%;
+        padding: 10px 0 10px 0;
+    }
+    dd:first-of-type {
+        border-top-style: none;
+    }
+    dd:last-child {
+        padding-bottom: 25px;
+    }
+    #desastre {
+        .results {
+            margin-top: 30px;
+        }
+        h1.activeH1 {
+            font-size: 60px;
+            text-transform: uppercase;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 700;
+        }
+        .showall {
+            @media (max-width: $screen-phone) {
+                display: none;
+            }
+        }
+        .letters {
+            border: solid 1px $keyline;
+            overflow: hidden;
+            padding: 1px 0;
+            @media (max-width: $screen-phone) {
+                display: none;
+            }
+            ul {
+                float: left;
+                // display: inline-block;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+                padding: 0 0 0 3px;
+                @media (max-width: $screen-tablet) {
+                    padding-left: 5px;
+                }
+                li {
+                    // display: inline-block;
+                    background-color: $Content-Background;
+                    border-right: 3px solid $GovJEWhite;
+                    line-height: 78px;
+                    height: 100%;
+                    width: 3.845%;
+                    text-align: center;
+                    float: left;
+                    text-transform: uppercase;
+                    @media (max-width: $screen-tablet) {
+                        margin-bottom: 2px;
+                        width: 7.68%;
+                    }
+                    a {
+                        height: 78px;
+                        width: 100%;
+                    }
+                }
+                li:hover {
+                    color: white;
+                    background-color: $GovJeRed;
+                    a {
+                        color: white;
+                    }
+                }
+                li:last-child {
+                    background-color: #fff;
+                    height: 30px;
+                    line-height: 30px;
+                    margin-top: 5px;
+                    padding-right: 5px;
+                    text-align: right;
+                    width: 100%;
+                    display: none;
+                    &:hover {
+                        background-color: #fff;
+                        a {
+                            color: $text-color;
+                        }
+                    }
+                    a {
+                        font-size: 12px;
+                        padding: 5px 10px;
+                        text-decoration: underline;
+                        &:hover {
+                            background-color: $GovJeRed;
+                            color: white;
+                        }
+                    }
+                }
+                a {
+                    color: $text-color;
+                    font-size: 25px;
+                    font-family: proxima-nova, sans-serif;
+                    font-weight: 600;
+                    text-decoration: none;
+                    height: 75px;
+                    display: block;
+                }
+            }
+        }
+    }
+    #linksSummaryHeader {
+        float: left;
+        margin-bottom: 15px;
+        width: 100%;
+        #linksSummaryImage {
+            float: left;
+            margin-right: 15px;
+        }
+    }
+    #contentVideo {
+        float: left;
+        margin-right: 20px;
+        padding-bottom: 10px;
+        width: 280px;
+    }
+}

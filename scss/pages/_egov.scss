@@ -1,0 +1,190 @@
+/* =================
+    e-Gov 
+   ================= */
+
+.projectCount {
+    text-align: center;
+}
+
+.projectCount.blue {
+    color: $GovJeBlue;
+}
+
+.projectCount.blue h3 {
+    background-color: $GovJeBlue;
+}
+
+.projectCount.orange {
+    color: $GovJeOrange;
+}
+
+.projectCount.orange h3 {
+    background-color: $GovJeOrange;
+}
+
+.projectCount.green {
+    color: $GovJeGreen;
+}
+
+.projectCount.green h3 {
+    background-color: $GovJeGreen;
+}
+
+article.pagecontent .projectCount h3 {
+    font-size: 2em;
+    margin-bottom: 0;
+    color: $GovJEWhite;
+    padding: 5px 0
+}
+
+article.pagecontent .projectCount strong {
+    font-size: 5em;
+    font-weight: 100;
+}
+
+.projectLinks ul {
+    list-style-type: none;
+    margin: 5px;
+    li {
+        padding: 25px 0;
+        width: 100%;
+        float: left;
+        border-top: 1px solid $keyline;
+    }
+}
+
+.projectLinks .left {
+    float: left;
+}
+
+.projectLinks .project {
+    clear: both;
+    width: 100%;
+}
+
+.projectLinks .projectTitle h2 a {
+    color: $GovJeRed;
+    font-size: 1.0em;
+}
+
+.projectLinks .projectBenefit p strong {
+    font-size: 1.2em;
+}
+
+.projectLinks .projectStatus {
+    //min-width: 25%;
+    border-left: 1px solid $keyline;
+}
+
+.projectLinks .project .projectStatus p strong {
+    text-align: center;
+    padding: 3px;
+}
+
+.projectLinks .project .projectStatus p strong.green {
+    background-color: $GovJeGreen;
+    color: white;
+}
+
+.projectLinks .project .projectStatus p strong.orange {
+    background-color: $GovJeOrange;
+    color: white;
+}
+
+.projectLinks .project .projectStatus p strong.blue {
+    background-color: $GovJeBlue;
+    color: white;
+}
+
+article.pagecontent .projectLinks ul {
+    margin: 0;
+    padding: 0;
+}
+
+#projectTopPnl {
+    float: left;
+    clear: both;
+    border-bottom: solid 2px $Content-Background;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    #projectLink {
+        float: left;
+        h2 {
+            a {
+                color: $GovJeRed
+            }
+        }
+    }
+    #projectDate {
+        float: right;
+        @media (max-width: $screen-phone) {
+            float: left;
+        }
+    }
+}
+
+#projectDept {
+    border-left: solid 1px $footer-background;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+aside #projectstatusPnl {
+    color: $GovJEWhite;
+    h1 {
+        color: $GovJEWhite;
+        // display: inline;
+        float: left;
+        margin-right: 20px;
+    }
+    &.sidePanel {
+        .statuslbl {
+            float: left;
+            border: 1px solid $GovJEWhite;
+            padding: 0 5px;
+            font-size: 1.5em;
+            margin-top: 5px;
+        }
+        &.live {
+            background-color: $GovJeGreen;
+        }
+        &.initiation {
+            background-color: $GovJeBlue;
+        }
+        &.development {
+            background-color: $GovJeOrange
+        }
+    }
+    #ProjectSummary {
+        float: left;
+        clear: both;
+    }
+}
+
+#PorjectStatusDetail {
+    border-left: solid 1px $footer-background;
+    margin-top: 10px;
+    .summary {
+        padding-left: 15px;
+    }
+    .lbl {
+        padding: 5px 10px 0;
+        margin-top: 10px;
+        color: $GovJEWhite;
+        display: inline-block;
+        &:first-child {
+            margin-top: 0;
+        }
+        &.orange {
+            background-color: $GovJeOrange;
+        }
+        &.blue {
+            background-color: $GovJeBlue;
+        }
+        &.green {
+            background-color: $GovJeGreen;
+        }
+    }
+}

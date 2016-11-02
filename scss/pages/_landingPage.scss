@@ -1,0 +1,131 @@
+#linksSummaryHeader {
+    h2 {
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 0;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+#introduction {
+    h1 {
+        font-size: 36px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        margin-bottom: 10px;
+        @media (max-width: $screen-tablet) {
+            font-size: 28px;
+            margin-bottom: 0;
+        }
+        @media (max-width:$screen-phone) {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+    }
+    p {
+        font-size: 18px;
+        font-family: proxima-nova, sans-serif;
+        @media (max-width: $screen-tablet) {
+            display: none;
+        }
+    }
+    a {
+        color: $GovJeRed;
+        &:hover {
+            color: $text-color;
+        }
+        @media (max-width:$screen-tablet) {
+            display: none;
+        }
+    }
+}
+
+#sectionLinks {
+    margin: 30px 0 80px 0;
+    @media (min-width: $screen-phone) {
+        margin: 0 0 30px 0;
+    }
+    h2 {
+        font-size: em(24px, 14px);
+        border-bottom: 0;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 0;
+        a {
+            color: $GovJeRed;
+            &:hover {
+                color: $text-color;
+            }
+        }
+    }
+    h3 {
+        font-size: 21px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        a {
+            color: $GovJeRed;
+            &:hover {
+                color: $text-color;
+            }
+        }
+    }
+    ul {
+        list-style: none outside none;
+        padding: 15px 0;
+        @media (max-width: $screen-tablet) {
+            padding: 15px 0 0 0;
+        }
+    }
+    li {
+        line-height: 1.3em;
+        margin-bottom: 8px;
+        padding: 0 0 5px 0;
+        @media (max-width: $screen-desktop) {
+            padding: 0 0 20px 0;
+        }
+        a {
+            font-size: em(18px, 14px);
+            font-family: proxima-nova, sans-serif;
+            &:hover {
+                color: $GovJeRed;
+            }
+        }
+    }
+    .row {
+        margin-bottom: 30px;
+        @media (min-width: $screen-phone) {
+            margin-bottom: 0;
+        }
+    }
+    .linksSummary {
+        margin-bottom: 20px;
+        a.SummaryLink {
+            text-decoration: none;
+            h2 {
+                margin-bottom: 10px;
+                color: $GovJeRed;
+                text-decoration: underline;
+            }
+            .preview {
+                float: left;
+                height: 90px;
+                width: 115px;
+                margin: 0 15px 20px 0;
+                overflow: hidden;
+            }
+        }
+    }
+    .MicroSiteDescription {
+        font-size: 16px;
+    }
+}
+
+.sectionbanner {
+    margin-bottom: 20px;
+    img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,55 @@
+.browser-warning {
+    display: none;
+    background: yellow;
+    width: 100%;
+    border-top: solid 1px #999;
+    border-bottom: solid 1px #999;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-size: 18px;
+}
+
+#skiptocontent a {
+    padding: 6px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    color: $GovJEWhite !important;
+    background: transparent;
+    z-index: 100;
+    font-size: 18px;
+}
+
+#skiptocontent a:focus {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: $focusHighlight;
+    color: $GovJEWhite !important;
+    outline: 0;
+    display: inline-block;
+}
+
+
+/* hide comment */
+
+.accessibility,
+#accessibility {
+    position: absolute;
+    left: -999em;
+}
+
+a.gm_sidebar_anchor {
+    &:focus {
+        background: $GovJEWhite;
+    }
+    &:active {
+        background: $GovJEWhite;
+    }
+}
+
+input {
+    &:focus {
+        border: 3px solid $focusHighlight;
+    }
+}

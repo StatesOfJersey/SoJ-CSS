@@ -1,0 +1,168 @@
+section.masthead {
+    background-color: $Content-Background;
+    width: 100%;
+    border-bottom: solid 1px $keyline;
+    color: $text-color;
+    margin-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    @media (max-width: $screen-phone) {
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .gov {
+        background-color: $GovJeRed !important;
+    }
+    #query {
+        border-radius: 0;
+        font-size: 16px;
+        border-right-style: none;
+    }
+    h2 {
+        font-size: 26px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+    }
+    label.search {
+        padding-top: 17px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 500;
+        font-size: 22px;
+        @media (min-width: $screen-tablet) {
+            font-size: 16px;
+        }
+    }
+    .input-group {
+        @media (max-width: $screen-tablet) {
+            width: 100%;
+        }
+    }
+    .form-control {
+        height: 38px;
+    }
+    .input-group-btn {
+        background-color: $Content-Background;
+        height: 38px;
+        @media (max-width: $screen-tablet) {
+            width: 38px;
+            height: 38px;
+            overflow: hidden;
+            display: block;
+            background-color: $GovJeRed;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-image: url("/_controltemplates/15/C5.GovJEResponsive/images/magglass.svg");
+            background-position: 7px 7px;
+            background-repeat: no-repeat;
+            background-size: 25px 25px;
+        }
+    }
+    .btn-default {
+        color: $GovJEWhite;
+        background-color: $GovJeRed;
+        border-bottom: 3px solid #666;
+        border-left-style: none;
+        border-right-style: none;
+        border-top-style: none;
+        border-radius: 0;
+        font-size: 18px;
+        line-height: 29px;
+        height: 38px;
+        padding: 0 15px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 600;
+        @media (max-width: $screen-tablet) {
+            padding: 0 0 0 70px;
+            height: 38px;
+            width: 38px;
+            border: 0;
+            background-color: transparent;
+        }
+        &:hover {
+            border-bottom: 0 solid #666;
+            background-color: #9f0110;
+        }
+    }
+    .button {
+        padding-top: 2px;
+        @media (min-width: $screen-phone) {
+            padding-top: 0;
+            margin-bottom: 5px;
+        }
+    }
+    .magglass {
+        width: 100%;
+        height: 100%;
+        fill: $GovJEWhite;
+        text-align: 9999px;
+    }
+    a {
+        color: $text-color;
+        text-decoration: underline;
+        font-family: proxima-nova, sans-serif;
+        font-size: 22px;
+    }
+    a.alert {
+        text-decoration: none;
+    }
+    p {
+        margin: 0 0 10px 0;
+        font-size: 12px;
+    }
+    .weather {
+        padding-top: 26px;
+        text-align: center;
+        a {
+            font-size: 16px;
+            color: $text-color;
+            &:hover {
+                color: $GovJeRed;
+            }
+            &:visited {
+                color: $text-color;
+            }
+        }
+        img {
+            width: 70px;
+            height: 50px;
+        }
+        span {
+            font-size: 18px;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 600;
+        }
+    }
+    .Popularsearchs {
+        dt {
+            display: inline;
+            background-color: $Content-Background;
+            padding: 0 4px 0 0;
+            font-family: proxima-nova, sans-serif;
+            font-size: 16px;
+            @media (min-width: $screen-phone) {
+                display: block;
+                margin: 0 0 0 5px;
+            }
+        }
+        dd {
+            display: inline;
+            padding: 8px 4px 13px 4px;
+            @media (min-width: $screen-phone) {
+                padding: 0 3px 0 3px;
+            }
+            a {
+                color: $text-color;
+                text-decoration: underline;
+                font-family: proxima-nova, sans-serif;
+                font-size: 16px;
+                &:hover {
+                    color: $GovJeRed;
+                }
+                &:visited {
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+nav.breadcrumbs {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    ul {
+        list-style-type: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline;
+        a {
+            font-size: em(16px, 14px);
+            line-height: 24px;
+            @media (max-width: $screen-tablet) {
+                font-size: 14px;
+            }
+        }
+    }
+    li+li:before {
+        content: ">";
+        padding: 0 10px;
+        @media (max-width: $screen-tablet) {
+            padding: 0 5px;
+        }
+    }
+}

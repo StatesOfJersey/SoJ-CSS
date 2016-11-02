@@ -1,1 +1,95 @@
-﻿
+﻿header {
+    background-color: $GovJeRed;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+    @media (max-width: $screen-tablet) {
+        padding: 5px 0;
+    }
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+    p.info {
+        margin: 18px 0 5px 10px;
+        padding: 0;
+        font-size: 16px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 600;
+        color: $GovJEWhite;
+        line-height: 16px;
+    }
+    p {
+        margin: 0 0 0 20px;
+        padding: 0;
+        font-size: 14px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 600;
+        color: $GovJEWhite;
+        line-height: 15px;
+    }
+    a {
+        float: left;
+        font-size: 36px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        color: $GovJEWhite;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 25px;
+        &:hover {
+            color: $red-hover;
+            text-decoration: none;
+        }
+        &:visited {
+            color: $GovJEWhite;
+        }
+        img {
+            margin: 0 5px 0 0;
+            height: 58px;
+            width: 50px;
+        }
+    }
+    .sitetitle {
+        a {
+            color: $GovJEWhite;
+            &:visited {
+                color: $GovJEWhite;
+            }
+        }
+    }
+    .right {
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    ul {
+        list-style-type: none;
+        display: inline-block;
+        margin: 18px 0 0 0;
+        @media (max-width: $screen-tablet) {
+            margin: 16px 0 0 0;
+        }
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            a {
+                color: $GovJEWhite;
+                font-size: em(16px, 14px);
+                padding-right: 0;
+                font-family: proxima-nova, sans-serif;
+                text-decoration: underline;
+                &:hover {
+                    color: $red-hover;
+                }
+            }
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+}

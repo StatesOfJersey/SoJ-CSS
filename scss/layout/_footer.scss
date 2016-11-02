@@ -1,0 +1,82 @@
+footer {
+    background-color: $footer-background;
+    width: 100%;
+    padding: 15px 0 30px 0;
+    @media (min-width: $screen-phone) {
+        padding-bottom: 30px;
+    }
+    dl#socialMedia {
+        padding-bottom: 10px;
+        margin-bottom: 0;
+        @media (max-width: $screen-tablet) {
+            padding-bottom: 0;
+        }
+        dt {
+            display: inline-block;
+            padding-right: 10px;
+            padding-top: 4px;
+            font-size: 22px;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 700;
+            vertical-align: top;
+            @media (max-width: $screen-tablet) {
+                display: block;
+            }
+        }
+        dd {
+            display: inline-block;
+            padding: 0 5px 10px 5px;
+            @media (max-width: $screen-tablet) {
+                padding: 10px 5px 20px 0;
+            }
+            a {
+                .fa-circle {
+                    color: $keyline;
+                }
+                &:hover {
+                    .fa-circle {
+                        color: $GovJeRed !important;
+                    }
+                }
+            }
+            a:focus i {
+                border: 2px solid $focusHighlight;
+            }
+        }
+    }
+    ul.footerLinks {
+        list-style-type: none;
+        display: inline;
+        margin: 0 0 0 0;
+        padding: 0;
+        li {
+            display: inline;
+            padding-right: 16px;
+            @media (max-width: $screen-tablet) {
+                display: block !important;
+                padding-bottom: 12px;
+            }
+        }
+        li.right {
+            @media (max-width: 715px) {
+                float: left !important;
+                padding-top: 10px;
+            }
+        }
+        li:last-child {
+            padding-right: 0;
+        }
+        a {
+            color: $text-color;
+            text-decoration: underline;
+            font-size: em(16px, 14px);
+            font-family: proxima-nova, sans-serif;
+            &:hover {
+                color: $GovJeRed !important;
+            }
+            &:visited {
+                color: $text-color;
+            }
+        }
+    }
+}

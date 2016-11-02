@@ -1,0 +1,83 @@
+/* ==========================================================================
+   rte styles.
+   ========================================================================== */
+
+h2.govstyleElement-H2 {
+    -ms-name: "H2";
+    color: $text-color;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+}
+
+h3.govstyleElement-H3 {
+    -ms-name: "H3";
+    color: $text-color;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+}
+
+h4.govstyleElement-H4 {
+    -ms-name: "H4";
+    color: $text-color;
+    font-family: proxima-nova, sans-serif;
+}
+
+p.govstyleElement-P {
+    -ms-name: "Paragraph";
+    color: $text-color;
+    font-family: proxima-nova, sans-serif;
+}
+
+.ms-rtestate-field {
+    font-family: proxima-nova, sans-serif;
+}
+
+.txtFeedbackAdditional {
+    display: none;
+}
+
+fieldset {
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*table.govstyleTable-default {-ms-name:"Default"; font-family: proxima-nova, sans-serif;}
+table.govstyleTable-alignRight {-ms-name:"Text-align right";  font-family: proxima-nova, sans-serif;} 
+    */
+
+table.govstyleTable-borders {
+    -ms-name: "Thin Borders with alternating stripes";
+}
+
+
+/* sets the name of the table style */
+
+table.govstyleTable-borders td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+
+/* sets padding and vertical align for all td cells in the table....you might have to do this for the th cells as well */
+
+
+/* set the background color of alternating rows */
+
+table.govstyleTable-borders tr.mystyle-TableEvenRow-alternating td {
+    background: #ccc;
+}
+
+table.govstyleTable-borders tr.mystyle-TableOddRow-alternating td {
+    background: #efefef;
+}
+
+article.pagecontent table tbody tr.govstyleTableHeaderRow-default th {
+    background-color: $GovJeRed;
+    color: $GovJEWhite;
+}
+
+article.pagecontent table.govstyleTable-default td.highlight {
+    background: $Content-Background;
+} 

@@ -1,0 +1,43 @@
+section.ourSites {
+    margin-top: 0;
+    background-color: $cookie-Background;
+    color: white;
+    padding: 10px 0 10px 0;
+    ul {
+        list-style-type: none;
+        display: inline;
+        margin: 0;
+        padding: 0;
+        @media (max-width: $screen-tablet) {
+            display: block;
+        }
+        li {
+            display: inline;
+            padding: 0 18px;
+            border-left: solid 1px white;
+            @media (max-width: $screen-tablet) {
+                display: block;
+                border-left-style: none;
+                padding: 8px 0;
+            }
+        }
+        li.title {
+            font-family: proxima-nova, sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            padding-left: 0;
+        }
+        li:first-child {
+            border-left: none;
+        }
+        a {
+            color: white;
+            text-decoration: underline;
+            font-family: proxima-nova, sans-serif;
+            font-size: 16px;
+            &:hover {
+                color: $footer-hover;
+            }
+        }
+    }
+}

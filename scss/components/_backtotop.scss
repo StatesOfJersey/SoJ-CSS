@@ -1,0 +1,15 @@
+.back-to-top {
+    position: fixed;
+    top: 0;
+    right: 20px !important;
+    text-decoration: none;
+    background-color: $GovJeRed !important;
+    color: $GovJEWhite !important;
+    font-size: 12px;
+    padding: 1em;
+    z-index: 100;
+    display: none;
+    &:hover {
+        background-color: rgba(135, 135, 135, 0.50);
+    }
+}

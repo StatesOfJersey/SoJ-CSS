@@ -1,1 +1,116 @@
-﻿
+﻿aside#sideBarSocial {
+    margin-bottom: 20px;
+    float: right;
+}
+
+aside#sideBar {
+    float: left;
+    .scrollable .fixed-column {
+        display: none;
+    }
+    @media (max-width:$screen-phone) {
+        background: $Content-Background;
+        overflow: hidden;
+        margin: 0;
+    }
+    @media (max-width:$screen-phone) {
+        width: 100%;
+    }
+    #social {
+        @media (max-width: $screen-phone) {
+            padding-top: 10px;
+        }
+        height: 30px;
+        div.firstbutton {
+            float: left;
+            padding-left: 20px;
+            margin-right: 8px;
+            font-size: 14px;
+            line-height: 14px;
+            @media (max-width: $screen-phone) {
+                padding-left: 0;
+            }
+            @media (max-width:1199px) {
+                padding-left: 0;
+            }
+        }
+        div.button {
+            float: left;
+            margin-right: 8px;
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+    p {
+        font-size: 18px;
+        font-family: proxima-nova, sans-serif;
+    }
+    ul {
+        list-style-type: none;
+        margin: 10px 0;
+        padding: 0;
+        li {
+            padding-bottom: 5px;
+            a {
+                font-size: 18px;
+                font-family: proxima-nova, sans-serif;
+                &:hover {
+                    color: $GovJeRed;
+                }
+            }
+            a[target=_blank] {
+                background: transparent url(/_controltemplates/15/C5.GovJEResponsive/images/new-window.svg) center right no-repeat;
+                /*display:inline-block;*/
+                padding-right: 20px;
+            }
+        }
+    }
+    h1 {
+        color: $GovJeRed;
+        font-size: 22px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    h3 {
+        color: $GovJeRed;
+        font-size: 22px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    h4 {
+        color: $GovJeRed;
+        font-size: 22px;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+    }
+    #contacts {
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        p.contactTitle {
+            margin-bottom: 0;
+        }
+        p.contactOpening {
+            margin: 10px 0;
+            padding: 0;
+        }
+        @media (max-width:$screen-phone) {
+            border-style: none !important;
+            padding-left: 0;
+        }
+    }
+}
+
+.sidePanel {
+    background-color: $Content-Background;
+    border: 0 solid $keyline;
+    padding: 10px 20px 10px;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}

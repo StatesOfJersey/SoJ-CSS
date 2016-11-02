@@ -1,0 +1,128 @@
+/* ==========================================================================
+   table styles.
+   ========================================================================== */
+
+article.pagecontent table,
+section#statesreports table {
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
+article.pagecontent table caption,
+section#statesreports table caption {
+    position: absolute;
+    left: -999em;
+}
+
+article.pagecontent table thead th {
+    padding: 5px;
+    background: $GovJeRed;
+    color: $GovJEWhite;
+    font-weight: bold;
+    text-align: left;
+    border: solid 1px #E0E0E0;
+}
+
+section#statesreports table thead th {
+    padding: 5px;
+    background-color: $Content-Background;
+    color: $text-color;
+    font-weight: bold;
+    text-align: left;
+    border: solid 1px #E0E0E0;
+}
+
+article.pagecontent table tbody td,
+section#statesreports table tbody td {
+    border: solid 1px #E0E0E0;
+    vertical-align: top;
+    padding: 5px;
+}
+
+article.pagecontent table tbody th {
+    border: solid 1px #E0E0E0;
+    background-color: $GovJeRed;
+    color: $GovJEWhite;
+    vertical-align: top;
+    padding: 5px;
+    text-align: left;
+}
+
+section#statesreports table tbody th {
+    border: solid 1px #E0E0E0;
+    background-color: $Content-Background;
+    color: $text-color;
+    vertical-align: top;
+    padding: 5px;
+    text-align: left;
+}
+
+article.pagecontent table th.govstyleTableFirstCol-default,
+article.pagecontent table th.govstyleTableFooterFirstCol-default,
+article.pagecontent table .govstyleTableFooterRow-default {
+    background-color: $Content-Background;
+    color: $text-color;
+}
+
+
+/* Scrollable table styling */
+
+.scrollable.has-scroll {
+    position: relative;
+    overflow: hidden;
+    /* Clips the shadow created with the pseudo-element in the next rule. Not necessary for the actual scrolling. */
+    clear: left;
+    width: 100%;
+}
+
+.scrollable.has-scroll:after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50px;
+    height: 100%;
+    border-radius: 10px 0 0 10px / 50% 0 0 50%;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.25);
+    content: '';
+}
+
+
+/* This is the element whose content will be scrolled if necessary */
+
+.scrollable.has-scroll>div {
+    overflow-x: auto;
+}
+
+
+/* Style the scrollbar to make it visible in iOS, Android and OS X WebKit browsers (where user preferences can make scrollbars invisible until you actually scroll) */
+
+.scrollable>div::-webkit-scrollbar {
+    height: 12px;
+}
+
+.scrollable>div::-webkit-scrollbar-track {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.15) inset;
+    background: #f0f0f0;
+}
+
+.scrollable>div::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #ccc;
+}
+
+.scrollable .fixed-column {
+    display: none;
+}
+
+.has-scroll .fixed-column {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    border-right: 1px solid #ddd;
+    z-index: 1000;
+    left: 0;
+}

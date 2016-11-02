@@ -1,0 +1,82 @@
+/* ==========================================================================
+   contribution calculator .
+   ========================================================================== */
+
+#resultSet {
+    height: 450px;
+    border-top: solid 1px #676767;
+    display: none;
+    padding-top: 15px;
+    margin-top: 5px;
+}
+
+#resultSet #printButton {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+
+/*#resultSet #resultSetTable {width:580px;}*/
+
+#calculateButton {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+#validationMessage {
+    color: #bd0000;
+    font-weight: 700;
+    display: none;
+}
+
+#primaryEmployeeContributionsLabel {
+    margin-bottom: 10px;
+}
+
+#secondaryEmployerContributionsLabel {
+    margin-bottom: 10px;
+}
+
+#secondaryEmployerContributions2PercentLabel {
+    margin-bottom: 10px;
+}
+
+#totalLabel {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#grossEarningLabel {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#grossEarningsTitle {
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#grossEarning {
+    margin-bottom: 10px;
+}
+
+#primaryEmployeeContributions {
+    margin-bottom: 10px;
+}
+
+#secondaryEmployerContributions {
+    margin-bottom: 10px;
+}
+
+#secondaryEmployerContributions2Percent {
+    margin-bottom: 10px;
+}
+
+#total {
+    margin-bottom: 10px;
+}
