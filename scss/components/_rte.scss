@@ -65,7 +65,7 @@ table.govstyleTable-borders td {
 
 /* set the background color of alternating rows */
 
-table.govstyleTable-borders tr.mystyle-TableEvenRow-alternating td {
+table.govstyleTable-borders tr.mystyle-TableEvenRow-alternating td { 
     background: #ccc;
 }
 
@@ -80,4 +80,4 @@ article.pagecontent table tbody tr.govstyleTableHeaderRow-default th {
 
 article.pagecontent table.govstyleTable-default td.highlight {
     background: $Content-Background;
-} 
+}

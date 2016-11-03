@@ -1,0 +1,37 @@
+﻿// This is the main SCSS file for the States of Jersey Web Standards Stylesheet
+// Base
+@import "base/colour";
+@import "base/typography";
+// Components
+@import "components/accessibility";
+@import "components/backtotop";
+@import "components/cookiebar";
+@import "components/headings";
+@import "components/links";
+@import "components/nosvg";
+@import "components/noticebar";
+@import "components/rte";
+@import "components/servicesAZ";
+@import "components/table";
+// Layout
+@import "layout/breadcrumb";
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/masthead";
+@import "layout/oursites";
+@import "layout/print";
+@import "layout/searchbar";
+@import "layout/sidebar";
+// Pages
+@import "pages/contacts";
+@import "pages/contentPage";
+@import "pages/contributionCalulator";
+@import "pages/egov";
+@import "pages/home";
+@import "pages/jobsinjersey";
+@import "pages/landingpage";
+@import "pages/news";
+@import "pages/search-reports-MD";
+// Third-party Vendors
+@import "vendors/bootstrap";
