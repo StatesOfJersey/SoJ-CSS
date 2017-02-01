@@ -1,0 +1,77 @@
+.btn {
+    height:45px;
+    max-width:300px;
+    border-bottom::0.3em solid $ButtonBottom;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    padding:0.625em 0.938em;
+    font-size:1.125em;
+    color:$White;
+    margin:0;
+    font-weight:600;
+    text-align:center;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border-radius:0px;
+}
+
+.btn-default {
+    background:$Red;
+
+    &:hover, &:active {
+        background:darken($Red, 15%);
+        border-bottom:none;
+        color:$White;
+    }
+}
+
+.btn-primary {
+    background:$GreenButton;
+
+    &:hover, &:active {
+        background:darken($GreenButton, 15%);
+        border-bottom:none;
+        color:$White;
+    }
+}
+
+.btn-secondary {
+    background:$BlueButton;
+
+    &:hover, &:active {
+        background:darken($BlueButton, 15%);
+        border-bottom:none;
+        color:$White;
+    }
+}
+
+.btn-cancel {
+    background:$MidGrey;
+
+    &:hover, &:active {
+        background:darken($MidGrey, 15%);
+        border-bottom:none;
+        color:$White;
+    }
+}
+
+.back-to-top {
+    position:fixed;
+    top:0;
+    right:20px;
+    background-colour: $Red;
+    font-size:em(12px);
+    padding:1em;
+    border:0px;
+    z-index: 100;    
+}

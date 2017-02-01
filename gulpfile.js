@@ -6,6 +6,7 @@ var concat = require('gulp-concat');
 var minifyCSS = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
+var watch = require('gulp-watch');
 
 var scssFiles = 'scss/**/*.scss';
 
