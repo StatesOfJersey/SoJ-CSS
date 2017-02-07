@@ -1,0 +1,141 @@
+Section#Services {
+    ul {
+        list-style: none;
+        margin-bottom: 20px;
+        padding: 0;
+        clear: both;
+        float: left;
+        width: 100%;
+        li {
+            display: inline-block;
+            padding: 5px 0;
+            list-style: none;
+            margin-bottom: 15px;
+            @media(max-width: $screen-tablet) {
+                margin-bottom:0;
+            }
+            @media (min-width: $screen-desktop) {
+                padding: 5px 15px 5px 0;
+                &:nth-child(3n) {
+                    padding-right: 0;
+                    &:after {
+                        content: ".";
+                        display: block;
+                        height: 0;
+                        clear: both;
+                        visibility: hidden;
+                    }
+                }
+                &:nth-of-type(3n+1) {
+                    clear: left;
+                }
+            }
+            a {
+                font-size: 18px;
+                color: $GovJeRed;
+                padding: 15px;
+                background-color: $Content-Background;
+                width: 100%;
+                display: block;
+                @media(max-width: $screen-tablet) {
+                    padding:0;
+                }
+            }
+            &:hover a {
+                color: $text-color;
+            } 
+        }
+    }
+    .panel {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-style: none;
+        border-radius: 0 !important;
+        -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    .panel-heading {
+        background-color: $GovJeRed;
+        color: $GovJEWhite;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 10px 0;
+        h2 {
+            line-height: 2em;
+            padding-left: 10px;
+            a {
+                background-position: right center;
+                background-repeat: no-repeat;
+                background-size: 45px 45px;
+                background-image: url('/_controltemplates/15/C5.GovJEResponsive/images/plus.svg');
+                display: block;
+                text-decoration: none;
+                font-weight: 700;
+                width: 100%;
+                font-size: 20px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            a.collapsed {
+                background-image: url('/_controltemplates/15/C5.GovJEResponsive/images/plus.svg');
+            }
+            a.opened {
+                background-image: url('/_controltemplates/15/C5.GovJEResponsive/images/minus.svg');
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $GovJEWhite;
+            &:hover {
+                color: $red-hover;
+            }
+            &:visited {
+                color: $red-hover;
+            }
+        }
+    }
+    .panel-body {
+        h3 {
+            margin-bottom: 0;
+            a {
+                color: $GovJeRed;
+                font-weight: 600;
+                &:hover {
+                    color: $text-color !important;
+                }
+                &:visited {
+                    color: $GovJeRed;
+                }
+            }
+        }
+    }
+    .panel-collapse {
+        background-color: $Content-Background;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            border-bottom: solid 1px #cccccc;
+            padding: 10px 0;
+        }
+        li.first {
+            padding-top: 0;
+        }
+        li.last {
+            border-bottom: dotted 0 $text-color;
+        }
+        li a {
+            color: $text-color;
+            text-decoration: underline;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            &:hover {
+                color: $GovJeRed;
+            }
+        }
+    }
+}

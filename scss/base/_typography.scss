@@ -3,12 +3,12 @@
     @return ($px / $base) * 1em;
 }
 
-html {
-    font-size: em(14px);
+html { 
+    font-size: em(14px); 
 }
-
+    
 body {
-    font-family: proxima-nova, sans-serif;
+    font-family: proxima-nova, sans-serif; 
     -ms-overflow-style: scrollbar;
 }
 
@@ -17,8 +17,8 @@ body {
     typekit
    ================= */
 
-.wf-loading {
-    visibility: hidden;
+.wf-loading { 
+    visibility: hidden; 
 }
 
 .wf-active {

@@ -11,6 +11,7 @@ var scssFiles = 'scss/**/*.scss';
 
 var cssFiles = 'css/**/*.css';
 var cssPath = 'css';
+var destPath = 'dest';
 
 gulp.task('scss', function() {
     return gulp.src(scssFiles)
@@ -19,11 +20,11 @@ gulp.task('scss', function() {
 });
 
 gulp.task('css', function() {
-    gulp.src(cssFiles)
-        .pipe(minifyCSS())
+    gulp.src(cssFiles) 
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
+        .pipe(minifyCSS())
         .pipe(rename('GovJE.min.css'))
-        .pipe(gulp.dest(cssPath));
+        .pipe(gulp.dest('./'+ destPath));
 });
 
 //Watch task
