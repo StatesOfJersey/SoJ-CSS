@@ -65,9 +65,9 @@
     }
     input[type="submit"] {
         // display: inline;
-        background-color: #B60011;
-        color: #ffffff;
-        border-bottom: 3px solid #666;
+        background-color: $GovJeRed;
+        color: $GovJEWhite;
+        border-bottom: 3px solid $buttonBase;
         border-radius: 0;
         border-left-style: none;
         border-right-style: none;
@@ -80,7 +80,7 @@
         font-family: proxima-nova, sans-serif;
         font-weight: 600;
         &:hover {
-            border-bottom: 0 solid #666;
+            border-bottom: 0 solid $buttonBase;
         }
     }
     input[type="text"] {
@@ -244,9 +244,9 @@
         }
         input[type="submit"] {
             // display: inline;
-            background-color: #B60011;
-            color: #ffffff;
-            border-bottom: 3px solid #666;
+            background-color: $GovJeRed;
+            color: $GovJEWhite;
+            border-bottom: 3px solid $buttonBase;
             border-radius: 0;
             font-size: 18px;
             line-height: 29px;
@@ -258,7 +258,7 @@
             border-top-style: none;
             height: 38px;
             &:hover {
-                border-bottom: 0 solid #666;
+                border-bottom: 0 solid $buttonBase;
             }
         }
         input[type="radio"],

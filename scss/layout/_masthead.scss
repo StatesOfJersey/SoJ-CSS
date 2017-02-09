@@ -61,7 +61,7 @@ section.masthead {
     .btn-default {
         color: $GovJEWhite;
         background-color: $GovJeRed;
-        border-bottom: 3px solid #666;
+        border-bottom: 3px solid $buttonBase;
         border-left-style: none;
         border-right-style: none;
         border-top-style: none;
@@ -80,7 +80,7 @@ section.masthead {
             background-color: transparent;
         }
         &:hover {
-            border-bottom: 0 solid #666;
+            border-bottom: 0 solid $buttonBase;
             background-color: #9f0110;
         }
     }
