@@ -12,7 +12,7 @@ var scssFiles = 'scss/**/*.scss';
 
 var cssFiles = 'css/**/*.css';
 var cssPath = 'css';
-var destPath = 'dest';
+var destPath = 'dist';
 
 gulp.task('scss', function() {
     gulp.src(scssFiles)
