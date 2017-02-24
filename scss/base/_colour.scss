@@ -1,4 +1,4 @@
-﻿$Content-Background: #eef0f0;
+$Content-Background: #eef0f0;
 $GovJeRed: #b60011;
 $cookie-Background: #585958;
 $noticebar-Background: #282828;
@@ -23,20 +23,48 @@ $GovJeBlue: #334582;
 
 // Primary
 
-$Red: #B60011;
+$Red: #b60011;
 $Charcoal: #1D1D1B;
-$DarkGrey: #585958;
-$LightGrey: #EEF0F0;
+$Dark-grey: #585958;
+$Mid-grey: #7D7D7D;
+$Pale-grey: #E0E0E0;
+$Lightest-grey: #EEF0F0;
 $White: #FFFFFF;
 
 // Secondary 
 
-$MidGrey: #7D7D7D;
-$FocusBlueLight: #67B0EA;
-$FocusBlueDark: #095AA2;
-$GreenButton: #31B255;
-$BlueButton: #1565D6;
-$TableBorders: #E0E0E0;
-$ButtonBottom: #666666;
-$PagingBoxBorder: #E1E3E3;
+$Focus-blue-light: #095AA2;
+$Focus-blue-dark: #67b0EA;
+$Primary-button: #009429;
+$Secondary-button: #0048AF;
 
+// Charts, Graphs and Data Tables
+
+// Grey
+
+$Stats-grey-lightest: #D4D3D3;
+$Stats-grey-lighter: #B9B9B6;
+$Stats-grey-light: #009429;
+$Stats-grey-dark: #6B6A69;
+$Stats-grey-darker: #474744;
+$Stats-grey-darkest: #1C1C1B;
+
+// Red
+
+$Stats-red-lightest: #FF9A75;
+$Stats-red-lighter: #FB5536;
+$Stats-red-light: #B91806;
+$Stats-red-dark: #8B0F00;
+$Stats-red-darker: #5D0600;
+$Stats-red-darkest: #420302;
+
+// mixed
+
+$Stats-mixed-red: #B91806;
+$Stats-mixed-blue: #334582;
+$Stats-mixed-pink: #FF39D4;
+$Stats-mixed-orange: #FF7E11;
+$Stats-mixed-light-blue: #86B5FF;
+$Stats-mixed-light-grey: #ACABA8;
+$Tides-table-light-blue: #E5F5FE;
+$Tides-table-mid-blue: #9abdcb;
