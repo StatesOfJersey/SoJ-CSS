@@ -14,7 +14,7 @@ var cssFiles = 'css/**/*.css';
 var cssPath = 'css';
 
 gulp.task('scss', function() {
-    return gulp.src(scssFiles)
+    gulp.src(scssFiles)
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(gulp.dest('./' + cssPath));
 });
