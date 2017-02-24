@@ -1,12 +1,12 @@
 .btn {
-    height:45px;
+    height:em(38px);
     max-width:300px;
-    border-bottom::0.3em solid $ButtonBottom;
+    border-bottom:em(3px) solid $Dark-grey;
     border-top:0px;
     border-left:0px;
     border-right:0px;
-    padding:0.625em 0.938em;
-    font-size:1.125em;
+    padding:em(10px) em(15px);
+    font-size:em(18px);
     color:$White;
     margin:0;
     font-weight:600;
@@ -23,43 +23,48 @@
     user-select: none;
     background-image: none;
     border-radius:0px;
+    line-height:em(18px);
+
+    &:focus, &:active, &:hover {
+        padding-top:em(12px);
+    }
 }
 
 .btn-default {
     background:$Red;
 
-    &:hover, &:active {
-        background:darken($Red, 15%);
+    &:focus, &:active, &:hover {
+        background:darken($Red, 9%);
         border-bottom:none;
         color:$White;
     }
 }
 
 .btn-primary {
-    background:$GreenButton;
+    background:$Primary-button;
 
-    &:hover, &:active {
-        background:darken($GreenButton, 15%);
+    &:focus, &:active, &:hover {
+        background:darken($Primary-button, 9%);
         border-bottom:none;
         color:$White;
     }
 }
 
 .btn-secondary {
-    background:$BlueButton;
+    background:$Secondary-button;
 
-    &:hover, &:active {
-        background:darken($BlueButton, 15%);
+    &:focus, &:active, &:hover {
+        background:darken($Secondary-button, 9%);
         border-bottom:none;
         color:$White;
     }
 }
 
 .btn-cancel {
-    background:$MidGrey;
+    background:$Mid-grey;
 
-    &:hover, &:active {
-        background:darken($MidGrey, 15%);
+    &:focus, &:active, &:hover {
+        background:darken($Mid-grey, 9%);
         border-bottom:none;
         color:$White;
     }
@@ -74,4 +79,11 @@
     padding:1em;
     border:0px;
     z-index: 100;    
+    height:38px;
+
+    &:focus, &:active, &:hover {
+        background:$Focus-blue-light !important;
+        padding-top:1em;
+        text-decoration:underline;
+    }
 }
