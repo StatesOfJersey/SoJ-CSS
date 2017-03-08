@@ -44,6 +44,11 @@ h3 {
     margin:20px 0 10px;
 }
 
+h3.red {
+    color: $GovJeRed;
+    font-weight: 700;
+}
+ 
 h4 {
     font-size: em(18px);
 }

@@ -6,9 +6,9 @@
 html {
     font-size: $base-font-size;
 }
-
+    
 body {
-    font-family: proxima-nova, sans-serif;
+    font-family: proxima-nova, sans-serif; 
     -ms-overflow-style: scrollbar;
     font-size:$base-font-size;
 }
@@ -18,8 +18,8 @@ body {
     typekit
    ================= */
 
-.wf-loading {
-    visibility: hidden;
+.wf-loading { 
+    visibility: hidden; 
 }
 
 .wf-active {

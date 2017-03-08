@@ -2,6 +2,10 @@
    rte styles.
    ========================================================================== */
 
+
+/* Hide Rendition button
+#Ribbon\.Image\.Image\.Renditions\.PickRendition-Large{display:none;}*/
+
 h2.govstyleElement-H2 {
     -ms-name: "H2";
     color: $text-color;
@@ -42,10 +46,15 @@ fieldset {
     padding: 0;
 }
 
+table.govstyleTable-default {
+    -ms-name: "GovJE Default";
+    font-family: proxima-nova, sans-serif;
+}
 
-/*table.govstyleTable-default {-ms-name:"Default"; font-family: proxima-nova, sans-serif;}
-table.govstyleTable-alignRight {-ms-name:"Text-align right";  font-family: proxima-nova, sans-serif;} 
-    */
+table.govstyleTable-alignRight {
+    -ms-name: "GovJE Right Align";
+    font-family: proxima-nova, sans-serif;
+}
 
 table.govstyleTable-borders {
     -ms-name: "Thin Borders with alternating stripes";
@@ -65,7 +74,7 @@ table.govstyleTable-borders td {
 
 /* set the background color of alternating rows */
 
-table.govstyleTable-borders tr.mystyle-TableEvenRow-alternating td { 
+table.govstyleTable-borders tr.mystyle-TableEvenRow-alternating td {
     background: #ccc;
 }
 
@@ -73,11 +82,24 @@ table.govstyleTable-borders tr.mystyle-TableOddRow-alternating td {
     background: #efefef;
 }
 
-article.pagecontent table tbody tr.govstyleTableHeaderRow-default th {
+article.pagecontent table tbody tr.govstyleTableHeaderRow-default th,
+table.govstyleTable-alignRight th {
     background-color: $GovJeRed;
     color: $GovJEWhite;
 }
 
-article.pagecontent table.govstyleTable-default td.highlight {
+article.pagecontent table.govstyleTable-default td.highlight,
+table.govstyleTable-alignRight td.highlight {
     background: $Content-Background;
+}
+
+article.pagecontent .govstyleTableFirstCol-alignRight,
+article.pagecontent .govstyleTableFooterRow-alignRight,
+article.pagecontent .govstyleTableFooterFirstCol-alignRight {
+    background: $Content-Background;
+    color: $text-color;
+}
+
+article.pagecontent table.govstyleTable-alignRight td {
+    text-align: right;
 }

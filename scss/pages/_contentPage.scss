@@ -148,9 +148,23 @@ article.pagecontent {
         margin-bottom: 30px;
     }
     ul {
-        margin-left: 15px;
+        list-style-type: disc;
+    }
+    ul,
+    ol {
+        margin-left: 0;
+        padding-left: 3em;
         @media (max-width: $screen-phone) {
+            padding-left:2em;
+        }
+        ul,
+        ol {
             margin-left: 0;
+            padding-left: 1.5em;
+            @media (max-width: $screen-phone) {
+                margin-left: 20px;
+                padding-left: 0;
+            }
         }
     }
     table {
