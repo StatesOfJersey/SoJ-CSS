@@ -1,17 +1,17 @@
 section#noticeBar {
-    background-color: $noticebar-Background;
+    background-color: $Dark-grey;
     width: 100%;
     padding: 9px 0;
     color: white;
     a {
         font-family: proxima-nova, sans-serif;
         text-decoration: underline;
-        color: $GovJEWhite;
+        color: $White;
         &:hover {
-            color: $red-hover;
+            color: $Focus-blue-dark;
         }
         &:visited {
-            color: $GovJEWhite;
+            color: $White;
         }
     }
     p {

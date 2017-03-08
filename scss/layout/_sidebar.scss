@@ -9,7 +9,7 @@ aside#sideBar {
         display: none;
     }
     @media (max-width:$screen-phone) {
-        background: $Content-Background;
+        background: $Lightest-grey;
         overflow: hidden;
         margin: 0;
     }
@@ -55,7 +55,7 @@ aside#sideBar {
                 font-size: 18px;
                 font-family: proxima-nova, sans-serif;
                 &:hover {
-                    color: $GovJeRed;
+                    color: $Red;
                 }
             }
             a[target=_blank] {
@@ -66,7 +66,7 @@ aside#sideBar {
         }
     }
     h1 {
-        color: $GovJeRed;
+        color: $Red;
         font-size: 22px;
         font-family: proxima-nova, sans-serif;
         font-weight: 700;
@@ -74,7 +74,7 @@ aside#sideBar {
         margin-bottom: 10px;
     }
     h3 {
-        color: $GovJeRed;
+        color: $Red;
         font-size: 22px;
         font-family: proxima-nova, sans-serif;
         font-weight: 700;
@@ -82,7 +82,7 @@ aside#sideBar {
         margin-bottom: 10px;
     }
     h4 {
-        color: $GovJeRed;
+        color: $Red;
         font-size: 22px;
         font-family: proxima-nova, sans-serif;
         font-weight: 700;
@@ -107,8 +107,8 @@ aside#sideBar {
 }
 
 .sidePanel {
-    background-color: $Content-Background;
-    border: 0 solid $keyline;
+    background-color: $Lightest-grey;
+    border: 0 solid $Mid-grey;
     padding: 10px 20px 10px;
     margin-bottom: 20px;
     float: left;

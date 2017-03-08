@@ -1,5 +1,5 @@
 footer {
-    background-color: $footer-background;
+    background-color: $Dark-grey;
     width: 100%;
     padding: 15px 0 30px 0;
     @media (min-width: $screen-phone) {
@@ -31,16 +31,16 @@ footer {
             }
             a {
                 .fa-circle {
-                    color: $keyline;
+                    color: $Mid-grey;
                 }
                 &:hover {
                     .fa-circle {
-                        color: $GovJeRed !important;
+                        color: $Red !important;
                     }
                 }
             }
             a:focus i {
-                border: 2px solid $focusHighlight;
+                border: 2px solid $Focus-blue-light;
             }
         }
     }
@@ -67,15 +67,15 @@ footer {
             padding-right: 0;
         }
         a {
-            color: $text-color;
+            color: $Charcoal;
             text-decoration: underline;
             font-size: em(16px, 14px);
             font-family: proxima-nova, sans-serif;
             &:hover {
-                color: $GovJeRed !important;
+                color: $Red !important;
             }
             &:visited {
-                color: $text-color;
+                color: $Charcoal;
             }
         }
     }

@@ -45,10 +45,10 @@ section#statesreports {
             }
             width: 32px;
             float: left;
-            border: 1px solid $footer-background;
+            border: 1px solid $Dark-grey;
             text-align: center;
             &:hover {
-                border: 1px solid $GovJeRed;
+                border: 1px solid $Red;
             }
             a {
                 text-decoration: none;
@@ -59,7 +59,7 @@ section#statesreports {
                 display: block;
                 &:hover {
                     text-decoration: underline;
-                    color: $GovJeRed;
+                    color: $Red;
                 }
             }
         }
@@ -74,9 +74,9 @@ section#statesreports {
             }
         }
         .currentpage {
-            border: 1px solid $GovJeRed;
+            border: 1px solid $Red;
             a {
-                color: $GovJeRed;
+                color: $Red;
             }
         }
         .pageitems {
@@ -89,7 +89,7 @@ section#statesreports {
             }
             a.current {
                 text-decoration: none;
-                color: $GovJeRed;
+                color: $Red;
             }
             span {
                 display: none;
@@ -155,7 +155,7 @@ section#statesreports {
         padding: 0;
         margin-left: 0;
         .teaser {
-            color: $text-color;
+            color: $Charcoal;
             font-size: 18px;
             min-height: 40px;
         }
@@ -171,11 +171,11 @@ section#statesreports {
             .title a,
             a .title {
                 font-size: 24px;
-                color: $GovJeRed;
+                color: $Red;
                 text-decoration: underline;
                 font-weight: 700;
                 &:hover {
-                    color: $text-color;
+                    color: $Charcoal;
                 }
             }
             .set {
@@ -184,7 +184,7 @@ section#statesreports {
             dt {
                 float: left;
                 clear: left;
-                color: $text-color;
+                color: $Charcoal;
                 margin-right: 20px;
                 border-top-style: none;
                 padding-top: 0;
@@ -210,7 +210,7 @@ section#statesreports {
             }
             dd {
                 float: left;
-                color: $text-color;
+                color: $Charcoal;
                 border-top-style: none;
                 padding-top: 0;
                 padding-bottom: 5px;
@@ -226,9 +226,9 @@ section#statesreports {
             }
             .searchpreview {
                 display: none;
-                background: $GovJEWhite repeat scroll 0 0;
-                border: 2px solid $text-color;
-                background-color: $GovJEWhite;
+                background: $White repeat scroll 0 0;
+                border: 2px solid $Charcoal;
+                background-color: $White;
                 box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
                 -moz-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
                 -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3);
@@ -267,7 +267,7 @@ section#statesreports {
                     word-wrap: break-word;
                 }
                 .srch-hover-arrow {
-                    border-color: transparent $Content-Background transparent transparent;
+                    border-color: transparent $Lightest-grey transparent transparent;
                     border-style: solid;
                     border-width: 15px;
                     height: 0;
@@ -277,7 +277,7 @@ section#statesreports {
                     top: 80.5px;
                 }
                 iframe {
-                    border: 2px solid $Content-Background;
+                    border: 2px solid $Lightest-grey;
                     height: 1240px;
                     overflow: hidden;
                     transform: scale(0.2, 0.2);
@@ -311,7 +311,7 @@ section#statesreports {
         }
     }
     .input-group-btn {
-        background-color: $Content-Background;
+        background-color: $Lightest-grey;
         position: absolute;
         right: 80px;
         top: 0;
@@ -321,7 +321,7 @@ section#statesreports {
             height: 38px;
             overflow: hidden;
             display: block;
-            background-color: $GovJeRed;
+            background-color: $Red;
             position: absolute;
             right: 0;
             top: 0;
@@ -337,9 +337,9 @@ section#statesreports {
         border-right-style: none;
     }
     .btn-default {
-        color: $GovJEWhite;
-        background-color: $GovJeRed;
-        border-bottom: 3px solid $buttonBase;
+        color: $White;
+        background-color: $Red;
+        border-bottom: 3px solid $Dark-grey;
         border-left-style: none;
         border-right-style: none;
         border-top-style: none;
@@ -357,7 +357,7 @@ section#statesreports {
             background-color: transparent;
         }
         &:hover {
-            border-bottom: 0 solid $buttonBase;
+            border-bottom: 0 solid $Dark-grey;
             background-color: #9f0110;
         }
     }
@@ -379,7 +379,7 @@ section#statesreports {
     .magglass {
         width: 100%;
         height: 100%;
-        fill: $GovJEWhite;
+        fill: $White;
     }
     a.button {
         padding-top: 2px;
@@ -391,7 +391,7 @@ section#statesreports {
     }
     .recomendedpanel {
         float: left;
-        border-left: 2px solid $GovJeRed;
+        border-left: 2px solid $Red;
         margin-bottom: 20px;
         width: 100%;
         .Recomended,
@@ -400,7 +400,7 @@ section#statesreports {
         }
     }
     aside#sideBar {
-        background-color: $GovJEWhite;
+        background-color: $White;
         .navbox {
             float: left;
             width: 100%;
@@ -408,14 +408,14 @@ section#statesreports {
                 float: left;
             }
             .sidePanel {
-                background-color: $GovJEWhite;
-                border: 1px solid $Content-Background;
+                background-color: $White;
+                border: 1px solid $Lightest-grey;
                 padding: 0;
                 margin-bottom: 20px;
                 float: left;
                 width: 100%;
                 .RefineResults {
-                    background-color: $Content-Background;
+                    background-color: $Lightest-grey;
                     float: left;
                     height: 40px;
                     margin: 0;
@@ -423,9 +423,9 @@ section#statesreports {
                     width: 100%;
                 }
                 a {
-                    color: $text-color;
+                    color: $Charcoal;
                     &:hover {
-                        color: $GovJeRed;
+                        color: $Red;
                     }
                 }
                 @media (max-width:$screen-tablet) {
@@ -449,7 +449,7 @@ section#statesreports {
                             font-size: 18px;
                             font-family: proxima-nova, sans-serif;
                             &:hover {
-                                color: $GovJeRed;
+                                color: $Red;
                             }
                         }
                         a[target=_blank] {
@@ -472,21 +472,21 @@ section#statesreports {
                     }
                 }
                 h1 {
-                    color: $text-color;
+                    color: $Charcoal;
                     font-size: 22px;
                     font-family: proxima-nova, sans-serif;
                     font-weight: 700;
                     margin-top: 10px;
                 }
                 h3 {
-                    color: $text-color;
+                    color: $Charcoal;
                     font-size: 22px;
                     font-family: proxima-nova, sans-serif;
                     font-weight: 700;
                     margin-top: 10px;
                 }
                 h4 {
-                    color: $text-color;
+                    color: $Charcoal;
                     font-size: 22px;
                     font-family: proxima-nova, sans-serif;
                     font-weight: 700;
@@ -531,13 +531,13 @@ section#statesreports {
 .ministerialdecisions {
     .report a {
         font-size: 18px;
-        color: $GovJeRed;
+        color: $Red;
     }
     .paging {
         font-size: 18px;
         a {
             font-size: 18px;
-            color: $GovJeRed;
+            color: $Red;
         }
     }
 }

@@ -1,5 +1,5 @@
 ﻿header {
-    background-color: $GovJeRed;
+    background-color: $Red;
     width: 100%;
     padding: 0;
     overflow: hidden;
@@ -17,7 +17,7 @@
         font-size: 16px;
         font-family: proxima-nova, sans-serif;
         font-weight: 600;
-        color: $GovJEWhite;
+        color: $White;
         line-height: 16px;
     }
     p {
@@ -26,7 +26,7 @@
         font-size: 14px;
         font-family: proxima-nova, sans-serif;
         font-weight: 600;
-        color: $GovJEWhite;
+        color: $White;
         line-height: 15px;
     }
     a {
@@ -35,16 +35,16 @@
         font-family: proxima-nova, sans-serif;
         font-weight: 700;
         text-decoration: none;
-        color: $GovJEWhite;
+        color: $White;
         padding-top: 5px;
         padding-bottom: 5px;
         padding-right: 25px;
         &:hover {
-            color: $red-hover;
+            color: $Focus-blue-dark;
             text-decoration: none;
         }
         &:visited {
-            color: $GovJEWhite;
+            color: $White;
         }
         img {
             margin: 0 5px 0 0;
@@ -54,9 +54,9 @@
     }
     .sitetitle {
         a {
-            color: $GovJEWhite;
+            color: $White;
             &:visited {
-                color: $GovJEWhite;
+                color: $White;
             }
         }
     }
@@ -78,13 +78,13 @@
             display: inline-block;
             margin-right: 20px;
             a {
-                color: $GovJEWhite;
+                color: $White;
                 font-size: em(16px, 14px);
                 padding-right: 0;
                 font-family: proxima-nova, sans-serif;
                 text-decoration: underline;
                 &:hover {
-                    color: $red-hover;
+                    color: $Focus-blue-dark;
                 }
             }
         }

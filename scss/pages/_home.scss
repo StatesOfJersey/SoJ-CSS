@@ -9,8 +9,8 @@
         box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     }
     .panel-heading {
-        background-color: $GovJeRed;
-        color: $GovJEWhite;
+        background-color: $Red;
+        color: $White;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         padding: 10px 0;
@@ -40,12 +40,12 @@
         }
         a {
             text-decoration: none;
-            color: $GovJEWhite;
+            color: $White;
             &:hover {
-                color: $red-hover;
+                color: $Focus-blue-dark;
             }
             &:visited {
-                color: $red-hover;
+                color: $Focus-blue-dark;
             }
         }
     }
@@ -53,19 +53,19 @@
         h3 {
             margin-bottom: 0;
             a {
-                color: $GovJeRed;
+                color: $Red;
                 font-weight: 600;
                 &:hover {
-                    color: $text-color !important;
+                    color: $Charcoal !important;
                 }
                 &:visited {
-                    color: $GovJeRed;
+                    color: $Red;
                 }
             }
         }
     }
     .panel-collapse {
-        background-color: $Content-Background;
+        background-color: $Lightest-grey;
         ul {
             list-style-type: none;
             margin: 0;
@@ -79,16 +79,16 @@
             padding-top: 0;
         }
         li.last {
-            border-bottom: dotted 0 $text-color;
+            border-bottom: dotted 0 $Charcoal;
         }
         li a {
-            color: $text-color;
+            color: $Charcoal;
             text-decoration: underline;
             font-family: proxima-nova, sans-serif;
             font-weight: 400;
             font-size: 20px;
             &:hover {
-                color: $GovJeRed;
+                color: $Red;
             }
         }
     }
@@ -96,7 +96,7 @@
 
 section.homepage-tabs {
     .nav-tabs {
-        border-bottom: 3px solid $GovJeRed;
+        border-bottom: 3px solid $Red;
     }
     .nav-tabs>li {
         float: left;
@@ -106,11 +106,11 @@ section.homepage-tabs {
     .nav-tabs>li>a {
         margin-right: 0;
         line-height: 1.428571429;
-        color: $GovJeRed;
+        color: $Red;
         background: #fff;
-        border-top: solid 1px $keyline;
-        border-left: solid 1px $keyline;
-        border-right: solid 1px $keyline;
+        border-top: solid 1px $Mid-grey;
+        border-left: solid 1px $Mid-grey;
+        border-right: solid 1px $Mid-grey;
         border-bottom: none;
         padding: 15px 0;
         border-radius: 0 0 0 0;
@@ -138,21 +138,21 @@ section.homepage-tabs {
         }
     }
     .nav-tabs>li>a:hover {
-        border-color: $keyline $keyline $keyline;
+        border-color: $Mid-grey $Mid-grey $Mid-grey;
     }
     .nav-tabs>li>a:focus {
-        color: $text-color !important;
+        color: $Charcoal !important;
     }
     .nav-tabs>li.active>a,
     .nav-tabs>li.active>a:hover,
     .nav-tabs>li.active>a:focus {
         color: #fff !important;
         cursor: default;
-        background-color: $GovJeRed;
-        border-top: none 1px $keyline;
-        border-left: none 1px $keyline;
-        border-right: none 1px $keyline;
-        border-bottom: solid 1px $GovJeRed;
+        background-color: $Red;
+        border-top: none 1px $Mid-grey;
+        border-left: none 1px $Mid-grey;
+        border-right: none 1px $Mid-grey;
+        border-bottom: solid 1px $Red;
     }
     .nav-tabs.nav-justified {
         width: 100%;
@@ -175,14 +175,14 @@ section.homepage-tabs {
         border-bottom: 1px solid #dddddd;
     }
     .nav-tabs.nav-justified>.active>a {
-        border-bottom-color: $GovJEWhite;
+        border-bottom-color: $White;
     }
     .tab-content {
         padding: 20px 10px 10px 10px;
         margin-bottom: 32px;
-        border-bottom: 1px solid $keyline;
-        border-left: 1px solid $keyline;
-        border-right: 1px solid $keyline;
+        border-bottom: 1px solid $Mid-grey;
+        border-left: 1px solid $Mid-grey;
+        border-right: 1px solid $Mid-grey;
         ul {
             list-style-type: none;
             padding-left: 20px;
@@ -194,13 +194,13 @@ section.homepage-tabs {
             padding-bottom: 0;
         }
         a {
-            color: $text-color;
+            color: $Charcoal;
             text-decoration: underline;
             font-size: em(19px, 14px);
             font-family: proxima-nova, sans-serif;
             font-weight: 700;
             &:hover {
-                color: $GovJeRed;
+                color: $Red;
             }
         }
     }
@@ -210,7 +210,7 @@ section.homepage-tabs {
             margin: 10px 0 15px 0;
         }
         a {
-            color: $text-color;
+            color: $Charcoal;
             text-decoration: underline;
             font-family: proxima-nova, sans-serif;
             font-size: em(16px, 14px);
@@ -224,7 +224,7 @@ section.homepage-tabs {
             padding: 10px 0 0;
             a {
                 &:hover {
-                    color: $GovJeRed;
+                    color: $Red;
                 }
             }
         }
@@ -237,17 +237,17 @@ section.homepage-tabs {
             font-family: proxima-nova, sans-serif;
             font-weight: 700;
             font-size: em(19px, 21px);
-            color: $GovJeRed;
+            color: $Red;
             &:hover {
-                color: $text-color;
+                color: $Charcoal;
             }
         }
     }
 }
 
 aside#HomepageSidebar {
-    background-color: $Content-Background;
-    border: 0 solid $keyline;
+    background-color: $Lightest-grey;
+    border: 0 solid $Mid-grey;
     padding: 10px 20px 10px;
     margin-top: 20px;
     padding-top: 10px;
@@ -255,7 +255,7 @@ aside#HomepageSidebar {
         margin-bottom: 10px;
     }
     @media (max-width:$screen-phone) {
-        background-color: $GovJEWhite;
+        background-color: $White;
     }
     .toparticle {
         display: block;
@@ -268,11 +268,11 @@ aside#HomepageSidebar {
             font-family: proxima-nova, sans-serif;
             font-weight: 700;
             text-decoration: none;
-            color: $text-color;
+            color: $Charcoal;
             margin: 0 0 10px 0;
             padding: 0;
             &:hover {
-                color: $text-color !important;
+                color: $Charcoal !important;
                 text-decoration: underline;
             }
         }
@@ -288,30 +288,30 @@ aside#HomepageSidebar {
             font-family: proxima-nova, sans-serif;
             font-weight: 700;
             font-size: 19px;
-            color: $GovJeRed;
+            color: $Red;
             &:hover {
-                color: $text-color;
+                color: $Charcoal;
             }
         }
     }
     hr {
         border: none;
         height: 1px;
-        color: $text-color;
-        background-color: $text-color;
+        color: $Charcoal;
+        background-color: $Charcoal;
         margin-top: 10px;
         margin-bottom: 10px;
     }
     p {
-        color: $text-color;
+        color: $Charcoal;
         text-decoration: none !important;
     }
     p.readMore {
-        color: $GovJeRed;
+        color: $Red;
         text-decoration: underline !important;
         margin: 0;
         &:hover {
-            color: $text-color;
+            color: $Charcoal;
         }
     }
     a.articleLink {
@@ -327,17 +327,17 @@ aside#HomepageSidebar {
             font-family: proxima-nova, sans-serif;
             font-weight: 700;
             text-decoration: none;
-            color: $text-color;
+            color: $Charcoal;
             margin: 0;
             padding: 0;
             &:hover {
-                color: $GovJeRed;
+                color: $Red;
                 text-decoration: underline;
             }
         }
         span:hover {
             text-decoration: none;
-            color: $text-color;
+            color: $Charcoal;
         }
     }
     #Consult {
@@ -369,7 +369,7 @@ aside#HomepageSidebar {
             font-size: 18px;
             font-family: proxima-nova, sans-serif;
             font-weight: 700;
-            color: $GovJeRed;
+            color: $Red;
             text-decoration: none;
         }
         h3 {
@@ -378,16 +378,16 @@ aside#HomepageSidebar {
             font-family: proxima-nova, sans-serif;
             font-weight: 700;
             text-decoration: none;
-            color: $text-color;
+            color: $Charcoal;
             margin: 0;
             padding: 0;
             &:hover {
-                color: $text-color;
+                color: $Charcoal;
                 text-decoration: underline;
             }
         }
         h3.event:hover {
-            color: $GovJeRed;
+            color: $Red;
             text-decoration: underline;
         }
     }

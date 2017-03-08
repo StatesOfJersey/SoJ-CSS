@@ -9,7 +9,7 @@ section.news {
         font-size: 30px;
         font-family: proxima-nova, sans-serif;
         font-weight: 700;
-        color: $GovJeRed;
+        color: $Red;
     }
     h2.highlight {
         line-height: 30px;
@@ -17,7 +17,7 @@ section.news {
         font-family: proxima-nova, sans-serif;
         font-weight: 700;
         text-decoration: none;
-        color: $text-color;
+        color: $Charcoal;
         margin-top: 0 !important;
     }
     h3 {
@@ -26,7 +26,7 @@ section.news {
         font-family: proxima-nova, sans-serif;
         font-weight: 700;
         text-decoration: none;
-        color: $text-color;
+        color: $Charcoal;
         margin-top: 0 !important;
     }
     h3:hover {
@@ -38,7 +38,7 @@ section.news {
         font-family: proxima-nova, sans-serif;
         font-weight: 700;
         text-decoration: none;
-        color: $text-color;
+        color: $Charcoal;
     }
     h4 {
         line-height: 30px;
@@ -46,7 +46,7 @@ section.news {
         font-family: proxima-nova, sans-serif;
         font-weight: 700;
         text-decoration: none;
-        color: $text-color;
+        color: $Charcoal;
     }
     h4:hover {
         text-decoration: underline;
@@ -60,27 +60,27 @@ section.news {
     hr {
         border: none;
         height: 2px;
-        color: $text-color;
-        background-color: $text-color;
+        color: $Charcoal;
+        background-color: $Charcoal;
         margin-top: 0;
     }
     p {
-        color: $text-color;
+        color: $Charcoal;
         text-decoration: none !important;
     }
     a.articleLink {
         text-decoration: none;
         &:hover h3 {
             text-decoration: underline;
-            color: $text-color;
+            color: $Charcoal;
         }
     }
     p.readMore {
-        color: $GovJeRed;
+        color: $Red;
         text-decoration: underline !important;
         margin-bottom: 18px;
         &:hover {
-            color: $text-color;
+            color: $Charcoal;
         }
     }
     .leftColumn {

@@ -20,8 +20,8 @@ section#statesreports table caption {
 
 article.pagecontent table thead th {
     padding: 5px;
-    background: $GovJeRed;
-    color: $GovJEWhite;
+    background: $Red;
+    color: $White;
     font-weight: bold;
     text-align: left;
     border: solid 1px #E0E0E0;
@@ -29,8 +29,8 @@ article.pagecontent table thead th {
 
 section#statesreports table thead th {
     padding: 5px;
-    background-color: $Content-Background;
-    color: $text-color;
+    background-color: $Lightest-grey;
+    color: $Charcoal;
     font-weight: bold;
     text-align: left;
     border: solid 1px #E0E0E0;
@@ -45,8 +45,8 @@ section#statesreports table tbody td {
 
 article.pagecontent table tbody th {
     border: solid 1px #E0E0E0;
-    background-color: $GovJeRed;
-    color: $GovJEWhite;
+    background-color: $Red;
+    color: $White;
     vertical-align: top;
     padding: 5px;
     text-align: left;
@@ -54,8 +54,8 @@ article.pagecontent table tbody th {
 
 section#statesreports table tbody th {
     border: solid 1px #E0E0E0;
-    background-color: $Content-Background;
-    color: $text-color;
+    background-color: $Lightest-grey;
+    color: $Charcoal;
     vertical-align: top;
     padding: 5px;
     text-align: left;
@@ -64,8 +64,8 @@ section#statesreports table tbody th {
 article.pagecontent table th.govstyleTableFirstCol-default,
 article.pagecontent table th.govstyleTableFooterFirstCol-default,
 article.pagecontent table .govstyleTableFooterRow-default {
-    background-color: $Content-Background;
-    color: $text-color;
+    background-color: $Lightest-grey;
+    color: $Charcoal;
 }
 
 

@@ -1,19 +1,19 @@
 a {
     font-family: proxima-nova, sans-serif;
-    color: $text-color;
+    color: $Charcoal;
     text-decoration: underline;
     &:hover {
-        color: $GovJeRed;
+        color: $Red;
     }
     &:visited {
-        color: $text-color;
+        color: $Charcoal;
     }
     &:focus {
-        background: $focusHighlight !important;
-        color: $GovJEWhite !important;
+        background: $Focus-blue-light !important;
+        color: $White !important;
     }
     &:active {
-        background: $focusHighlight !important;
-        color: $GovJEWhite !important;
+        background: $Focus-blue-light !important;
+        color: $White !important;
     }
 }

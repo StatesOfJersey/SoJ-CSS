@@ -2,3 +2,5 @@
 node_modules/
 css/*.css
 dest/*.css
+dist/*.css
+dist/GovJE.min.css

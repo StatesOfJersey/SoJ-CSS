@@ -7,33 +7,33 @@
 }
 
 .projectCount.blue {
-    color: $GovJeBlue;
+    color: $Blue;
 }
 
 .projectCount.blue h3 {
-    background-color: $GovJeBlue;
+    background-color: $Blue;
 }
 
 .projectCount.orange {
-    color: $GovJeOrange;
+    color: $Orange;
 }
 
 .projectCount.orange h3 {
-    background-color: $GovJeOrange;
+    background-color: $Orange;
 }
 
 .projectCount.green {
-    color: $GovJeGreen;
+    color: $Green;
 }
 
 .projectCount.green h3 {
-    background-color: $GovJeGreen;
+    background-color: $Green;
 }
 
 article.pagecontent .projectCount h3 {
     font-size: 2em;
     margin-bottom: 0;
-    color: $GovJEWhite;
+    color: $White;
     padding: 5px 0
 }
 
@@ -49,7 +49,7 @@ article.pagecontent .projectCount strong {
         padding: 25px 0;
         width: 100%;
         float: left;
-        border-top: 1px solid $keyline;
+        border-top: 1px solid $Mid-grey;
     }
 }
 
@@ -63,7 +63,7 @@ article.pagecontent .projectCount strong {
 }
 
 .projectLinks .projectTitle h2 a {
-    color: $GovJeRed;
+    color: $Red;
     font-size: 1.0em;
 }
 
@@ -73,7 +73,7 @@ article.pagecontent .projectCount strong {
 
 .projectLinks .projectStatus {
     //min-width: 25%;
-    border-left: 1px solid $keyline;
+    border-left: 1px solid $Mid-grey;
 }
 
 .projectLinks .project .projectStatus p strong {
@@ -82,17 +82,17 @@ article.pagecontent .projectCount strong {
 }
 
 .projectLinks .project .projectStatus p strong.green {
-    background-color: $GovJeGreen;
+    background-color: $Green;
     color: white;
 }
 
 .projectLinks .project .projectStatus p strong.orange {
-    background-color: $GovJeOrange;
+    background-color: $Orange;
     color: white;
 }
 
 .projectLinks .project .projectStatus p strong.blue {
-    background-color: $GovJeBlue;
+    background-color: $Blue;
     color: white;
 }
 
@@ -104,7 +104,7 @@ article.pagecontent .projectLinks ul {
 #projectTopPnl {
     float: left;
     clear: both;
-    border-bottom: solid 2px $Content-Background;
+    border-bottom: solid 2px $Lightest-grey;
     width: 100%;
     display: block;
     margin-bottom: 10px;
@@ -112,7 +112,7 @@ article.pagecontent .projectLinks ul {
         float: left;
         h2 {
             a {
-                color: $GovJeRed
+                color: $Red
             }
         }
     }
@@ -125,16 +125,16 @@ article.pagecontent .projectLinks ul {
 }
 
 #projectDept {
-    border-left: solid 1px $footer-background;
+    border-left: solid 1px $Dark-grey;
     padding-bottom: 10px;
     margin-bottom: 10px;
     padding-left: 10px;
 }
 
 aside #projectstatusPnl {
-    color: $GovJEWhite;
+    color: $White;
     h1 {
-        color: $GovJEWhite;
+        color: $White;
         // display: inline;
         float: left;
         margin-right: 20px;
@@ -142,19 +142,19 @@ aside #projectstatusPnl {
     &.sidePanel {
         .statuslbl {
             float: left;
-            border: 1px solid $GovJEWhite;
+            border: 1px solid $White;
             padding: 0 5px;
             font-size: 1.5em;
             margin-top: 5px;
         }
         &.live {
-            background-color: $GovJeGreen;
+            background-color: $Green;
         }
         &.initiation {
-            background-color: $GovJeBlue;
+            background-color: $Blue;
         }
         &.development {
-            background-color: $GovJeOrange
+            background-color: $Orange
         }
     }
     #ProjectSummary {
@@ -164,7 +164,7 @@ aside #projectstatusPnl {
 }
 
 #PorjectStatusDetail {
-    border-left: solid 1px $footer-background;
+    border-left: solid 1px $Dark-grey;
     margin-top: 10px;
     .summary {
         padding-left: 15px;
@@ -172,19 +172,19 @@ aside #projectstatusPnl {
     .lbl {
         padding: 5px 10px 0;
         margin-top: 10px;
-        color: $GovJEWhite;
+        color: $White;
         display: inline-block;
         &:first-child {
             margin-top: 0;
         }
         &.orange {
-            background-color: $GovJeOrange;
+            background-color: $Orange;
         }
         &.blue {
-            background-color: $GovJeBlue;
+            background-color: $Blue;
         }
         &.green {
-            background-color: $GovJeGreen;
+            background-color: $Green;
         }
     }
 }

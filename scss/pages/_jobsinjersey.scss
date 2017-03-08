@@ -3,7 +3,7 @@
     label.searchtext {
         margin: 10px 0 10px 0;
         font-size: 22px;
-        color: $GovJeRed;
+        color: $Red;
         text-decoration: none;
         font-family: proxima-nova, sans-serif;
         font-weight: 700;
@@ -65,9 +65,9 @@
     }
     input[type="submit"] {
         // display: inline;
-        background-color: $GovJeRed;
-        color: $GovJEWhite;
-        border-bottom: 3px solid $buttonBase;
+        background-color: $Red;
+        color: $White;
+        border-bottom: 3px solid $Dark-grey;
         border-radius: 0;
         border-left-style: none;
         border-right-style: none;
@@ -80,7 +80,7 @@
         font-family: proxima-nova, sans-serif;
         font-weight: 600;
         &:hover {
-            border-bottom: 0 solid $buttonBase;
+            border-bottom: 0 solid $Dark-grey;
         }
     }
     input[type="text"] {
@@ -130,8 +130,8 @@
         }
         dt {
             float: left;
-            color: $text-color;
-            border-top: solid 1px $keyline;
+            color: $Charcoal;
+            border-top: solid 1px $Mid-grey;
             display: table-cell;
             width: 40%;
             clear: both;
@@ -147,8 +147,8 @@
         }
         dd {
             float: left;
-            color: $text-color;
-            border-top: solid 1px $keyline;
+            color: $Charcoal;
+            border-top: solid 1px $Mid-grey;
             display: table-cell;
             width: 60%;
             padding: 10px 0 10px 0;
@@ -179,8 +179,8 @@
             font-weight: 700;
         }
         .keyline {
-            background-color: $GovJEWhite;
-            border: 1px solid $keyline;
+            background-color: $White;
+            border: 1px solid $Mid-grey;
             @media (max-width: $screen-phone) {
                 /*border-style: none;*/
                 padding-left: 5px;
@@ -244,9 +244,9 @@
         }
         input[type="submit"] {
             // display: inline;
-            background-color: $GovJeRed;
-            color: $GovJEWhite;
-            border-bottom: 3px solid $buttonBase;
+            background-color: $Red;
+            color: $White;
+            border-bottom: 3px solid $Dark-grey;
             border-radius: 0;
             font-size: 18px;
             line-height: 29px;
@@ -258,7 +258,7 @@
             border-top-style: none;
             height: 38px;
             &:hover {
-                border-bottom: 0 solid $buttonBase;
+                border-bottom: 0 solid $Dark-grey;
             }
         }
         input[type="radio"],
@@ -300,17 +300,17 @@
             .title a,
             a .title {
                 font-size: 18px;
-                color: $GovJeRed;
+                color: $Red;
                 text-decoration: underline;
                 font-weight: 700;
                 &:hover {
-                    color: $text-color;
+                    color: $Charcoal;
                 }
             }
             dt {
                 float: left;
                 clear: both;
-                color: $text-color;
+                color: $Charcoal;
                 margin-right: 20px;
                 border-top-style: none;
                 padding-top: 0;
@@ -321,7 +321,7 @@
             }
             dd {
                 float: left;
-                color: $text-color;
+                color: $Charcoal;
                 border-top-style: none;
                 padding-top: 0;
                 padding-bottom: 5px;

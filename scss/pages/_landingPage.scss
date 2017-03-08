@@ -32,9 +32,9 @@
         }
     }
     a {
-        color: $GovJeRed;
+        color: $Red;
         &:hover {
-            color: $text-color;
+            color: $Charcoal;
         }
         @media (max-width:$screen-tablet) {
             display: none;
@@ -55,9 +55,9 @@
         margin-top: 10px;
         margin-bottom: 0;
         a {
-            color: $GovJeRed;
+            color: $Red;
             &:hover {
-                color: $text-color;
+                color: $Charcoal;
             }
         }
     }
@@ -66,9 +66,9 @@
         font-family: proxima-nova, sans-serif;
         font-weight: 700;
         a {
-            color: $GovJeRed;
+            color: $Red;
             &:hover {
-                color: $text-color;
+                color: $Charcoal;
             }
         }
     }
@@ -90,7 +90,7 @@
             font-size: em(18px, 14px);
             font-family: proxima-nova, sans-serif;
             &:hover {
-                color: $GovJeRed;
+                color: $Red;
             }
         }
     }
@@ -106,7 +106,7 @@
             text-decoration: none;
             h2 {
                 margin-bottom: 10px;
-                color: $GovJeRed;
+                color: $Red;
                 text-decoration: underline;
             }
             .preview {

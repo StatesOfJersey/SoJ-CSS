@@ -14,7 +14,7 @@
     position: absolute;
     top: -100px;
     left: 0;
-    color: $GovJEWhite !important;
+    color: $White !important;
     background: transparent;
     z-index: 100;
     font-size: 18px;
@@ -24,8 +24,8 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: $focusHighlight;
-    color: $GovJEWhite !important;
+    background: $Focus-blue-light;
+    color: $White !important;
     outline: 0;
     display: inline-block;
 }
@@ -41,15 +41,15 @@
 
 a.gm_sidebar_anchor {
     &:focus {
-        background: $GovJEWhite;
+        background: $White;
     }
     &:active {
-        background: $GovJEWhite;
+        background: $White;
     }
 }
 
 input {
     &:focus {
-        border: 3px solid $focusHighlight;
+        border: 3px solid $Focus-blue-light;
     }
 }

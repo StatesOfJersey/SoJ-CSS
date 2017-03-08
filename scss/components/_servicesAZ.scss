@@ -5,7 +5,7 @@
 
 .ServicesAZ,
 .FormsAZ {
-    border: solid 1px $keyline;
+    border: solid 1px $Mid-grey;
     overflow: hidden;
     height: 79px;
     margin: 0 0 30px 0;
@@ -39,8 +39,8 @@
         height: 100%;
         li {
             display: inline-block;
-            background-color: $Content-Background;
-            border-right: 3px solid $GovJEWhite;
+            background-color: $Lightest-grey;
+            border-right: 3px solid $White;
             line-height: 78px;
             height: 100%;
             width: 3.845%;
@@ -49,7 +49,7 @@
         }
         li:hover {
             color: white;
-            background-color: $GovJeRed;
+            background-color: $Red;
             a {
                 color: white;
                 height: 78px;
@@ -57,7 +57,7 @@
             }
         }
         a {
-            color: $text-color;
+            color: $Charcoal;
             font-size: 25px;
             font-family: proxima-nova, sans-serif;
             font-weight: 600;
@@ -84,7 +84,7 @@
             }
         }
         li.active {
-            background-color: $GovJeRed;
+            background-color: $Red;
             a {
                 color: white;
             }
@@ -96,7 +96,7 @@
     @media (max-width: 747px) {
         display: none;
     }
-    border: solid 1px $keyline;
+    border: solid 1px $Mid-grey;
     overflow: hidden;
     height: 165px;
     margin: 40px 0 30px 0;
@@ -127,7 +127,7 @@
         border: none;
         height: 2px;
         margin: 0;
-        color: $GovJEWhite;
+        color: $White;
     }
     ul {
         display: inline;
@@ -135,7 +135,7 @@
         padding: 0;
         li {
             display: inline-block;
-            background-color: $Content-Background;
+            background-color: $Lightest-grey;
             line-height: 78px;
             height: 100%;
             width: 7%;
@@ -143,13 +143,13 @@
         }
         li:hover {
             color: white;
-            background-color: $GovJeRed;
+            background-color: $Red;
             a {
                 color: white;
             }
         }
         a {
-            color: $text-color;
+            color: $Charcoal;
             font-size: 25px;
             font-family: proxima-nova, sans-serif;
             font-weight: 700;

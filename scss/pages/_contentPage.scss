@@ -15,7 +15,7 @@ h1.title {
 }
 
 section#InfoModule {
-    border: 1px solid $text-color;
+    border: 1px solid $Charcoal;
     padding: 15px;
     margin-bottom: 20px;
     @media (max-width: $screen-tablet) {
@@ -37,12 +37,12 @@ section#InfoModule {
     }
     a {
         font-size: em(18px, 18px);
-        color: $GovJeRed;
+        color: $Red;
         &:hover {
-            color: $text-color;
+            color: $Charcoal;
         }
         &:visited {
-            color: $GovJeRed;
+            color: $Red;
         }
     }
 }
@@ -56,9 +56,9 @@ article.pagecontent {
         margin-right: 5px;
     }
     a {
-        color: $GovJeRed;
+        color: $Red;
         &:hover {
-            color: $text-color;
+            color: $Charcoal;
         }
     }
     p {
@@ -84,7 +84,7 @@ article.pagecontent {
 
         a {
             text-decoration: none;
-            color: $text-color;
+            color: $Charcoal;
             cursor: auto;
         }
     }*/
@@ -97,7 +97,7 @@ article.pagecontent {
         font-weight: 600;
         a {
             text-decoration: none;
-            color: $text-color;
+            color: $Charcoal;
             cursor: auto;
             font-family: proxima-nova, sans-serif;
             font-weight: 600;
@@ -121,7 +121,7 @@ article.pagecontent {
         font-weight: 600;
         a {
             text-decoration: none;
-            color: $text-color;
+            color: $Charcoal;
             cursor: auto;
             font-family: proxima-nova, sans-serif;
             font-weight: 600;
@@ -134,7 +134,7 @@ article.pagecontent {
         font-weight: 600;
         a {
             text-decoration: none;
-            color: $text-color;
+            color: $Charcoal;
             cursor: auto;
             font-family: proxima-nova, sans-serif;
             font-weight: 600;
@@ -179,8 +179,8 @@ article.pagecontent {
         display: table-cell;
         font-size: 16px;
         float: left;
-        color: $text-color;
-        border-top: solid 1px $keyline;
+        color: $Charcoal;
+        border-top: solid 1px $Mid-grey;
         width: 40%;
         padding: 10px 0 10px 0;
         font-family: proxima-nova, sans-serif;
@@ -196,9 +196,9 @@ article.pagecontent {
     dd {
         display: table-cell;
         float: left;
-        color: $text-color;
+        color: $Charcoal;
         font-size: 16px;
-        border-top: solid 1px $keyline;
+        border-top: solid 1px $Mid-grey;
         width: 55%;
         padding: 10px 0 10px 0;
     }
@@ -224,7 +224,7 @@ article.pagecontent {
             }
         }
         .letters {
-            border: solid 1px $keyline;
+            border: solid 1px $Mid-grey;
             overflow: hidden;
             padding: 1px 0;
             @media (max-width: $screen-phone) {
@@ -242,8 +242,8 @@ article.pagecontent {
                 }
                 li {
                     // display: inline-block;
-                    background-color: $Content-Background;
-                    border-right: 3px solid $GovJEWhite;
+                    background-color: $Lightest-grey;
+                    border-right: 3px solid $White;
                     line-height: 78px;
                     height: 100%;
                     width: 3.845%;
@@ -261,7 +261,7 @@ article.pagecontent {
                 }
                 li:hover {
                     color: white;
-                    background-color: $GovJeRed;
+                    background-color: $Red;
                     a {
                         color: white;
                     }
@@ -278,7 +278,7 @@ article.pagecontent {
                     &:hover {
                         background-color: #fff;
                         a {
-                            color: $text-color;
+                            color: $Charcoal;
                         }
                     }
                     a {
@@ -286,13 +286,13 @@ article.pagecontent {
                         padding: 5px 10px;
                         text-decoration: underline;
                         &:hover {
-                            background-color: $GovJeRed;
+                            background-color: $Red;
                             color: white;
                         }
                     }
                 }
                 a {
-                    color: $text-color;
+                    color: $Charcoal;
                     font-size: 25px;
                     font-family: proxima-nova, sans-serif;
                     font-weight: 600;

@@ -8,27 +8,27 @@
 
 h2.govstyleElement-H2 {
     -ms-name: "H2";
-    color: $text-color;
+    color: $Charcoal;
     font-family: proxima-nova, sans-serif;
     font-weight: 600;
 }
 
 h3.govstyleElement-H3 {
     -ms-name: "H3";
-    color: $text-color;
+    color: $Charcoal;
     font-family: proxima-nova, sans-serif;
     font-weight: 600;
 }
 
 h4.govstyleElement-H4 {
     -ms-name: "H4";
-    color: $text-color;
+    color: $Charcoal;
     font-family: proxima-nova, sans-serif;
 }
 
 p.govstyleElement-P {
     -ms-name: "Paragraph";
-    color: $text-color;
+    color: $Charcoal;
     font-family: proxima-nova, sans-serif;
 }
 
@@ -84,20 +84,20 @@ table.govstyleTable-borders tr.mystyle-TableOddRow-alternating td {
 
 article.pagecontent table tbody tr.govstyleTableHeaderRow-default th,
 table.govstyleTable-alignRight th {
-    background-color: $GovJeRed;
-    color: $GovJEWhite;
+    background-color: $Red;
+    color: $White;
 }
 
 article.pagecontent table.govstyleTable-default td.highlight,
 table.govstyleTable-alignRight td.highlight {
-    background: $Content-Background;
+    background: $Lightest-grey;
 }
 
 article.pagecontent .govstyleTableFirstCol-alignRight,
 article.pagecontent .govstyleTableFooterRow-alignRight,
 article.pagecontent .govstyleTableFooterFirstCol-alignRight {
-    background: $Content-Background;
-    color: $text-color;
+    background: $Lightest-grey;
+    color: $Charcoal;
 }
 
 article.pagecontent table.govstyleTable-alignRight td {

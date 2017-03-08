@@ -1,8 +1,8 @@
 section.masthead {
-    background-color: $Content-Background;
+    background-color: $Lightest-grey;
     width: 100%;
-    border-bottom: solid 1px $keyline;
-    color: $text-color;
+    border-bottom: solid 1px $Mid-grey;
+    color: $Charcoal;
     margin-bottom: 12px;
     padding-top: 10px;
     padding-bottom: 0;
@@ -11,7 +11,7 @@ section.masthead {
         margin-bottom: 20px;
     }
     .gov {
-        background-color: $GovJeRed !important;
+        background-color: $Red !important;
     }
     #query {
         border-radius: 0;
@@ -41,14 +41,14 @@ section.masthead {
         height: 38px;
     }
     .input-group-btn {
-        background-color: $Content-Background;
+        background-color: $Lightest-grey;
         height: 38px;
         @media (max-width: $screen-tablet) {
             width: 38px;
             height: 38px;
             overflow: hidden;
             display: block;
-            background-color: $GovJeRed;
+            background-color: $Red;
             position: absolute;
             right: 0;
             top: 0;
@@ -59,9 +59,9 @@ section.masthead {
         }
     }
     .btn-default {
-        color: $GovJEWhite;
-        background-color: $GovJeRed;
-        border-bottom: 3px solid $buttonBase;
+        color: $White;
+        background-color: $Red;
+        border-bottom: 3px solid $Dark-grey;
         border-left-style: none;
         border-right-style: none;
         border-top-style: none;
@@ -80,7 +80,7 @@ section.masthead {
             background-color: transparent;
         }
         &:hover {
-            border-bottom: 0 solid $buttonBase;
+            border-bottom: 0 solid $Dark-grey;
             background-color: #9f0110;
         }
     }
@@ -94,11 +94,11 @@ section.masthead {
     .magglass {
         width: 100%;
         height: 100%;
-        fill: $GovJEWhite;
+        fill: $White;
         text-align: 9999px;
     }
     a {
-        color: $text-color;
+        color: $Charcoal;
         text-decoration: underline;
         font-family: proxima-nova, sans-serif;
         font-size: 22px;
@@ -115,12 +115,12 @@ section.masthead {
         text-align: center;
         a {
             font-size: 16px;
-            color: $text-color;
+            color: $Charcoal;
             &:hover {
-                color: $GovJeRed;
+                color: $Red;
             }
             &:visited {
-                color: $text-color;
+                color: $Charcoal;
             }
         }
         img {
@@ -136,7 +136,7 @@ section.masthead {
     .Popularsearchs {
         dt {
             display: inline;
-            background-color: $Content-Background;
+            background-color: $Lightest-grey;
             padding: 0 4px 0 0;
             font-family: proxima-nova, sans-serif;
             font-size: 16px;
@@ -152,15 +152,15 @@ section.masthead {
                 padding: 0 3px 0 3px;
             }
             a {
-                color: $text-color;
+                color: $Charcoal;
                 text-decoration: underline;
                 font-family: proxima-nova, sans-serif;
                 font-size: 16px;
                 &:hover {
-                    color: $GovJeRed;
+                    color: $Red;
                 }
                 &:visited {
-                    color: $text-color;
+                    color: $Charcoal;
                 }
             }
         }

@@ -10,8 +10,8 @@ section#contacts {
         display: table-cell;
         font-size: 18px;
         float: left;
-        color: $text-color;
-        border-top: solid 1px $keyline;
+        color: $Charcoal;
+        border-top: solid 1px $Mid-grey;
         width: 30%;
         clear: both;
         padding: 10px 0 10px 0;
@@ -27,9 +27,9 @@ section#contacts {
     dd {
         display: table-cell;
         float: left;
-        color: $text-color;
+        color: $Charcoal;
         font-size: 18px;
-        border-top: solid 1px $keyline;
+        border-top: solid 1px $Mid-grey;
         width: 60%;
         padding: 10px 0 10px 0;
     }

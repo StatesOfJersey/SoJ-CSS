@@ -1,25 +1,25 @@
 section#cookiebar {
-    background-color: $cookie-Background;
+    background-color: $Dark-grey;
     width: 100%;
     overflow: hidden;
     padding: 9px 0 3px 0;
     p {
-        color: $GovJEWhite;
+        color: $White;
         margin-top: 5px;
         margin-bottom: 5px;
         font-size: 18px;
         font-family: proxima-nova, sans-serif;
     }
     a {
-        color: $GovJEWhite;
+        color: $White;
         text-decoration: underline;
         &:hover {
-            color: $GovJEWhite;
+            color: $White;
         }
     }
     .btn-default {
-        color: $GovJEWhite;
-        background-color: $GovJeRed;
+        color: $White;
+        background-color: $Red;
         border-left-style: none;
         border-right-style: none;
         border-top-style: none;
@@ -29,7 +29,7 @@ section#cookiebar {
         font-weight: 600;
         text-decoration: none;
         &:hover {
-            color: $GovJEWhite;
+            color: $White;
             text-decoration: underline;
         }
     }

@@ -32,9 +32,9 @@ Section#Services {
             }
             a {
                 font-size: 18px;
-                color: $GovJeRed;
+                color: $Red;
                 padding: 15px;
-                background-color: $Content-Background;
+                background-color: $Lightest-grey;
                 width: 100%;
                 display: block;
                 @media(max-width: $screen-tablet) {
@@ -42,7 +42,7 @@ Section#Services {
                 }
             }
             &:hover a {
-                color: $text-color;
+                color: $Charcoal;
             } 
         }
     }
@@ -55,8 +55,8 @@ Section#Services {
         box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     }
     .panel-heading {
-        background-color: $GovJeRed;
-        color: $GovJEWhite;
+        background-color: $Red;
+        color: $White;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         padding: 10px 0;
@@ -86,12 +86,12 @@ Section#Services {
         }
         a {
             text-decoration: none;
-            color: $GovJEWhite;
+            color: $White;
             &:hover {
-                color: $red-hover;
+                color: $Focus-blue-dark;
             }
             &:visited {
-                color: $red-hover;
+                color: $Focus-blue-dark;
             }
         }
     }
@@ -99,19 +99,19 @@ Section#Services {
         h3 {
             margin-bottom: 0;
             a {
-                color: $GovJeRed;
+                color: $Red;
                 font-weight: 600;
                 &:hover {
-                    color: $text-color !important;
+                    color: $Charcoal !important;
                 }
                 &:visited {
-                    color: $GovJeRed;
+                    color: $Red;
                 }
             }
         }
     }
     .panel-collapse {
-        background-color: $Content-Background;
+        background-color: $Lightest-grey;
         ul {
             list-style-type: none;
             margin: 0;
@@ -125,16 +125,16 @@ Section#Services {
             padding-top: 0;
         }
         li.last {
-            border-bottom: dotted 0 $text-color;
+            border-bottom: dotted 0 $Charcoal;
         }
         li a {
-            color: $text-color;
+            color: $Charcoal;
             text-decoration: underline;
             font-family: proxima-nova, sans-serif;
             font-weight: 400;
             font-size: 20px;
             &:hover {
-                color: $GovJeRed;
+                color: $Red;
             }
         }
     }
