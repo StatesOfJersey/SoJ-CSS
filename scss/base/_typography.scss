@@ -3,13 +3,14 @@
     @return ($px / $base) * 1em;
 }
 
-html { 
-    font-size: em(14px); 
+html {
+    font-size: $base-font-size;
 }
     
 body {
     font-family: proxima-nova, sans-serif; 
     -ms-overflow-style: scrollbar;
+    font-size:$base-font-size;
 }
 
 
@@ -24,3 +25,4 @@ body {
 .wf-active {
     visibility: visible;
 }
+

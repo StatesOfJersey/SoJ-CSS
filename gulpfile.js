@@ -6,6 +6,7 @@ var concat = require('gulp-concat');
 var minifyCSS = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
+var watch = require('gulp-watch');
 
 var scssFiles = 'scss/**/*.scss';
 
@@ -14,7 +15,7 @@ var cssPath = 'css';
 var destPath = 'dest';
 
 gulp.task('scss', function() {
-    return gulp.src(scssFiles)
+    gulp.src(scssFiles)
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(gulp.dest('./' + cssPath));
 });

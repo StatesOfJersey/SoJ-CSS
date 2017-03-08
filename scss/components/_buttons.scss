@@ -1,0 +1,89 @@
+.btn {
+    height:em(38px);
+    max-width:300px;
+    border-bottom:em(3px) solid $Dark-grey;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    padding:em(10px) em(15px);
+    font-size:em(18px);
+    color:$White;
+    margin:0;
+    font-weight:600;
+    text-align:center;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border-radius:0px;
+    line-height:em(18px);
+
+    &:focus, &:active, &:hover {
+        padding-top:em(12px);
+    }
+}
+
+.btn-default {
+    background:$Red;
+
+    &:focus, &:active, &:hover {
+        background:darken($Red, 9%);
+        border-bottom:none;
+        color:$White;
+    }
+}
+
+.btn-primary {
+    background:$Primary-button;
+
+    &:focus, &:active, &:hover {
+        background:darken($Primary-button, 9%);
+        border-bottom:none;
+        color:$White;
+    }
+}
+
+.btn-secondary {
+    background:$Secondary-button;
+
+    &:focus, &:active, &:hover {
+        background:darken($Secondary-button, 9%);
+        border-bottom:none;
+        color:$White;
+    }
+}
+
+.btn-cancel {
+    background:$Mid-grey;
+
+    &:focus, &:active, &:hover {
+        background:darken($Mid-grey, 9%);
+        border-bottom:none;
+        color:$White;
+    }
+}
+
+.back-to-top {
+    position:fixed;
+    top:0;
+    right:20px;
+    background-colour: $Red;
+    font-size:em(12px);
+    padding:1em;
+    border:0px;
+    z-index: 100;    
+    height:38px;
+
+    &:focus, &:active, &:hover {
+        background:$Focus-blue-light !important;
+        padding-top:1em;
+        text-decoration:underline;
+    }
+}
