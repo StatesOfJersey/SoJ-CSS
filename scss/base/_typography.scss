@@ -1,4 +1,4 @@
-﻿$base-font-size: 16px;
+﻿$base-font-size: 14px;
 @function em($px, $base: $base-font-size) {
     @return ($px / $base) * 1em;
 }
@@ -10,9 +10,7 @@ html {
 body {
     font-family: proxima-nova, sans-serif; 
     -ms-overflow-style: scrollbar;
-    font-size:$base-font-size;
 }
-
 
 /* =================
     typekit
@@ -24,5 +22,5 @@ body {
 
 .wf-active {
     visibility: visible;
-}
+} 
 
