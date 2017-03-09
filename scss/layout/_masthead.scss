@@ -117,7 +117,7 @@ section.masthead {
             font-size: 16px;
             color: $Charcoal;
             &:hover {
-                color: $Red;
+                color: $Red !important;
             }
             &:visited {
                 color: $Charcoal;
@@ -157,7 +157,7 @@ section.masthead {
                 font-family: proxima-nova, sans-serif;
                 font-size: 16px;
                 &:hover {
-                    color: $Red;
+                    color: $Red !important;
                 }
                 &:visited {
                     color: $Charcoal;
