@@ -1,5 +1,5 @@
 footer {
-    background-color: $Dark-grey;
+    background-color: $Pale-grey;
     width: 100%;
     padding: 15px 0 30px 0;
     @media (min-width: $screen-phone) {
@@ -21,7 +21,7 @@ footer {
             vertical-align: top;
             @media (max-width: $screen-tablet) {
                 display: block;
-            }
+            } 
         }
         dd {
             display: inline-block;
