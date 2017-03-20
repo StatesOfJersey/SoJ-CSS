@@ -70,6 +70,16 @@
     }
 }
 
+.btn-error {
+    background:$Error;
+
+    &:focus, &:active, &:hover {
+        background:darken($Error, 9%);
+        border-bottom:none;
+        color:$White;
+    }
+}
+
 .back-to-top {
     position:fixed;
     top:0;

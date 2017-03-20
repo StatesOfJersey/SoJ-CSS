@@ -1,0 +1,48 @@
+   input[type=text] {
+       border-radius: 0 !important;
+
+       .error {
+       border: 1px solid $Error;
+       background-color: rgba(235, 0, 25, 0.15);
+       color: #000;
+       }
+   }
+      
+   span.error {
+       color:$Error;
+       font-weight: 700;
+       display: block;
+   }
+
+   span.required {
+       color: $Red;
+   }
+
+   label {
+       font-weight: normal;
+   }
+           
+   hr {
+       border-top: 1px solid $Mid-grey;
+   }
+      
+   .form-group {
+       margin-bottom:20px; 
+       margin-top:25px;
+   }   
+   
+   .form-control[disabled],
+   .form-control[readonly] {
+       background-color: $Lightest-grey
+   }
+   
+   input.disabled {
+       color: $Dark-grey;
+   }
+   
+   .ui-state-highlight {
+       background-color: $Red !important;
+       color: $White !important;
+       border-color: $Red !important;
+   }
+      

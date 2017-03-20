@@ -7,27 +7,27 @@
 }
 
 .projectCount.blue {
-    color: $Blue;
+    color: $Stats-mixed-blue;
 }
 
 .projectCount.blue h3 {
-    background-color: $Blue;
+    background-color: $Stats-mixed-blue;
 }
 
 .projectCount.orange {
-    color: $Orange;
+    color: $Stats-mixed-orange;
 }
 
 .projectCount.orange h3 {
-    background-color: $Orange;
+    background-color: $Stats-mixed-orange;
 }
 
 .projectCount.green {
-    color: $Green;
+    color: $Stats-mixed-Green;
 }
 
 .projectCount.green h3 {
-    background-color: $Green;
+    background-color: $Stats-mixed-Green;
 }
 
 article.pagecontent .projectCount h3 {
@@ -82,17 +82,17 @@ article.pagecontent .projectCount strong {
 }
 
 .projectLinks .project .projectStatus p strong.green {
-    background-color: $Green;
+    background-color: $Stats-mixed-Green;
     color: white;
 }
 
 .projectLinks .project .projectStatus p strong.orange {
-    background-color: $Orange;
+    background-color: $Stats-mixed-orange;
     color: white;
 }
 
 .projectLinks .project .projectStatus p strong.blue {
-    background-color: $Blue;
+    background-color: $Stats-mixed-blue;
     color: white;
 }
 
@@ -148,13 +148,13 @@ aside #projectstatusPnl {
             margin-top: 5px;
         }
         &.live {
-            background-color: $Green;
+            background-color: $Stats-mixed-Green;
         }
         &.initiation {
-            background-color: $Blue;
+            background-color: $Stats-mixed-blue;
         }
         &.development {
-            background-color: $Orange
+            background-color: $Stats-mixed-orange
         }
     }
     #ProjectSummary {
@@ -178,13 +178,13 @@ aside #projectstatusPnl {
             margin-top: 0;
         }
         &.orange {
-            background-color: $Orange;
+            background-color: $Stats-mixed-orange;
         }
         &.blue {
-            background-color: $Blue;
+            background-color: $Stats-mixed-blue;
         }
         &.green {
-            background-color: $Green;
+            background-color: $Stats-mixed-Green;
         }
     }
 }
