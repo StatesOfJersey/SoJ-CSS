@@ -11,7 +11,13 @@ section#statesreports table {
     clear: both;
     float: left;
 }
-
+article.pagecontent table+h2,
+section#statesreports table+h2{
+    clear:both;
+    float:left;
+    margin-top:1.2em;
+    width:100%;
+    }
 article.pagecontent table caption,
 section#statesreports table caption {
     position: absolute; 
