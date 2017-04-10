@@ -1,12 +1,12 @@
 .btn {
-    height:em(38px);
+    height:38px;
     max-width:300px;
-    border-bottom:em(3px) solid $Dark-grey;
+    border-bottom:3px solid $Dark-grey;
     border-top:0px;
     border-left:0px;
     border-right:0px;
-    padding:em(10px) em(15px);
-    font-size:em(18px);
+    padding:0 15px;
+    font-size:18px;
     color:$White;
     margin:0;
     font-weight:600;
@@ -14,20 +14,13 @@
     white-space: nowrap;
     display: inline-block;
     vertical-align: middle;
-    -ms-touch-action: manipulation;
     touch-action: manipulation;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
     background-image: none;
     border-radius:0px;
-    line-height:em(18px);
+    line-height:29px;
 
-    &:focus, &:active, &:hover {
-        padding-top:em(12px);
-    }
 }
 
 .btn-default {
@@ -97,3 +90,37 @@
         text-decoration:underline;
     }
 }
+
+a.call-to-action {
+    @extend .btn;
+    color: #fff !important;
+    text-decoration: none;
+    padding-top: 3px;
+
+    &:focus, &:active, &:hover {
+        padding-top: 5px;
+    }
+
+    &:after {
+        content: "\f061";
+        font-family: FontAwesome;
+        font-size: 18px;
+        margin-left: 10px;    
+    }
+}
+
+a.call-to-action-default {
+    @extend .call-to-action;
+    @extend .btn-default;
+}
+
+a.call-to-action-primary {
+    @extend .call-to-action;
+    @extend .btn-primary; 
+}
+
+a.call-to-action-secondary {
+    @extend .call-to-action;
+    @extend .btn-secondary; 
+}
+

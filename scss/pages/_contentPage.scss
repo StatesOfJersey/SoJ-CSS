@@ -231,8 +231,7 @@ article.pagecontent {
                 display: none;
             }
             ul {
-                float: left;
-                // display: inline-block;
+                display: inline-block;
                 margin: 0;
                 height: 100%;
                 width: 100%;
@@ -241,14 +240,13 @@ article.pagecontent {
                     padding-left: 5px;
                 }
                 li {
-                    // display: inline-block;
+                    display: inline-block;
                     background-color: $Lightest-grey;
                     border-right: 3px solid $White;
                     line-height: 78px;
                     height: 100%;
                     width: 3.845%;
                     text-align: center;
-                    float: left;
                     text-transform: uppercase;
                     @media (max-width: $screen-tablet) {
                         margin-bottom: 2px;

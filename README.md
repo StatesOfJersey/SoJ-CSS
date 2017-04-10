@@ -1,6 +1,6 @@
 #SoJ-CSS
 
-CSS supporting SoJ branding Guildlines
+CSS supporting SoJ branding guidelines
 
 ## Prerequisites
 
