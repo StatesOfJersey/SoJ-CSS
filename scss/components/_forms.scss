@@ -53,7 +53,7 @@
     input[type="text"],select{
         background: $White none repeat scroll 0 0;
         border: 1px solid $Stats-grey-light;
-        color: $text-color;
+        color:$Charcoal;
         font-size: 18px;
         height: 38px;
         line-height: 35px;
@@ -69,12 +69,12 @@
     input:focus,textarea:focus
     {
         border-width:2px;
-        border-color: $focusHighlight;
+        border-color: $Focus-blue-light;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
         outline: 0 none;
     }
     textarea{
         border: 1px solid $Stats-grey-light;
         box-shadow:none;
-        border-radius: :0;
+        border-radius: 0;
     }
