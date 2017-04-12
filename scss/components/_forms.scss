@@ -20,8 +20,11 @@
 
    label {
        font-weight: normal;
+       font-size:1em;
+       font-family:proxima-nova,sans-serif;
+       margin: 0.5em 0;
    }
-           
+  
    hr {
        border-top: 1px solid $Mid-grey;
    }
@@ -46,3 +49,32 @@
        border-color: $Red !important;
    }
       
+    /*Input text and area*/
+    input[type="text"],select{
+        background: $White none repeat scroll 0 0;
+        border: 1px solid $Stats-grey-light;
+        color: $text-color;
+        font-size: 18px;
+        height: 38px;
+        line-height: 35px;
+        min-width: 1.8em;
+        overflow-wrap: normal;
+        padding-left: 1px;
+        padding-top: 0;
+        vertical-align: middle;
+        width:100%;
+        display:table-cell;
+    }
+
+    input:focus,textarea:focus
+    {
+        border-width:2px;
+        border-color: $focusHighlight;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+        outline: 0 none;
+    }
+    textarea{
+        border: 1px solid $Stats-grey-light;
+        box-shadow:none;
+        border-radius: :0;
+    }
