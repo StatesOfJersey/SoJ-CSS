@@ -74,6 +74,15 @@ article.pagecontent {
     img {
         max-width: 100%;
     }
+    /*for google map*/
+    .googleMap
+    {
+        display:none;
+    }
+    iframe
+    {
+        max-width:100%;
+    }
     /*h2 {
         margin: 20px 0 10px 0;
         font-size: 32px;
