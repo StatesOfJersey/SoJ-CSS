@@ -24,7 +24,7 @@ aside#sideBar {
         div.firstbutton {
             float: left;
             padding-left: 20px;
-            margin-right: 8px;
+            margin-right: 0;
             font-size: 14px;
             line-height: 14px;
             @media (max-width: $screen-phone) {
@@ -39,6 +39,26 @@ aside#sideBar {
             margin-right: 8px;
             font-size: 14px;
             line-height: 14px;
+        }
+        .email-share-button {
+            height: 21px;
+            padding: 1px 8px 1px 6px;
+            background-color: $Lightest-grey;
+            color: $Black;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            padding-top: 3px;
+            &:before {
+                content: "\f0e0";
+                font-family: FontAwesome;
+                font-size: 16px;
+                margin-right: 5px;
+                color: $Mid-grey;
+                display: inline-block;
+                text-decoration: none;
+            }
         }
     }
     p {
@@ -59,9 +79,14 @@ aside#sideBar {
                 }
             }
             a[target=_blank] {
-                background: transparent url(/_controltemplates/15/C5.GovJEResponsive/images/new-window.svg) center right no-repeat;
-                /*display:inline-block;*/
-                padding-right: 20px;
+                &:after {
+                    content: "\f08e";
+                    font-family: FontAwesome;
+                    font-size: 18px;
+                    margin-left: 10px;
+                    display: inline-block;
+                    text-decoration: none;
+                }
             }
         }
     }

@@ -18,10 +18,6 @@
             line-height: 2em;
             padding-left: 10px;
             a {
-                background-position: right center;
-                background-repeat: no-repeat;
-                background-size: 45px 45px;
-                background-image: url('/_controltemplates/15/C5.GovJEResponsive/images/plus.svg');
                 display: block;
                 text-decoration: none;
                 font-weight: 700;
@@ -30,12 +26,37 @@
                 &:hover {
                     text-decoration: underline;
                 }
+                &:after {
+                    content: "\f055";
+                    font-family: FontAwesome;
+                    font-size: 18px;
+                    position: absolute;
+                    left: 90%;
+                    display: inline-block;
+                    text-decoration: none;
+                }
             }
             a.collapsed {
-                background-image: url('/_controltemplates/15/C5.GovJEResponsive/images/plus.svg');
+                &:after {
+                    content: "\f055";
+                    font-family: FontAwesome;
+                    font-size: 18px;
+                    position: absolute;
+                    left: 90%;
+                    display: inline-block;
+                    text-decoration: none;
+                }
             }
             a.opened {
-                background-image: url('/_controltemplates/15/C5.GovJEResponsive/images/minus.svg');
+                &:after {
+                    content: "\f056";
+                    font-family: FontAwesome;
+                    font-size: 18px;
+                    position: absolute;
+                    left: 90%;
+                    display: inline-block;
+                    text-decoration: none;
+                }
             }
         }
         a {

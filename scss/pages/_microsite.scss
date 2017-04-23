@@ -1,0 +1,165 @@
+.ms-mastheadImage {
+    max-height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav#ms-subnav {
+    display: block;
+    background-color: $foster;
+    width: 100%;
+    min-height: 60px;
+    margin-bottom: 20px;
+    ul.navitem {
+        padding: 0;
+        margin: 0;
+        min-height: 60px;
+        display: table;
+        width: 100%;
+        border-left: 1px solid #0197B7;
+        border-right: 1px solid #0197B7;
+        width: 100%;
+        li {
+            display: table-cell;
+            border-left: 1px solid #0197B7;
+            &:first-child {
+                border-left: 0px solid #0197B7;
+            }
+        }
+        a {
+            font-size: em(16px, 14px);
+            display: block;
+            padding-top: 10px;
+            min-height: 60px;
+            text-align: center;
+            color: $White;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+            &:hover {
+                background-color: $fosterHighlight;
+            }
+        }
+    }
+    @media (max-width:$screen-tablet) {
+        display: none;
+    }
+}
+
+#ms-footercontent {
+    background-color: $Lightest-grey;
+    width: 100%;
+    min-height: 500px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    ol {
+        padding-left: 18px;
+    }
+}
+
+aside.ms-SideBar {
+    h1 {
+        color: $foster !important;
+    }
+    .contactTitle {
+        font-weight: bold;
+    }
+    i {
+        font-size: 28px;
+        padding-right: 10px;
+        &:hover {
+            color: $Red !important;
+        }
+    }
+}
+
+.ms-Content {
+    font-size: em(18px, 14px);
+    span {
+        display: block;
+    }
+    a {
+        color: $foster;
+        &:hover {
+            color:$Black;
+        }
+    }
+    p {
+        font-size: em(18px, 18px);
+    }
+    img {
+        max-width: 100%;
+    }
+    h2 {
+        color: $foster;
+        margin: 30px 0 10px 0;
+        font-size: 28px;
+        text-decoration: none;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 600;
+        @media (max-width: $screen-tablet) {
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+        @media (max-width:$screen-phone) {
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+    }
+    h3 {
+        font-size: em(20px, 18px);
+        font-family: proxima-nova, sans-serif;
+        font-weight: 600;
+    }
+    hr {
+        margin: 30px 0 20px 0;
+    }
+    ul {
+        list-style-type: disc;
+    }
+    ul,
+    ol {
+        margin-left: 0;
+        padding-left: 3em;
+        @media (max-width: $screen-phone) {
+            padding-left:2em;
+        }
+        ul,
+        ol {
+            margin-left: 0;
+            padding-left: 1.5em;
+            @media (max-width: $screen-phone) {
+                margin-left: 20px;
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.ms-contentmargin {
+    margin-bottom: 35px;
+}
+
+.ms-date {
+    font-size: 14px;
+}
+
+#ms-sitelogo {
+    @media (max-width: $screen-phone) {
+        text-align:center;
+    }
+}
+
+
+.ms-panel-heading {
+    background-color: $foster !important;
+    &:hover {
+        background-color: $fosterHighlight !important;
+    }
+    a {
+        &:hover {
+            color: $White !important;
+        }
+    }
+}

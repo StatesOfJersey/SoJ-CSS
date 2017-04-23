@@ -1,6 +1,8 @@
 ﻿// This is the main SCSS file for the States of Jersey Web Standards Stylesheet
 // Third-party Vendors
 @import "vendors/bootstrap";
+@import "vendors/govmetric";
+@import "vendors/font-awesome";
 
 // Base
 @import "base/colour";
@@ -15,12 +17,10 @@
 @import "components/headings";
 @import "components/links";
 @import "components/list";
-@import "components/nosvg";
 @import "components/noticebar";
 @import "components/rte";
 @import "components/servicesAZ";
 @import "components/table";
-@import "components/magnific-popup";
 // Layout
 @import "layout/breadcrumb";
 @import "layout/footer";
@@ -42,4 +42,4 @@
 @import "pages/news";
 @import "pages/search-reports-MD";
 @import "pages/services";
-
+@import "pages/microsite";
