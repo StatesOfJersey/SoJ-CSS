@@ -11,15 +11,23 @@ section#statesreports table {
     clear: both;
     float: left;
 }
-article.pagecontent .scrollable+h2,
-section#statesreports .scrollable+h2{
+article.pagecontent div.scrollable+h2,
+section#statesreports div.scrollable+h2
+article.pagecontent table+h2,
+section#statesreports table+h2{
     clear:both;
     float:left;
     margin-top:1.2em;
     width:100%;
     }
-article.pagecontent .scrollable+h3,
-section#statesreports .scrollable+h3{
+article.pagecontent div.scrollable + h3,
+section#statesreports div.scrollable + h3,
+article.pagecontent table + h3,
+section#statesreports table + h3
+article.pagecontent div.scrollable + h4,
+section#statesreports div.scrollable + h4,
+article.pagecontent table + h4,
+section#statesreports table + h4{
     clear:both;
     float:left;
     margin-top:1.11em;

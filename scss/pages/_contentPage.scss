@@ -326,3 +326,12 @@ article.pagecontent {
         width: 280px;
     }
 }
+/*Google map on content page*/
+.googleMap
+{
+	display:none;
+}
+iframe
+{
+    max-width:100%;
+}
