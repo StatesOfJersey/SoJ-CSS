@@ -12,7 +12,7 @@ section#statesreports table {
     float: left;
 }
 article.pagecontent div.scrollable+h2,
-section#statesreports div.scrollable+h2
+section#statesreports div.scrollable+h2,
 article.pagecontent table+h2,
 section#statesreports table+h2{
     clear:both;
@@ -23,7 +23,7 @@ section#statesreports table+h2{
 article.pagecontent div.scrollable + h3,
 section#statesreports div.scrollable + h3,
 article.pagecontent table + h3,
-section#statesreports table + h3
+section#statesreports table + h3,
 article.pagecontent div.scrollable + h4,
 section#statesreports div.scrollable + h4,
 article.pagecontent table + h4,
