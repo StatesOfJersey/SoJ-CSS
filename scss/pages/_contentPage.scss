@@ -156,6 +156,9 @@ article.pagecontent {
         overflow: hidden;
         margin-bottom: 30px;
     }
+    .nobullet {
+        list-style-type: none;        
+    }
     ul {
         list-style-type: disc;
     }

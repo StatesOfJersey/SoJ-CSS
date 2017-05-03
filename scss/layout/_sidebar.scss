@@ -59,6 +59,10 @@ aside#sideBar {
                 display: inline-block;
                 text-decoration: none;
             }
+            &:hover {
+                color:$Red;
+                text-decoration: underline;
+            }
         }
     }
     p {

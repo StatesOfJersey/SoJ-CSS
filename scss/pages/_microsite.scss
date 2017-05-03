@@ -1,8 +1,22 @@
 .ms-mastheadImage {
-    max-height: 400px;
+    max-height: 320px;
     width: 100%;
     overflow: hidden;
+    @media (max-width: $screen-phone) {
+            display:none;
+    }
 }
+
+.ms-mastheadImageSM {
+    display:none;
+    @media (max-width: $screen-phone) {
+    max-height: 320px;
+    width:100%;
+    overflow: hidden;
+    display:block;
+    }
+}
+
 
 nav#ms-subnav {
     display: block;
@@ -42,7 +56,7 @@ nav#ms-subnav {
             }
         }
     }
-    @media (max-width:$screen-tablet) {
+    @media (max-width:767px) {
         display: none;
     }
 }
@@ -146,8 +160,11 @@ aside.ms-SideBar {
 }
 
 #ms-sitelogo {
+    width:300px;
+    margin-bottom:15px;
     @media (max-width: $screen-phone) {
         text-align:center;
+        width:100%;
     }
 }
 
