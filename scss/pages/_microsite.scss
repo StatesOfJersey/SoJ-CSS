@@ -1,7 +1,20 @@
 .ms-mastheadImage {
-    max-height: 400px;
+    max-height: 320px;
     width: 100%;
     overflow: hidden;
+    @media (max-width: $screen-phone) {
+        display:none;
+    }
+}
+
+.ms-mastheadImageSM {
+    display: none;
+    @media (max-width: $screen-phone) {
+        max-height: 320px;
+        width: 100%;
+        overflow: hidden;
+        display: block;
+    }
 }
 
 nav#ms-subnav {
@@ -42,7 +55,7 @@ nav#ms-subnav {
             }
         }
     }
-    @media (max-width:$screen-tablet) {
+    @media (max-width:767px) {
         display: none;
     }
 }
@@ -82,7 +95,7 @@ aside.ms-SideBar {
     a {
         color: $foster;
         &:hover {
-            color:$Black;
+            color: $Black;
         }
     }
     p {
@@ -135,6 +148,30 @@ aside.ms-SideBar {
             }
         }
     }
+    table thead th {
+        padding: 5px;
+        background: $foster;
+        color: $White;
+        font-weight: bold;
+        text-align: left;
+        border: solid 1px #E0E0E0;
+    }
+    table thead th {
+        padding: 5px;
+        background-color: $Lightest-grey;
+        color: $Charcoal;
+        font-weight: bold;
+        text-align: left;
+        border: solid 1px #E0E0E0;
+    }
+    table tbody th {
+        border: solid 1px #E0E0E0;
+        background-color: $foster;
+        color: $White;
+        vertical-align: top;
+        padding: 5px;
+        text-align: left;
+    }
 }
 
 .ms-contentmargin {
@@ -146,11 +183,13 @@ aside.ms-SideBar {
 }
 
 #ms-sitelogo {
+    width: 300px;
+    margin-bottom: 15px;
     @media (max-width: $screen-phone) {
         text-align:center;
+        width: 100%;
     }
 }
-
 
 .ms-panel-heading {
     background-color: $foster !important;

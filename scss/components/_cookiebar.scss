@@ -17,20 +17,4 @@ section#cookiebar {
             color: $White;
         }
     }
-    .btn-default {
-        color: $White;
-        background-color: $Red;
-        border-left-style: none;
-        border-right-style: none;
-        border-top-style: none;
-        border-bottom-style: none;
-        border-radius: 0;
-        font-family: proxima-nova, sans-serif;
-        font-weight: 600;
-        text-decoration: none;
-        &:hover {
-            color: $White;
-            text-decoration: underline;
-        }
-    }
 }

@@ -3,7 +3,8 @@
    ========================================================================== */
 
 article.pagecontent table,
-section#statesreports table {
+section#statesreports table,
+.ms-Content table {
     margin: 10px 0px 10px 0px;
     padding: 0px;
     border-collapse: collapse;
@@ -14,7 +15,9 @@ section#statesreports table {
 article.pagecontent div.scrollable+h2,
 section#statesreports div.scrollable+h2,
 article.pagecontent table+h2,
-section#statesreports table+h2{
+section#statesreports table+h2,
+.ms-Content div.scrollable+h2,
+.ms-Content table+h2,{
     clear:both;
     float:left;
     margin-top:1.2em;
@@ -34,7 +37,8 @@ section#statesreports table + h4{
     width:100%;
     }
 article.pagecontent table caption,
-section#statesreports table caption {
+section#statesreports table caption, 
+.ms-Content table caption {
     position: absolute; 
     left: -999em;
 }
@@ -58,7 +62,8 @@ section#statesreports table thead th {
 }
 
 article.pagecontent table tbody td,
-section#statesreports table tbody td {
+section#statesreports table tbody td,
+.ms-Content table tbody td {
     border: solid 1px #E0E0E0;
     vertical-align: top;
     padding: 5px;
