@@ -300,6 +300,7 @@ section#statesreports {
                     width: 1338px;
                     margin-left: -542px;
                     margin-top: -495px;
+                    max-width: none;
                     &.pdf {
                         width: calc(100%+40px);
                         height: 250px;
