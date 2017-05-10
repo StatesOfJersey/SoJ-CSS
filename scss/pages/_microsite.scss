@@ -185,9 +185,16 @@ aside.ms-SideBar {
 #ms-sitelogo {
     width: 300px;
     margin-bottom: 15px;
+    img {
+
+        height: 78px;
+    }
     @media (max-width: $screen-phone) {
-        text-align:center;
+        text-align: center;
         width: 100%;
+        img {
+            height: auto;
+        }
     }
 }
 
