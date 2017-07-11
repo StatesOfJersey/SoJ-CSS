@@ -1,0 +1,1392 @@
+$screen-phone: 600px;
+$screen-standand: 1199px;
+
+.hiddendesktop {
+    display: none;
+
+    @media(max-width:$screen-phone) {
+        display: block;  
+    }
+}
+
+.hidemobile {
+    @media(max-width:$screen-phone) {
+        display: none;
+    }
+}
+
+nav.breadcrumbs {
+    @media(max-width:$screen-phone) {
+        margin-bottom: 0;
+    }
+}
+
+article.pagecontent h2.title {
+    margin-top: 0;
+}
+
+aside#sideBar {
+
+    p {
+        font-size: 18px !important;
+    }
+
+    a {
+        font-family: proxima-nova, sans-serif;
+        color: $Charcoal;
+
+        &:hover {
+            color: $Red;
+        }
+    }
+}
+
+.pushright {
+    float: right;
+}
+
+.weather {
+    .forcastcontent {
+        .col-md-8 {
+            @media(max-width:$screen-phone) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .col-md-12 {
+                padding-left: 0;
+                padding-right: 0;
+                float: left;
+
+                @media(max-width:$screen-phone) {
+                    padding: 0 15px;
+                }
+            }
+        }
+
+        #PageNaivationMobile {
+            @media(max-width:$screen-tablet) {
+                display: none !important;
+            }
+        }
+    }
+
+    .social {
+        margin-bottom: 20px;
+        min-height: 50px;
+        display: block;
+
+        .shareaholic-share-buttons-container ul.shareaholic-share-buttons {
+            margin-left: 0 !important;
+
+            li {
+                margin-left: 0 !important;
+
+                &:first-child {
+                    padding-left: 0 !important;
+                }
+            }
+        }
+
+        @media(max-width:$screen-phone) {
+            display: none;
+        }
+    }
+
+    .issuedate {
+        @media(max-width:$screen-phone) {
+            font-size: 18px;
+            margin-bottom: 20px;
+            display: block;
+        }
+    }
+
+    .setting {
+        border-bottom: 5px solid $Red;
+        width: 100%;
+        margin-top: 20px;
+        color: $Charcoal;
+        text-decoration: none;
+        float: left;
+
+        &:visited {
+            color: $Charcoal;
+        }
+
+        .icon {
+            cursor: pointer;
+            height: 40px;
+            width: 40px;
+            background-color: $Red;
+            display: block;
+            float: left;
+            font-weight: bold;
+            text-decoration: none;
+            content: "\f055";
+            &:focus {
+                background-color: $Focus-blue-light;
+            }
+            &:after {
+                    content: "\f055";
+                    font-family: FontAwesome;
+                    font-size: 24px;
+                    display: inline-block;
+                    text-decoration: none;
+                    color:$White;
+                    padding: 5px 0 0 9px;
+            }
+
+        }
+
+        &.active {
+            .icon {
+            &:after {
+                    content: "\f056";
+                    font-family: FontAwesome;
+                    font-size: 24px;
+                    display: inline-block;
+                    text-decoration: none;
+                    color:$White;
+                    padding: 5px 0 0 10px;
+            }
+            }
+        }
+
+        h2 {
+            float: left;
+            margin: 0 0 0 15px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 1.3em;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            width: 150px;
+        }
+
+        @media(max-width:$screen-phone) {
+            display: none;
+        }
+
+        position: relative;
+
+        .mode {
+            float: right;
+            line-height: 40px;
+            font-size: 0.9em;
+            cursor: pointer;
+            height: 40px;
+
+            span {
+                color: $Red;
+                margin-right: 10px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    #settingPanel {
+        background-color: $Lightest-grey;
+        width: 100%;
+        float: left;
+        display: none;
+        padding: 10px;
+
+        @media(max-width:$screen-phone) {
+            display: none !important;
+        }
+
+        legend {
+            font-size: 18px;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 700;
+            margin: 10px 0 10px 0;
+            display: block;
+            border-style: none;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                display: block;
+
+                input[type="radio"] {
+                    margin-right: 5px;
+                }
+                 
+                label {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    aside#sideBar {
+        @media(max-width:$screen-tablet) {
+            width: 100%;
+            background: none repeat scroll 0 0 $Lightest-grey;
+
+            .sidePanel {
+                padding: 10px 0;
+            }
+        }
+    }
+
+    article.pagecontent {
+        @media(max-width:$screen-tablet) {
+            margin-bottom: 0;
+        }
+    }
+
+    #FivedayForecastWrapper {
+        height: 131px;
+        margin: 0 0 5px;
+        float: left;
+        border-bottom: 1px solid $Mid-grey;
+
+        @media(max-width:$screen-phone) {
+            display: none;
+        }
+
+        @media (max-width:$screen-standand) {
+            height: 185px;
+        }
+
+        .forecastTag {
+            color: $Charcoal;
+            text-decoration: none;
+            float: left;
+            width: 16.66667%;
+            height: 130px;
+            padding: 10px;
+            font-family: proxima-nova, sans-serif;
+            font-size: 0.875em;
+            font-weight: bold;
+            text-align: left;
+            border-right: 1px solid $White;
+            text-align: center;
+
+            @media (max-width:$screen-standand) {
+                height: 184px;
+            }
+
+            background-color: $Lightest-grey;
+
+            .content {
+                font-family: proxima-nova, sans-serif;
+                font-weight: 600;
+                font-size: 18px;
+
+                @media(max-width:$screen-standand) {
+                    padding: 0;
+                }
+
+                .weathericon {
+                    float: left;
+                    height: 33px;
+                    margin-top: 10px;
+                    width: 50px;
+
+                    @media(max-width:$screen-standand) {
+                        float: none;
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            &:hover, &:focus {
+                background-color: $White;
+                color: $Charcoal !important;
+                cursor: pointer;
+            }
+
+            .ForecastTitle {
+                padding-bottom: 0;
+                display: block;
+
+                @media(max-width:$screen-standand) {
+                    margin-top: 0;
+                }
+            }
+
+
+            .ForecastTemp {
+                padding-top: 0;
+                font-size: 1.000em;
+
+                @media(max-width:$screen-standand) {
+                    padding-top: 5px;
+                }
+            }
+        }
+
+        .ForecastTemp {
+            width: 50%;
+            float: left;
+            font-size: 20px;
+            text-align: center;
+            overflow: hidden;
+
+            @media (max-width:$screen-standand) {
+                width: 100%;
+                height: auto;
+                line-height: 1em;
+            }
+
+            .pnlmaxtemp {
+                height: 25px;
+                display: block;
+                text-align: center;
+                /*margin-right:20px;*/
+                @media (max-width:$screen-standand) {
+                    margin-right: 0;
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+
+        .wind {
+            float: left;
+            height: 45px;
+            line-height: 45px;
+            overflow: hidden;
+            text-align: center;
+            width: 50%;
+
+            @media (max-width:$screen-standand) {
+                width: 100%;
+                height: auto;
+                line-height: 1em;
+            }
+
+            .winddirection {
+                height: 45px;
+                margin-left: 0;
+                margin-top: 0;
+                width: 45px;
+            }
+
+            span {
+                @media print {
+                    color: $Charcoal !important;
+                }
+
+                color: $White !important;
+                font-size: 15px;
+                line-height: 50px;
+                min-width: 50px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+
+        .forecastTag.active {
+            background-color: $White;
+            border: 1px solid $Mid-grey;
+            border-bottom: 1px solid $White;
+            color: $Charcoal;
+            height: 131px;
+
+            @media (max-width:$screen-standand) {
+                height: 186px;
+            }
+        }
+    }
+
+    .forecastRow {
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid #e1e3e3;
+        padding-right: 5px;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .forecastText {
+            display: table-cell;
+            vertical-align: middle;
+            height: 50px;
+            padding: 5px 0 0 20px;
+
+            @media(max-width:$screen-phone) {
+                padding: 5px 0 0 15px;
+            }
+        }
+
+        .forecastIcon {
+            width: 50px;
+            height: 50px;
+            float: left;
+            text-align: center;
+        }
+
+        .forecastTextBlank {
+        }
+
+        .wind {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+
+            p {
+                line-height: 52px;
+                width: 100%;
+            }
+
+            .winddirection {
+                margin-top: 3px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .detailIcon {
+            margin-top: 5px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .validicon {
+            margin-top: 12px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+
+    .forecastDetail {
+        width: 100%;
+        background-color: $White;
+        display: none;
+
+        @media (max-width:$screen-phone) {
+            float: left;
+        }
+
+        .pnlweathericon {
+            width: 25%;
+            float: left;
+            padding-right: 10px;
+
+            @media (max-width:$screen-phone) {
+                display: none;
+            }
+
+            .weathericon {
+                width: 100%;
+            }
+        }
+
+        .pnlforcast {
+            width: 75%;
+            display: inline-block;
+            float: left;
+
+            .forecastValid {
+                float: left;
+                width: 100%;
+
+                @media (max-width:$screen-phone) {
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            @media (max-width:$screen-phone) {
+                border-top: 1px solid $Charcoal;
+            }
+
+            .ForecastTitle {
+                float: left;
+                width: 100%;
+
+                @media (max-width:$screen-phone) {
+                    display: none;
+                }
+            }
+
+            .main {
+                @media (max-width:$screen-phone) {
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+
+            .pnlmaxtemp {
+                margin-top: 15px;
+                float: left;
+
+                @media (max-width:$screen-phone) {
+                    float: none;
+                    padding-top: 0;
+                }
+            }
+
+            .pnluv {
+                @media (max-width:$screen-phone) {
+                    min-height: 70px;
+
+                    .icon {
+                        width: 50px;
+                        text-align: center;
+
+                        img {
+                            padding-left: 10px;
+                        }
+                    }
+                }
+
+                .forecastText {
+                    @media (max-width:$screen-phone) {
+                        display: table-cell;
+                        height: 50px;
+                        vertical-align: middle;
+                        font-family: proxima-nova, sans-serif;
+                    }
+                }
+            }
+
+            .Max {
+                float: left;
+                padding-right: 10px;
+                padding-top: 2px;
+
+                @media (max-width:$screen-phone) {
+                    float: none;
+                    font-size: 18px;
+                }
+            }
+
+            .temp {
+                font-size: 25px;
+                line-height: 1em;
+                font-family: proxima-nova, sans-serif;
+                font-weight: 700;
+                float: left;
+                margin-right: 15px;
+
+                @media (max-width:$screen-phone) {
+                    float: none;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    margin-right: 10px;
+                    // font-size:45px;
+                }
+            }
+
+            .current, .forecastIcon {
+                float: left;
+                padding-top: 9px;
+            }
+
+            .current {
+                padding-top: 14px;
+
+                @media (max-width:$screen-phone) {
+                    clear: left;
+                    float: none;
+                }
+            }
+
+            .forecastIcon {
+                line-height: 12px;
+                clear: left;
+
+                @media(max-width:$screen-phone) {
+                    border-bottom: 1px solid $Charcoal;
+                    width: 100%;
+                }
+
+                .icon {
+                    margin-bottom: 0;
+                    padding-right: 20px;
+                    float: left;
+                }
+            }
+
+            .currentc {
+                font-family: proxima-nova, sans-serif;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 1em;
+                padding-left: 10px;
+                /*@media (max-width:$screen-phone)
+            {
+                 font-size:40px;
+                 }*/
+            }
+
+            .forecastText {
+                line-height: 1.4em;
+                min-height: 2em;
+                display: inline;
+
+                @media(max-width:$screen-phone) {
+                    padding: 0 0 5px 15px;
+                }
+            }
+
+            @media (max-width:$screen-phone) {
+                width: 100%;
+            }
+        }
+    }
+
+    .windwrapper {
+        width: 50%;
+        float: right;
+
+        @media (max-width:$screen-standand) {
+            width: 100%;
+        }
+    }
+
+    .wind {
+        position: relative;
+
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            color: $White;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 600;
+        }
+
+        span.detail {
+            position: absolute;
+            left: 0;
+            line-height: 57px;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            color: $White;
+            font-family: proxima-nova, sans-serif;
+            font-weight: 600;
+        }
+    }
+
+
+    .winddirection {
+        height: 65px;
+        margin-left: 0;
+        margin-top: 0;
+        width: 65px;
+    }
+
+    #forecastDetailWrapper {
+        width: 100%;
+        background-color: $White;
+        padding: 0;
+        display: block;
+
+        @media (max-width:$screen-phone) {
+            display: none;
+        }
+    }
+
+    #forecastWrapper {
+        padding: 0;
+        float: left;
+        width: 100%;
+
+        @media (max-width:$screen-tablet) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .mobileheader {
+        display: none;
+        cursor: pointer;
+        float: left;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 600;
+
+        &:hover, &.active {
+            background-color: $White;
+            color: $Charcoal;
+        }
+
+        div {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+
+        .wind {
+            .winddirection {
+                width: 45px;
+                height: 45px;
+            }
+
+            span {
+                font-size: 14px;
+                line-height: 45px;
+                text-align: center;
+                width: 100%;
+                font-family: proxima-nova, sans-serif;
+                font-weight: 600;
+            }
+        }
+
+        @media (max-width:$screen-phone) {
+            display: block;
+            width: 100%;
+            background-color: $Lightest-grey;
+            border-top: 1px solid $Charcoal;
+            height: 45px;
+            padding: 0 5px;
+        }
+
+        .toggleicon {
+            height: 15px;
+            width: 15px;
+            display: block;
+            float: right;
+            margin-top: 15px;
+            margin-right: 5px;
+            &:after {
+                content: "\f055";
+                font-family: FontAwesome;
+                font-size: 18px;
+                position: absolute;
+                right: 30px;
+                display: inline-block;
+                text-decoration: none;
+            }
+        }
+
+        &.active {
+            .toggleicon {
+            &:after {
+                content: "\f056";
+                font-family: FontAwesome;
+                font-size: 18px;
+                position: absolute;
+                right: 30px;
+                display: inline-block;
+                text-decoration: none;
+            }
+            }
+        }
+
+        .icon {
+            width: 50px;
+        }
+
+        .weathericon {
+            padding-top: 10px;
+            width: 40px;
+        }
+
+        .ForecastTemp {
+            font-size: 22px;
+            line-height: 45px;
+        }
+
+        .ForecastTitle {
+            line-height: 45px;
+            text-align: left;
+            font-size: 14px;
+            padding-left: 10px;
+            margin-right: 20px;
+        }
+    }
+
+
+    .forecastIconBlank {
+        float: left;
+        border-bottom: 1px solid #cecece;
+        border-right: 1px solid $Lightest-grey;
+        height: 38px;
+        width: 63px;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .forecastTextBlank {
+        float: left;
+        padding-top: 0;
+        padding-left: 0;
+        font-family: proxima-nova, sans-serif;
+        font-size: 1.000em;
+        line-height: normal;
+    }
+
+
+
+
+
+    .forecastTextOuter {
+        display: table;
+        width: 469px;
+        height: 53px;
+        overflow: hidden;
+    }
+
+    .forecastTextOuter .forecastTextInner {
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        font-size: 1.000em;
+    }
+
+    .last {
+        border-bottom-style: none;
+    }
+
+
+
+
+    #PageNaivationMobile {
+        float: left;
+        width: 100%;
+
+        ul {
+            margin: 0 0 10px 0;
+            padding: 0 0 10px 0;
+            list-style-type: none;
+
+            @media (max-width:$screen-phone) {
+
+                li {
+                    line-height: 2em;
+                }
+            }
+        }
+
+        @media(max-width:$screen-phone) {
+            float: left;
+        }
+    }
+
+
+    #PageNaivation {
+        margin: 20px 0 30px;
+
+        a {
+            color: $Red !important;
+            font-family: proxima-nova, sans-serif;
+            font-size: 0.875em;
+            font-weight: bold;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+                color: $Charcoal;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+
+        .navimageRadar {
+            height: 104px;
+            text-align: center;
+
+            img {
+                display: block;
+                position: relative;
+                top: -55px;
+            }
+        }
+
+
+        .navbox {
+            height: 104px;
+            overflow: hidden;
+        }
+
+        .navimageWebcam {
+            height: 104px;
+            text-align: center;
+
+            img {
+                display: block;
+                position: relative;
+                top: -55px;
+            }
+        }
+
+
+        .navimageSat {
+            height: 104px;
+            text-align: center;
+
+            img {
+                display: block;
+                position: relative;
+                top: -55px;
+            }
+        }
+    }
+
+
+
+
+
+    #forecastDetailButtons {
+        display: none;
+
+        @media (max-width:$screen-phone) {
+            padding-left: 15px;
+        }
+
+        float: left;
+        text-align: left;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #WarningFull {
+        width: 600px;
+        background-color: $Lightest-grey;
+        padding: 10px 0px 10px 10px;
+        margin-bottom: 0px;
+        height: 42px;
+
+        h1 {
+            font-family: proxima-nova, sans-serif;
+            font-size: 20px !important;
+            color: #333333 !important;
+            font-weight: bold !important;
+            background-color: $Lightest-grey !important;
+            width: auto !important;
+            padding-left: 0px !important;
+            margin-bottom: 0px !important;
+            line-height: normal !important;
+        }
+
+        a {
+            font-family: proxima-nova, sans-serif;
+            font-size: 14px;
+            color: #333333;
+            font-weight: normal;
+            padding: 0px;
+        }
+
+        img {
+            padding-right: 20px;
+        }
+    }
+
+
+
+
+    .Warning2 {
+        width: 304px;
+        background-color: $Lightest-grey;
+        padding: 10px 0px 10px 0px;
+        margin-bottom: 5px;
+        height: 73px;
+        float: left;
+        text-align: center;
+        border-right: 1px solid #CECFCE;
+
+        h1 {
+            font-family: Arial;
+            font-size: 16px !important;
+            color: #333333 !important;
+            font-weight: bold !important;
+            background-color: $Lightest-grey !important;
+            width: auto !important;
+            padding: 0px !important;
+            margin-bottom: 0px !important;
+            line-height: normal !important;
+        }
+
+        a {
+            font-family: Arial;
+            font-size: 12px;
+            color: #333333;
+            font-weight: normal;
+            padding: 0px;
+        }
+    }
+
+
+
+
+    .Warning3 {
+        width: 203px;
+        background-color: $Lightest-grey;
+        padding: 10px 0px 10px 0px;
+        margin-bottom: 0px;
+        height: 73px;
+        float: left;
+        text-align: center;
+        border-right: 1px solid #CECFCE;
+
+        h1 {
+            font-family: Arial;
+            font-size: 16px !important;
+            color: #333333 !important;
+            font-weight: bold !important;
+            background-color: $Lightest-grey !important;
+            width: auto !important;
+            padding: 0px !important;
+            margin-bottom: 0px !important;
+            line-height: normal !important;
+        }
+
+        a {
+            font-family: Arial;
+            font-size: 12px;
+            color: #333333;
+            font-weight: normal;
+            padding: 0px;
+        }
+    }
+
+
+    .Warning4 {
+        width: 152px;
+        background-color: $Lightest-grey;
+        padding: 10px 0px 10px 0px;
+        margin-bottom: 0px;
+        height: 73px;
+        float: left;
+        text-align: center;
+        border-right: 1px solid #CECFCE;
+
+        h1 {
+            font-family: Arial;
+            font-size: 16px !important;
+            color: #333333 !important;
+            font-weight: bold !important;
+            background-color: $Lightest-grey !important;
+            width: auto !important;
+            padding-left: 0px !important;
+            margin-bottom: 0px !important;
+            line-height: normal !important;
+        }
+
+        a {
+            font-family: Arial;
+            font-size: 14px;
+            color: #333333;
+            font-weight: normal;
+            padding: 0px;
+        }
+    }
+
+
+
+    .Warning5 {
+        width: 121px;
+        background-color: $Lightest-grey;
+        padding: 10px 0px 10px 0px;
+        margin-bottom: 0px;
+        height: 93px;
+        float: left;
+        text-align: center;
+        border-right: 1px solid #CECFCE;
+    }
+
+    .Warning5 h1 {
+        font-family: Arial;
+        font-size: 16px !important;
+        color: #333333 !important;
+        font-weight: bold !important;
+        background-color: $Lightest-grey !important;
+        width: auto !important;
+        padding-left: 0px !important;
+        margin-bottom: 0px !important;
+        line-height: normal !important;
+    }
+
+    .Warning5 a {
+        font-family: Arial;
+        font-size: 14px;
+        color: #333333;
+        font-weight: normal;
+        padding: 0px;
+    }
+
+    .Warning2 img, .Warning3 img, .Warning4 img, .Warning5 img {
+        margin-bottom: 5px;
+    }
+
+
+
+    .print_image:hover {
+        cursor: pointer;
+    }
+}
+
+#twitter-widget-1 {
+    width: 100% !important;
+}
+
+
+#aviationforecastPrint {
+    display: none;
+    color: #ff0000;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media print {
+    .weather {
+        .setting {
+            display: none;
+        }
+
+        #FivedayForecastWrapper {
+            min-width: 800px;
+        }
+    }
+
+    #aviationforecast, .m_sidebar {
+        display: none;
+    }
+
+    #aviationforecastPrint {
+        display: block !important;
+    }
+
+    #aviationforecastPrint img {
+        width: 900px !important;
+        height: 638px !important;
+    }
+}
+
+.webcam {
+    text-align: center;
+}
+
+#slides {
+    display: none;
+}
+
+#slides .slidesjs-navigation {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+a.slidesjs-next,
+a.slidesjs-previous,
+a.slidesjs-play,
+a.slidesjs-stop {
+    background-image: url(../JerseyMet/images/btns-next-prev.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 12px;
+    height: 18px;
+    overflow: hidden;
+    text-indent: -9999px;
+    float: left;
+    margin-right: 5px;
+}
+
+a.slidesjs-previous {
+    margin-left: 12px;
+}
+
+
+a.slidesjs-next {
+    margin-right: 10px;
+    background-position: -12px 0;
+}
+
+a:hover.slidesjs-next {
+    background-position: -12px -18px;
+}
+
+a.slidesjs-previous {
+    background-position: 0 0;
+}
+
+a:hover.slidesjs-previous {
+    background-position: 0 -18px;
+}
+
+a.slidesjs-play {
+    width: 15px;
+    background-position: -25px 0;
+}
+
+a:hover.slidesjs-play {
+    background-position: -25px -18px;
+}
+
+a.slidesjs-stop {
+    width: 18px;
+    background-position: -41px 0;
+}
+
+a:hover.slidesjs-stop {
+    background-position: -41px -18px;
+}
+
+.slidesjs-pagination {
+    margin: 15px 12px 0;
+    float: right;
+    list-style: none;
+}
+.slidesjs-pagination-item
+{
+        list-style: none;
+}
+.slidesjs-pagination li {
+    float: left;
+    margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+    display: block;
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+    background-image: url(../JerseyMet/images/pagination.png);
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+    background-position: 0 -13px;
+}
+
+.slidesjs-pagination li a:hover {
+    background-position: 0 -26px;
+}
+
+#slides a:link,
+#slides a:visited {
+    color: #333;
+}
+
+#slides a:hover,
+#slides a:active {
+    color: #9e2020;
+}
+
+
+.navbar {
+  overflow: hidden;
+}
+
+.ui-slider-wrapper {
+  position: relative;
+  width: 98.3%;
+  margin-left: auto;
+  margin-right: auto;
+
+            @media(max-width:$screen-phone) {
+                  width: 90% !important;
+    }
+}
+
+.ui-slider-wrapper .ui-slider-horizontal {
+}
+.ui-slider-labels
+{
+}
+
+.ui-slider-labels {
+  position: absolute;
+  border: 1px solid transparent;
+}
+
+.ui-slider-label-ticks {
+  border: 1px solid transparent;
+  position: absolute;
+  white-space: nowrap;
+}
+
+.ui-slider-label-ticks span {
+  font-family: proxima-nova,sans-serif !important;
+  min-width: 1.2em;
+}
+
+.ui-slider-wrapper.horizontal {
+  height: 2.5em;
+}
+
+.horizontal .ui-slider-labels {
+  left: 0;
+  right: 0;
+  top: 0.2em;
+}
+
+.horizontal .ui-slider-label-ticks {
+  width: 1.2em;
+  height: .8em;
+  text-align: center;
+  border-left: 1px solid #999;
+
+}
+
+.horizontal .ui-slider-label-ticks span {
+  position: relative;
+  display: inline-block;
+  margin-left: -1.2em;
+  top: .3em;
+      @media(max-width:$screen-phone) {
+          font-size:14px;
+    }
+}
+
+.ui-slider-horizontal {
+  height: .7em;
+}
+
+.ui-slider-handle {
+  background-color: #bf0d0d !important;
+  background-image: none !important;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border-color: #fff !important;
+  border-width: 2px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  margin-left: -12px !important;
+  top: -7px !important;
+
+          @media(max-width:$screen-phone) {
+
+  top: -12px !important;
+  }
+}
+
+.ui-slider-handle {
+          @media(max-width:$screen-phone) {
+              height:1.7em !important;
+              width:1.7em !important;
+    }
+
+}
+
+.ui-widget-content {
+  background-color: #e5e5e5 !important;
+  background-image: none !important;
+}
+
+.ui-widget-header {
+    background-color:#4a4a4c !important;
+      background-image: none !important;
+
+}
+

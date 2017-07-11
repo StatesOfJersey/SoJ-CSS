@@ -1,0 +1,178 @@
+.resultPages { 
+	background: white;
+	padding:0.4em 0;
+	height:1.2em;
+    width:100%;
+    /*float:left;*/
+}  
+
+.resultPages .previous {
+	padding-right:0.5em;
+    /*width:120px;*/
+    display:block;
+} 
+
+.resultPages .center
+{
+    padding-left:160px;
+}
+.resultPages .next 
+{
+    padding-left:0.5em;
+	display:block;
+	padding:0;
+	margin:0 0 10px 0;
+	float:right;
+    /*width:100px;*/
+    text-align:right;
+}
+.previous 
+{
+    float:left;
+	padding-right:0.5em;
+    width:50%;
+    display:block;
+} 
+.next 
+{
+    padding-left:0.5em;
+	padding:0;
+	margin:0;
+	float:right;
+    width:50%;
+    display:block;
+}
+
+/* Tide table */
+
+table.tide
+{
+    padding:0;
+	width:100%;
+	margin:0;
+	border-collapse:separate;
+	border-spacing:0;
+    border-collapse:collapse;
+    float:left;
+}
+
+table.tide th {
+	text-align:left; 
+	border-bottom: #9abdcb 1px solid;
+	padding:0.6em 0 0.3em 0;
+	margin:0;
+}
+
+table.tide tr.tideToday {
+	text-align:left; 
+	border-bottom: #9abdcb 1px solid;
+	padding:0.6em 0 0.3em 0;
+	margin:0;
+	background:#86E4FE !important;
+}
+
+table.tide tr.tideWeekend {
+	text-align:left; 
+	border-bottom:0;
+	padding:0.6em 0 0.3em 0;
+	margin:0;
+	background-color:#f0f0f0 !important;
+}
+
+table.tide td
+{
+	border-bottom:solid 1px #E2E2E2;
+	font-size:1em;
+	height:25px;
+	margin:0;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+table.tide td.rules
+{
+	border-bottom:solid 1px #E2E2E2;
+	font-size:1em;
+	height:25px;
+	margin:0;
+	font-weight:bold;
+}
+
+table.tide tr.tideToday td.tideTodayp
+{
+	border-bottom:solid 1px #FFF;
+	font-size:1em;
+	height:25px;
+	margin:0;
+	background:transparent url(/_layouts/15/images/C5.PortOfJersey/siteimages/dayPointer.gif) no-repeat left center !important;
+	width:28px;
+}
+
+table.tide tr.tideWeekend td.tideTodayp
+{
+	border-bottom:solid 1px #FFF;
+	font-size:1em;
+	height:25px;
+	margin:0;
+	background:transparent url(/_layouts/15/images/C5.PortOfJersey/siteimages/dayPointer.gif) no-repeat left center !important;
+	width:28px;
+}
+
+table.tide tr.tideWeekend td.tideTodayEmpty
+{
+	border:0px;
+	font-size:1em;
+	height:25px;
+	margin:0;
+	width:28px;
+	background:#FFFFFF !important;
+}
+
+table.tide td.tideTodayEmpty
+{
+	border:0px;
+	font-size:1em;
+	height:25px;
+	margin:0;
+	width:28px;
+	background:#FFFFFF !important;
+}
+
+
+.Tides  {
+    /*width: 460px !important;*/
+    float:left;
+}
+
+.Tides th {
+    /*background-color: white !important;*/
+}
+
+.TidesDate {
+    width: 165px !important;
+}
+
+.TidesLowHigh{
+    width: 94px;
+}
+
+.TidesTime {
+    width: 85px;
+    text-align: right;
+}
+
+.TidesHeight {
+    width: 50px;
+    text-align: right;
+}
+article.pagecontent table tbody th.alignright {
+     text-align: right;
+     width:140px;
+}
+.Weekend {
+    background-color: #D1E3FD !important;    
+}
+
+.NextTide {
+    color: #cc0000;
+}
