@@ -77,7 +77,10 @@ article.pagecontent table tbody th {
     padding: 5px;
     text-align: left;
 }
-
+article.pagecontent table.govstyleTable-default td.highlight, table.govstyleTable-alignRight td.highlight
+{
+    background-color: $Lightest-grey;
+}
 section#statesreports table tbody th {
     border: solid 1px #E0E0E0;
     background-color: $Lightest-grey;
