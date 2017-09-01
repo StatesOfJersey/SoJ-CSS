@@ -94,6 +94,11 @@ article.pagecontent table .govstyleTableFooterRow-default {
     color: $Charcoal;
 }
 
+article.pagecontent table.govstyleTable-default td.highlight, 
+table.govstyleTable-alignRight td.highlight
+{
+    background-color: $Lightest-grey;
+}
 
 /* Scrollable table styling */
 
