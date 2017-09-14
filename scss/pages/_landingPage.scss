@@ -102,6 +102,13 @@
     }
     .linksSummary {
         margin-bottom: 20px;
+        .preview {
+            float: left;
+            height: 90px;
+            width: 115px;
+            margin: 0 15px 20px 0;
+            overflow: hidden;
+        } 
         a.SummaryLink {
             text-decoration: none;
             h2 {
@@ -109,12 +116,8 @@
                 color: $Red;
                 text-decoration: underline;
             }
-            .preview {
-                float: left;
-                height: 90px;
-                width: 115px;
-                margin: 0 15px 20px 0;
-                overflow: hidden;
+            &:hover {
+                text-decoration: underline;
             }
         }
     }

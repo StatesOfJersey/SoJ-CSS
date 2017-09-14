@@ -12,7 +12,7 @@ section.ourSites {
             display: block;
         }
         li {
-            display: inline;
+            display: inline-block;
             padding: 0 18px;
             border-left: solid 1px white;
             @media (max-width: $screen-tablet) {
