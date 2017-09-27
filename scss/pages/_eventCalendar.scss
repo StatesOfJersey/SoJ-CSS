@@ -4,6 +4,11 @@
 	min-width:0;
 	border:0;
 }
+.calendar button:focus
+{
+	background-color:$Focus-blue-light;
+	color:$White;
+}
 .calendar-sm {
   cursor: default;
   width: 800px;
@@ -85,16 +90,15 @@ button.c-previous {
   height: 12%;
   text-align: center; }
 
-button.c-today {
-  background-color: $Lightest-grey;
-  color: $Red; }
-
 button.c-event {
   color: $Charcoal;
   font-weight: bold;
   cursor: pointer;
   pointer-events: auto; }
 
+button.c-today {
+  background-color: $Lightest-grey;
+  color: $Red; }
 .c-grid {
   float: none;
   width: 100%; }
