@@ -39,6 +39,8 @@
         a {
             font-weight: 700;
             display: block;
+            position: relative;
+            z-index: 1;  
         }
         .dh-date {
             margin-top: 10px;
@@ -55,12 +57,42 @@
                 padding-left: 20px;
             }
         }
+
+
+        position: relative;
+        
+        
+        .block-link__overlay-link {
+            position: static;
+            &:before {
+              bottom: 0;
+              content: "";
+              left: 0;
+              overflow: hidden;
+              position: absolute;
+              right: 0;
+              top: 0;
+              white-space: nowrap;
+              z-index: 1;
+            } 
+        }
+        
+        h2 {
+            margin-top:0;            
+            a {
+        font-size: 18px;
+          &:hover {
+            color:$Black;
+          }
+        }
+    }
+ 
     }
     article#dh-content {
-        margin-bottom: 20px;        
+        margin-bottom: 30px;        
     }
     #departmentPages {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         ul {
             margin: 0;
             padding: 0;
@@ -70,7 +102,7 @@
         }
     }
     #departmentDocuments {
-        margin-bottom: 20px;        
+        margin-bottom: 30px;        
         h1 {
             font-size: em(20px);
         }
@@ -90,12 +122,16 @@
         h1 {
             font-size: em(20px);
         }
-        margin-bottom:20px;
+        margin-bottom:30px;
     }
     #dh-ministers {
-        margin-bottom:20px;
+        margin-bottom:30px;
         h1 {
             font-size: em(20px);
+            margin:20px 0;
+            &:first-child {
+                margin-top:0;
+            }
         }
         h2 {
             font-size: em(15px);
@@ -103,6 +139,9 @@
         }
         p {
             margin-top: 0;
+        }
+        img {
+            margin-bottom: 5px;
         }
         @media (min-width:$screen-tablet) and (max-width: $screen-desktop) {
             img {
@@ -113,7 +152,7 @@
     #dh-externallinks {        
         background-color: $Lightest-grey;
         padding: 20px 20px 40px 20px;
-        margin-bottom:20px;
+        margin-bottom:30px;
         h1 {
             font-size: em(20px);
         }
@@ -141,13 +180,19 @@
     i {
         font-size: 28px;
         padding-right: 10px;
-        color: $Black !important;        
+        color: $Black !important;
+        &:hover {
+            color: $department !important;            
+        }        
     }
     .firstbutton {
         padding-left:0px !important;
     }
     a {
         color: $department !important;
+        &:hover {
+            color: $Black !important;            
+        }
     }
     h1 {
         color: $department !important;
@@ -166,15 +211,18 @@
         float: left;
         background-color: $Lightest-grey;
         border: 0 solid $Mid-grey;
-        padding: 10px 20px 10px;
-        margin-top: 10px;
-        padding-top: 10px;
+        padding: 10px 20px;
+        width: 100%;        
         @media (min-width: $screen-tablet) {
-            margin-bottom: 10px;
+            margin-bottom: 30px;
         }
         @media (max-width:$screen-phone) {
-            background-color: $White;
-        }        
+            background: $Lightest-grey;
+            overflow: hidden;
+            padding: 10px 0;
+        }
+     
+
         h2 {
             font-family: proxima-nova, sans-serif;
             font-weight: 700;
@@ -253,6 +301,13 @@
                     text-decoration: underline;
                 }
             }
+            .dh-date {
+                margin-top: 10px;
+                font-size: 14px;
+                display: block;
+                color:$Black;
+                font-weight: normal;
+            }   
         }
     }
 }
