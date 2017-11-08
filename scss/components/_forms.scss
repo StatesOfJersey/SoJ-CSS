@@ -1,7 +1,7 @@
-   input[type=text] {
+   input[type=text],input[type=password] {
        border-radius: 0 !important;
 
-       .error {
+       &.error {
        border: 1px solid $Error;
        background-color: rgba(235, 0, 25, 0.15);
        color: #000;
@@ -50,7 +50,7 @@
    }
       
     /*Input text and area*/
-    input[type="text"],select{
+    input[type="text"],select,input[type=password]{
         background: $White none repeat scroll 0 0;
         border: 1px solid $Stats-grey-light;
         color:$Charcoal;
