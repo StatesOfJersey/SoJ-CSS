@@ -9,27 +9,26 @@ var rename = require('gulp-rename');
 var watch = require('gulp-watch');
 
 var scssFiles = 'scss/**/*.scss';
-
 var cssFiles = 'css/**/*.css';
+
 var cssPath = 'css';
 var destPath = 'dist';
 
-gulp.task('scss', function() {
+gulp.task('build', function() {
     gulp.src(scssFiles)
         .pipe(sass.sync().on('error', sass.logError))
-        .pipe(gulp.dest('./' + cssPath));
+        .pipe(gulp.dest(cssPath));
 });
 
-gulp.task('css', function() {
+gulp.task('minify', function() {
     gulp.src(cssFiles) 
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9'))
-        .pipe(minifyCSS())
+        .pipe(minifyCSS({ keepSpecialComments: 0 }))
         .pipe(rename('GovJE.min.css'))
-        .pipe(gulp.dest('./'+ destPath));
+        .pipe(gulp.dest(destPath));
 });
 
-//Watch task
 gulp.task('default', function() {
-    gulp.watch(scssFiles, ['scss']); 
-    gulp.watch(cssFiles, ['css']);
+    gulp.watch(scssFiles, ['build', 'minify']);
+    gulp.start(['build', 'minify']);
 });

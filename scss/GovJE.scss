@@ -8,6 +8,7 @@
 @import "base/colour";
 @import "base/typography";
 @import "base/media";
+
 // Components
 @import "components/accessibility";
 @import "components/backtotop";
@@ -19,9 +20,10 @@
 @import "components/list";
 @import "components/noticebar";
 //@import "components/rte";
-@import "components/servicesAZ";
+@import "components/services-az";
 @import "components/table";
 @import "components/chart";
+
 // Layout
 @import "layout/breadcrumb";
 @import "layout/footer";
@@ -32,18 +34,19 @@
 @import "layout/print";
 @import "layout/searchbar";
 @import "layout/sidebar";
+
 // Pages
 @import "pages/contacts";
-@import "pages/contentPage";
-@import "pages/contributionCalulator";
-@import "pages/departmentHomepage";
+@import "pages/content-page";
+@import "pages/contribution-calulator";
+@import "pages/department-homepage";
 @import "pages/egov";
-@import "pages/filteredResults";
+@import "pages/filtered-results";
 @import "pages/home";
-@import "pages/jobsinjersey";
-@import "pages/landingpage";
+@import "pages/jobs-in-jersey";
+@import "pages/landing-page";
 @import "pages/news";
-@import "pages/search-reports-MD";
+@import "pages/search-reports-md";
 @import "pages/services";
 @import "pages/microsite";
-@import "pages/eventCalendar";
+@import "pages/event-calendar";
