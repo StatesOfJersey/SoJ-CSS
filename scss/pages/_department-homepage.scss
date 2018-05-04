@@ -89,7 +89,29 @@
  
     }
     article#dh-content {
-        margin-bottom: 30px;        
+        margin-bottom: 30px;  
+            table {
+            margin:10px 0;
+            padding:0;
+            border-collapse:collapse;
+            width:100%;
+            clear:both;
+            float:left;
+            text-align:left;
+            }
+
+            table th {
+            color:#fff;
+            background-color:#0049AF;
+            text-align:left;
+            padding:5px;
+            }
+
+            table td {
+            border:1px solid #E0E0E0;
+            vertical-align:top;
+            padding:5px;
+            }      
     }
     #departmentPages {
         margin-bottom: 30px;
@@ -161,6 +183,8 @@
             padding-left:0;
         }
     }
+    
+
 }
 
 
@@ -311,3 +335,4 @@
         }
     }
 }
+

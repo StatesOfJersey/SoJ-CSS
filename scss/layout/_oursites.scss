@@ -3,6 +3,29 @@ section.ourSites {
     background-color: $Dark-grey;
     color: white;
     padding: 10px 0 10px 0;
+
+
+    div.title {
+    width:110px;
+	float:left;
+	font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+        @media (max-width: $screen-tablet)
+        {
+            width:100%;
+            float:none;
+            
+        }
+    }
+    div.links
+    {
+         @media (min-width: $screen-tablet)
+        {
+        width: calc(100% - 110px); float: left;
+        }
+    }
+
     ul {
         list-style-type: none;
         display: inline;
@@ -14,11 +37,13 @@ section.ourSites {
         li {
             display: inline-block;
             padding: 0 18px;
+            margin-bottom: 5px;
             border-left: solid 1px white;
             @media (max-width: $screen-tablet) {
                 display: block;
                 border-left-style: none;
                 padding: 8px 0;
+                 margin-bottom: 0;
             }
         }
         li.title {
@@ -26,9 +51,6 @@ section.ourSites {
             font-weight: 700;
             font-size: 22px;
             padding-left: 0;
-        }
-        li:first-child {
-            border-left: none;
         }
         a {
             color: white;
