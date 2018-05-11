@@ -1,0 +1,46 @@
+.imagecolumn {position:relative;}
+.imagerow {position:relative;-webkit-columns:2;-moz-columns:2;}
+.contentPanel {
+    background-color: $Lightest-grey;
+    border: 0 solid $Mid-grey;
+    padding: 10px 20px;
+    margin: 20px 0;
+    width: 100%;
+}
+article.pagecontent .contentPanel h2 {
+    margin-top: 10px;
+}
+.cornerimage {border:0;position:absolute;top:0px;left:0px;text-align:center;top:0.25em;left:0.5em;}
+.permitted {color:$Stats-mixed-Green;font-size:2em;line-height:1.5em;left:0.15em;}
+.prohibited {color:$Error;font-size:2em;line-height:1.5em;left:0.15em;}
+.cornerimage .fa-stack {width:3em;height:3em;line-height:3em;font-size:1.5em;vertical-align:middle;}
+.cornerimage .fa-stack-2x {font-size:3em;} 
+.fa-circle {color:$White;}
+
+
+#RecyclingList 
+{
+    section#Search {border-bottom:none;padding:16px 15px;}
+    .input-group {width:99%;}
+    .PopularItems {margin:20px 0;padding:0;width:100%;list-style:none;-webkit-columns:4;-moz-columns:4;}
+    .PopularItems li {text-align:center;}
+    .PopularItems li a {background:$Lightest-grey;color:$Red;padding:22px 0;display:block;font-size:1.25em;font-weight:bold;}
+    .RecylingItems {margin:0;padding:20px 0 0;}
+    .RecylingItems > li {display:block;margin:0;padding:10px;}
+    ul.list {padding:0;margin:0;-webkit-columns:4;-moz-columns:4;}
+    ul.list li {list-style-type:none;padding:0;margin:0;}
+    ul.list li a {color:#1D1D1D;font-size:0.85em;}
+    ul.list li a:hover {color:$Red;}
+    ul.list li.letter {font-weight:700;font-size:x-large;padding:15px 0 3px 0;}
+    ul.list li:first-child.letter {padding:0 0 3px 0;}
+    @media (max-width:$screen-tablet) {
+        section#Search {border-bottom:none;padding:0;margin:0;background:none;}
+        ul.list {-webkit-columns:1;-moz-columns:1;}
+        .PopularItems {-webkit-columns:1;-moz-columns:1;}
+        .PopularItems li {text-align:inherit;}
+        .PopularItems li a {background:inherit;color:$Red;padding:0;display:inherit;}
+        section#SearchMobile {margin:0 0 20px 0;}
+        section#SearchMobile label {font-size:1.5em;font-weight:700;}
+        section#SearchMobile .col-sm-12.search {background:$Lightest-grey;padding:10px;}
+    }
+}
