@@ -1,20 +1,20 @@
 section#cookiebar {
-    background-color: $Dark-grey;
+    background-color: $cookieBlue;
     width: 100%;
     overflow: hidden;
     padding: 9px 0 3px 0;
     p {
-        color: $White;
+        color: $Charcoal;
         margin-top: 5px;
         margin-bottom: 5px;
         font-size: 18px;
         font-family: proxima-nova, sans-serif;
     }
     a {
-        color: $White;
+        color: $Charcoal;
         text-decoration: underline;
         &:hover {
-            color: $White;
+            color: $Charcoal;
         }
     }
 }
