@@ -278,6 +278,10 @@ aside#sideBar.ms-SideBar {
     display:table-cell;
     vertical-align:middle;
     }
+    nav#ms-subnav ul.vcm-menu > li > a:hover,nav#ms-subnav ul.vcm-menu > li.hover > a,nav#ms-subnav ul.vcm-menu > li:hover > a
+    {
+        text-decoration: none;
+    }
     nav#ms-subnav ul.vcm-menu li.hasChild 
     {
         position:relative;
