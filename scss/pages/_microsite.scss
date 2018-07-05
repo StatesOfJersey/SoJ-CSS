@@ -306,7 +306,7 @@ aside#sideBar.ms-SideBar {
         height:38px;
         text-align:right;
     }
-    nav#ms-subnav ul.vcm-menu > li.hasChild.focus > a.moreSection:after 
+    nav#ms-subnav ul.vcm-menu > li.hasChild.focus > a.moreSection:after ,nav#ms-subnav ul.vcm-menu > li.hasChild.hover > a.moreSection:after 
     {
         content: "\f078";
     }
