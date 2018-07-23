@@ -14,6 +14,21 @@ h1.title {
     }
 }
 
+.colimage 
+{
+    img{
+        width:100%;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: $screen-tablet) {
+   .row .colimage 
+    {
+        img{
+        max-width: 665px;
+        }
+    }
+}
 section#InfoModule {
     border: 1px solid $Charcoal;
     padding: 15px;
@@ -107,7 +122,7 @@ article.pagecontent {
         a {
             text-decoration: none;
             color: $Charcoal;
-            cursor: pointer;
+            cursor: auto;
             font-family: proxima-nova, sans-serif;
             font-weight: 600;
         }
