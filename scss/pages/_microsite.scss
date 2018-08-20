@@ -75,7 +75,7 @@ nav#ms-subnav {
 #ms-footercontent {
     background-color: $Lightest-grey;
     width: 100%;
-    min-height: 500px;
+    min-height: 250px;
     margin-top: 20px;
     padding-bottom: 20px;
     ol {
@@ -260,15 +260,16 @@ aside#sideBar.ms-SideBar {
              display:table-cell;
              max-width: 300px;
              margin-bottom: 15px;
-             padding-right: 20px;
+            
              img {
-     
+                
                  height: 78px;
              }
          }
          h1{
              display:table-cell;
              vertical-align: middle;
+             padding-left: 20px;
          }
          @media (max-width: $screen-phone) {
              text-align: left;
@@ -277,6 +278,7 @@ aside#sideBar.ms-SideBar {
              a,h1{
                  width: 100%;
                  display: block;
+                 padding-left: 0;
              }
              img {
                  height: auto;
@@ -308,8 +310,8 @@ aside#sideBar.ms-SideBar {
     ul.vcm-menu > li > a
     {
     text-align:left;
-    padding-left:15px;
-    padding-right:35px;
+    padding-left:20px;
+    padding-right:20px;
     padding-top:0;
     min-height:60px;
     display:table-cell;
@@ -318,6 +320,10 @@ aside#sideBar.ms-SideBar {
         {
             background-color: $Focus-blue-light;
         }
+    }
+    ul.vcm-menu > li.hasChild > a
+    {
+        padding-right:40px;
     }
     ul.vcm-menu > li > a:hover,ul.vcm-menu > li.hover > a,ul.vcm-menu > li:hover > a
     {
@@ -333,8 +339,9 @@ aside#sideBar.ms-SideBar {
         width:35px;
         height:38px;
         top:0;
-        right:0;
+        right:5px;
         display:block;
+        padding:0 10px;
     }
     ul.vcm-menu li.hasChild > a.moreSection:after {
         display:inline;
@@ -343,7 +350,7 @@ aside#sideBar.ms-SideBar {
         content: "\f054";
         right: 5px;
         top:20px;
-        width:35px;
+        width:15px;
         height:38px;
         text-align:right;
     }
@@ -746,8 +753,15 @@ aside#sideBar.ms-SideBar {
             &:last-child>a{
                 border-bottom:none
             }
+            a{
+                &.back-button,&.back-button:hover
+                {
+                    border-left:0 
+                }
+            }
             &:first-child>a{
-                border-top:none
+                border-top:none;
+                border-left:0;
             }
              ul{
             left:100%;
@@ -781,6 +795,7 @@ aside#sideBar .vcm-sideMenu
             display: block;
         }
     }
+    
 }
 @media (max-width:480px) {
     .vcm aside#sideBar #contacts {
@@ -790,6 +805,20 @@ aside#sideBar .vcm-sideMenu
         {
         padding-left:10px;
         }
+        aside#sideBar .vcm-sideMenu .vcmSection
+        {
+            margin:0;
+            padding:0;
+            ul
+            {
+                padding:0
+            }
+        }
+        .vcm aside#sideBar
+        {
+            padding:0;
+        
+        }
 }
 
 aside#sideBar .vcm-sideMenu h1{
@@ -797,6 +826,7 @@ aside#sideBar .vcm-sideMenu h1{
     padding: 15px;
     color:$White;
     margin-top:0;
+    margin-bottom: 0;
 }
 aside#sideBar .vcm-sideMenu br
      {
@@ -809,6 +839,7 @@ aside#sideBar .vcm-sideMenu ul.vcmSection{
         padding-left:0;
         ul
         {
+            margin:0; 
             li{
                 padding-left:15px; 
                 border-bottom:1px solid #979797;
@@ -902,16 +933,8 @@ aside#sideBar .vcm-sideMenu li.hasChild.focus> a.moreSection:after,aside#sideBar
     content: "\f078";
     
 }
-aside#sideBar .vcm-sideMenu .vcmSection
-{
-    margin:0;
-    padding:0;
-}
-.vcm aside#sideBar
-{
-    padding:0;
-   
-}
+
+
 
 aside#sideBar .vcm-sideMenu li>h2
 {
@@ -939,4 +962,25 @@ aside#sideBar .vcm-sideMenu .vcmSection li .sub-menu ul {
 }
 .vcm img.news {
     width:100%;
+}
+.vcm{
+    table.govstyleTable-default {
+         th{
+               border:1px solid #E0E0E0;
+               padding:5px;
+               text-align: left;
+               vertical-align: top;
+               color:$White;
+        }
+        td{
+            border:1px solid #E0E0E0;
+            padding:5px;
+            text-align: left;
+            vertical-align: top;
+        }
+        tr.govstyleTableFooterRow-default{
+            background-color:#eef0f0;
+            color:$Black;
+        }
+    }
 }
