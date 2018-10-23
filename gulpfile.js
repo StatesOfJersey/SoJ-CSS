@@ -29,6 +29,6 @@ gulp.task('minify', function() {
 });
 
 gulp.task('default', function() {
-    gulp.watch(scssFiles, ['build', 'minify']);
-    gulp.start(['build', 'minify']);
+    gulp.watch(scssFiles,gulp.series('build'));
+    gulp.watch(scssFiles,gulp.series('minify'));
 });
