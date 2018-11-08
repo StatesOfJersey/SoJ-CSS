@@ -281,7 +281,7 @@ aside#HomepageSidebar {
     .toparticle {
         display: block;
         clear: both;
-        height: 100px;
+        min-height:100px;
         padding-bottom: 10px;
         h2 {
             line-height: 22px;
@@ -291,11 +291,14 @@ aside#HomepageSidebar {
             text-decoration: none;
             color: $Charcoal;
             margin: 0 0 10px 0;
-            padding: 0;
+            padding:0 0 0 160px;
             &:hover {
                 color: $Charcoal !important;
                 text-decoration: underline;
             }
+        }
+        p.readMore{
+            padding:0 0 0 160px
         }
         img {
             display: block;

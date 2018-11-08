@@ -252,6 +252,7 @@ aside#sideBar.ms-SideBar {
     .ms-mastheadImage
     {
         margin-bottom:20px;
+        max-height:none;
     }
     #ms-sitelogo {
         display: table;
@@ -834,6 +835,7 @@ aside#sideBar .vcm-sideMenu br
      }
 aside#sideBar .vcm-sideMenu ul.vcmSection{
     padding: 0;
+    margin:0;
     li.sectionLinks{
         
         padding-left:0;
@@ -841,6 +843,7 @@ aside#sideBar .vcm-sideMenu ul.vcmSection{
         {
             margin:0; 
             li{
+                padding-bottom:0;
                 padding-left:15px; 
                 border-bottom:1px solid #979797;
                 ul{
@@ -914,7 +917,7 @@ aside#sideBar .vcm-sideMenu li.hasChild> a.moreSection {
     right:0;
     text-decoration:none;
     width:50px;
-    height:50px;
+    height:46px;
     line-height:45px;
     text-align:right;
     padding-right:20px;
@@ -939,7 +942,7 @@ aside#sideBar .vcm-sideMenu li.hasChild.focus> a.moreSection:after,aside#sideBar
 aside#sideBar .vcm-sideMenu li>h2
 {
     margin:2px 0;
-    padding:10px 0;
+    padding:10px 45px 10px 0;
 }
 aside#sideBar .vcm-sideMenu li>h2>a{
     margin-top:0;

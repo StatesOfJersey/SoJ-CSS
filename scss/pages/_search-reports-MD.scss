@@ -163,6 +163,25 @@ section#statesreports {
         dd {
             width: auto;
         }
+        &.product{
+            li{
+                border-bottom:1px solid $Mid-grey;
+                padding-bottom: 15px;
+                .ProductImage
+                {
+                    float:left;
+                    width:150px;
+                    margin-right: 15px;
+                }
+                .content{
+                    float:left;
+                    width:calc(100% - 165px);
+                    @media (max-width: $screen-phone) {
+                        width:100%;
+                    }
+                }
+            }
+        }
     }
     .decision {
         font-size: 18px;
@@ -190,6 +209,7 @@ section#statesreports {
                 color: $Red;
                 text-decoration: underline;
                 font-weight: 700;
+                cursor:pointer;
                 &:hover {
                     color: $Charcoal;
                 }
