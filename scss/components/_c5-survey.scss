@@ -1,0 +1,183 @@
+/* CHECKLIST */
+/* For dynamic checklist filtering */
+
+.sv_filterable {
+  padding-left: 22px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #979797;
+  border-left: 5px solid #ffffff;
+}
+
+/* + and - icons styling in checklist */
+
+.sv_p_title_expandable .sv_panel_icon {
+  margin-right: 10px;
+}
+
+/* Move the content so it lines up with the title in the checklist */
+
+.sv_description {
+  margin-left: 25px;
+}
+
+/* Add some spacing to survey buttons */
+
+.sv_main .btn {
+  margin-top: 10px;
+}
+
+/* Add some spacing for the content show icons */
+
+.sv_content_icon {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Fix page count appearing on new line */
+
+#pageCount {
+  display: inline-block;
+}
+
+/* For hiding and showing the filter section */
+
+.sv_invisible {
+  visibility: hidden;
+}
+
+/* For styling the question pages container */
+
+.sv_q_container {
+  background-color: $Lightest-grey;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+/* Proper spacing for radio boxes on questions pages */
+
+.sv-q-col-1.radio {
+  margin-top: 20px;
+  label {
+    margin-left: 10px;
+    input {
+      height: 1em;
+    }
+  }
+}
+
+/* Fix radio box alignment */
+
+.sv_qbln label {
+  height: 1em;
+}
+
+/* Fix GovJE CSS rendering spans as block */
+
+.ms-Content #DynamicContent span {
+  display: inline;
+}
+
+/* SIDEBAR */
+/* SideBar position desktop vs mobile */
+
+aside#sideBarMobile {
+  &.dc-SideBar {
+    display: none;
+  }
+  ul {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0;
+  }
+  &.ms-SideBar h1.checklistFilter {
+    color: $Focus-blue-light;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: $screen-desktop) {
+  aside {
+    &#sideBarMobile.dc-SideBar {
+      display: block;
+    }
+    &#sideBar.dc-SideBar {
+      display: none;
+    }
+  }
+}
+
+aside {
+  &#sideBar h1.checklistFilter,
+  &#sideBarMobile h1.checklistFilter {
+    margin: 0;
+  }
+  &#sideBar ul.vcm-filter li,
+  &#sideBarMobile ul.vcm-filter li {
+    padding-bottom: 0;
+  }
+  &#sideBar .sidePanel.vcm-print,
+  &#sideBarMobile .sidePanel.vcm-print {
+    margin: 20px 0;
+  }
+  &#sideBar .sidePanel.vcm-print i,
+  &#sideBarMobile .sidePanel.vcm-print i,
+  &#sideBar .sidePanel.vcm-print a,
+  &#sideBarMobile .sidePanel.vcm-print a {
+    font-size: 18px;
+  }
+}
+
+h1.checklistFilter {
+  background-color: $Lightest-grey;
+  color: $Focus-blue-light;
+  margin: 0;
+  padding: 15px;
+}
+
+ul.vcm-filter {
+  h2 {
+    border-left: 5px solid #ffffff;
+    margin: 2px 0;
+    padding: 10px 0;
+    &.current {
+      border-left-width: 15px;
+      i {
+        display: inline;
+      }
+    }
+    &:hover {
+      border-left-width: 15px;
+    }
+  }
+  li {
+    border-bottom: 1px solid #979797;
+    padding: 0;
+    a {
+      padding-left: 10px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+}
+
+.ms-SideBar.dc-SideBar i {
+  display: none;
+  font-size: 18px;
+  padding-left: 5px;
+}
+
+.sidePanel.noindex.vcm-dynamicSideMenu {
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.ms-SideBar.dc-SideBar .vcm-print i {
+  display: inline;
+}
