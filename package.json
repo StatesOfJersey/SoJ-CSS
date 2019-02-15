@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "States of Jersey Web Design Standards UI stylesheet",
   "main": "Gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.3.0"
+  },
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^4.0.0",
