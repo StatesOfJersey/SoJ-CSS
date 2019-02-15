@@ -133,3 +133,7 @@ a.call-to-action-secondary {
     @extend .btn-secondary; 
 }
 
+a.call-to-action-wrap {
+    white-space: normal !important;
+    max-width: 100% !important;
+}
