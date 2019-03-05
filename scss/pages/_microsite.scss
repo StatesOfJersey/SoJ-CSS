@@ -992,3 +992,44 @@ aside#sideBar .vcm-sideMenu .vcmSection li .sub-menu ul {
         }
     }
 }
+
+.row.list {
+    div.col-md-4 { 
+        margin: 5px 0;
+    }
+
+    :nth-child(3n+1).col-md-4 {
+        clear: both;
+    }
+
+    .nopadding {
+        padding: 0;
+    }
+}
+
+#PeopleList section#SearchPeople {
+    background-color: #eef0f0;
+    border-bottom: none;
+    padding: 16px 15px;
+    margin-bottom: 30px;
+}
+
+#People {
+    .row.list {
+        font-size: 0.8em;
+    }
+
+    span.pFilter1 {
+        display: none;
+    }
+
+    div.clearfix.visible-xs-block {
+        display: block; margin: 20px 0;
+    }
+}
+
+@media (min-width: 1052px) {
+    #PeopleList #Filter1 {
+        float: right;
+    }
+}
