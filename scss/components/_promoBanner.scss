@@ -1,0 +1,192 @@
+span {
+    &.bannerHeader, &.bannerMessage {
+      font-family: proxima-nova,sans-serif;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      box-sizing: border-box;
+      display: block;
+    }
+  }
+  
+  #PromotionalBanner {
+    background-color: #141564;
+    color: white;
+    margin-top: -12px;
+    margin-bottom: 40px;
+    span {
+      &.bannerHeader {
+        font-size: 2.0em;
+        margin: 0;
+        font-weight: 600;
+        a {
+          color: white;
+          text-decoration: none;
+          &:visited {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+      &.bannerMessage {
+        a {
+          color: white;
+          text-decoration: none;
+          &:visited {
+            color: white;
+            text-decoration: none;
+          }
+        }
+        font-weight: normal;
+        font-size: 1.3em;
+        margin: 0;
+      }
+      &.bannerHeader a:hover, &.bannerMessage a:hover {
+        text-decoration: underline;
+      }
+    }
+    .row {
+      position: relative;
+    }
+    .vcenter {
+      display: inline-block;
+      vertical-align: middle;
+      float: none;
+      text-align: center;
+      margin-left: -3px;
+    }
+    .col-sm-7.vcenter {
+      text-align: left;
+    }
+    .closeButton {
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      a {
+        color: white;
+        font-size: 1.3em;
+        text-decoration: none;
+      }
+    }
+    .closeLink a {
+      color: white;
+      font-size: 1.3em;
+      text-decoration: none;
+    }
+    .closeButton a:hover, .closeLink a:hover {
+      text-decoration: underline;
+    }
+    img {
+      width: 100%;
+    }
+    span {
+      &.bannerHeader.bannerAlternate {
+        font-size: 1.8em;
+      }
+      &.bannerMessage.bannerAlternate {
+        font-size: 1.4em;
+      }
+    }
+    .bannerFullWidth span {
+      &.bannerHeader, &.bannerMessage {
+        margin: 20px 10%;
+      }
+    }
+    .col-sm-6.vcenter {
+      text-align: left;
+      span {
+        &.bannerHeader, &.bannerMessage {
+          margin: 5px 0;
+        }
+      }
+    }
+    .col-sm-7.vcenter span {
+      &.bannerHeader, &.bannerMessage {
+        margin: 5px 0;
+      }
+    }
+    .row.bannerFullWidth .col-sm-12 {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      &.closeLink {
+        margin: 20px;
+      }
+    }
+    .banner, .bannerAlternate, .bannerFullWidth {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 991px) {
+    #PromotionalBanner .banner {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 990px) {
+    #PromotionalBanner .bannerAlternate {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    #PromotionalBanner .bannerFullWidth {
+      display: block;
+    }
+  }
+  
+  .lightbox {
+    > div {
+      background-color: #141564;
+      color: #ffffff;
+      width: 438px;
+      height: auto;
+      overflow: hidden;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0 0 30px 0;
+      text-align: center;
+      border-radius: 8px;
+    }
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    span {
+      &.bannerHeader {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 30px 20%;
+      }
+      &.bannerMessage {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 30px 20%;
+      }
+      &.bannerHeader a, &.bannerMessage a {
+        text-decoration: none;
+      }
+    }
+    .closeButton a {
+      text-decoration: none;
+    }
+    span {
+      &.bannerHeader a:hover, &.bannerMessage a:hover {
+        text-decoration: underline;
+      }
+    }
+    .closeButton a:hover {
+      text-decoration: underline;
+    }
+    img {
+      width: 100%;
+    }
+    .closeButton {
+      margin: 30px 0 0 0;
+    }
+  }
