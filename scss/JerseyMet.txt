@@ -2,7 +2,7 @@
 
 // Third-party Vendors
 
-@import "vendors/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap";
 //@import "vendors/boottemp";
 @import "vendors/govmetric";
 @import "vendors/font-awesome";
@@ -55,3 +55,4 @@
 
 
 
+ 
