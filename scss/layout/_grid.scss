@@ -1,4 +1,8 @@
 
+.hide {
+    display: none !important;
+}
+
 .hidemobile {
     display: block;
     @media (max-width: $screen-phone) {
