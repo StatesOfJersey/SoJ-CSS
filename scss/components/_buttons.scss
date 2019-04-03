@@ -34,6 +34,7 @@ a.btn {
 
 .btn-default {
     background:$Red;
+    background-color:$Red;
 
     &:focus, &:active, &:hover {
         background:darken($Red, 9%);
@@ -44,6 +45,7 @@ a.btn {
 
 .btn-primary {
     background:$Primary-button;
+    background-color:$Primary-button;
 
     &:focus, &:active, &:hover {
         background:darken($Primary-button, 9%);
@@ -54,6 +56,7 @@ a.btn {
 
 .btn-secondary {
     background:$Secondary-button;
+    background-color:$Secondary-button;
 
     &:focus, &:active, &:hover {
         background:darken($Secondary-button, 9%);
@@ -133,3 +136,8 @@ a.call-to-action-secondary {
     @extend .btn-secondary; 
 }
 
+a.call-to-action-wrap {
+    white-space: normal !important;
+    max-width: 100% !important;
+    height: auto !important;
+}

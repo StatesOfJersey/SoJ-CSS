@@ -353,3 +353,22 @@ iframe
 {
     max-width:100%;
 }
+/*iframe on content page*/
+.iframe
+{
+    display:none;
+}
+.embedcontainer {
+    position: relative;
+    width:100%;
+     max-width: 100%;
+     height: 0;
+     padding-bottom: 80%;
+ }
+ .BIiframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+ }
