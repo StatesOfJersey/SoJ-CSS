@@ -1,5 +1,8 @@
 ﻿section.homepage-accordion {
     margin-bottom: 20px;
+    .card-group > .card {
+        margin-bottom: 5px;
+    }
     .card {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
@@ -17,6 +20,7 @@
         h2 {
             line-height: 2em;
             padding-left: 10px;
+            margin-bottom: 0px;
             a {
                 display: block;
                 text-decoration: none;
