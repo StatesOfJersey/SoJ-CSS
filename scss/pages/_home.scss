@@ -1,7 +1,13 @@
 ﻿section.homepage-accordion {
     margin-bottom: 20px;
-    .card-group > .card {
-        margin-bottom: 5px;
+    .card-group {
+        flex-direction: column;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+        & > .card {
+            margin-bottom: 5px;
+        }
     }
     .card {
         border-top-left-radius: 0;
