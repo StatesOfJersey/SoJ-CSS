@@ -57,16 +57,14 @@
                     text-decoration: none;
                 }
             }
-            a.opened {
-                &:after {
-                    content: "\f056";
-                    font-family: FontAwesome;
-                    font-size: 18px;
-                    position: absolute;
-                    right: 30px;
-                    display: inline-block;
-                    text-decoration: none;
-                }
+            a:after {
+                content: "\f056";
+                font-family: FontAwesome;
+                font-size: 18px;
+                position: absolute;
+                right: 30px;
+                display: inline-block;
+                text-decoration: none;
             }
         }
         a {
