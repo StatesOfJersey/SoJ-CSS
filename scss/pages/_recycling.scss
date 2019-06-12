@@ -208,16 +208,16 @@ article.pagecontent .contentPanel h2 {
     .smallIndent ul {
       padding-left: 2em;
     }
-    .green {
-      background: green;
-      margin-left: 0;
-      margin-right: 0;
-      .banner {
-        .col-md-6, h2 {
-          color: white;
-        }
+  .row.green {
+    background: green;
+    margin-left: 0;
+    margin-right: 0;
+    .banner {
+      .col-md-6, h2 {
+        color: white;
       }
     }
+  }
   }
   
   .contentPanel.green {
