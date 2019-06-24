@@ -83,6 +83,7 @@ article.pagecontent .contentPanel h2 {
         list-style: none;
         -webkit-columns: 4;
         -moz-columns: 4;
+        column-count: 4;
     }
 
     .PopularItems li {
@@ -114,6 +115,7 @@ article.pagecontent .contentPanel h2 {
         margin: 0;
         -webkit-columns: 4;
         -moz-columns: 4;
+        column-count: 4;
     }
 
     ul.list li {
@@ -214,6 +216,7 @@ article.pagecontent .contentPanel h2 {
     margin-left: 0;
     margin-right: 0;
     .banner {
+      width: 100%;
       .col-md-6, h2 {
         color: white;
       }

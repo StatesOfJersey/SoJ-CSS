@@ -1030,6 +1030,11 @@ aside#sideBar .vcm-sideMenu .vcmSection li .sub-menu ul {
     div.clearfix.visible-xs-block {
         display: block; margin: 20px 0;
     }
+
+    .pagecontent .row.list .col-md-12.col-12.nopadding div {
+        display: inline-block;
+        vertical-align: top;
+    }
 }
 
 @media (min-width: 1052px) {
