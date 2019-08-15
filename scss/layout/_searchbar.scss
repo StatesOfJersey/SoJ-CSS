@@ -33,6 +33,7 @@ section#Search {
                 position: absolute;
                 top: 10%;
                 left: 25%;
+                pointer-events: none;
             }
         }
     }
@@ -89,4 +90,8 @@ section#Search {
             padding-top: 0;
         }
     }
+}
+
+#mdSearchBox .input-group input.querytext.searchbox.form-control {
+    padding-right:0px;
 }

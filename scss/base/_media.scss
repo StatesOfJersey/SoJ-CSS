@@ -1,3 +1,12 @@
 $screen-phone: 480px;
 $screen-tablet: 768px; 
 $screen-desktop: 992px;
+
+// Fix col-sm breakpoint margins in bootstrap 4
+@media (max-width:767px)
+{
+    .container {
+        max-width:100%;
+        overflow-x: hidden;
+    }
+};

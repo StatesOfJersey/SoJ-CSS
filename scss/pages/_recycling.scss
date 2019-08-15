@@ -1,46 +1,297 @@
-.imagecolumn {position:relative;}
-.imagerow {position:relative;-webkit-columns:2;-moz-columns:2;}
+.myTest {color:#fff;}
+.imagecolumn {
+    position: absolute;
+}
+
+.imagerow {
+    position: relative;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+}
+
 .contentPanel {
-    background-color: $Lightest-grey;
-    border: 0 solid $Mid-grey;
+    background-color: #EEF0F0;
+    border: 0 solid #7D7D7D;
     padding: 10px 20px;
     margin: 20px 0;
     width: 100%;
 }
+
 article.pagecontent .contentPanel h2 {
     margin-top: 10px;
 }
-.cornerimage {border:0;position:absolute;top:0px;left:0px;text-align:center;top:0.25em;left:0.5em;}
-.permitted {color:$Stats-mixed-Green;font-size:2em;line-height:1.5em;left:0.15em;}
-.prohibited {color:$Error;font-size:2em;line-height:1.5em;left:0.15em;}
-.cornerimage .fa-stack {width:3em;height:3em;line-height:3em;font-size:1.5em;vertical-align:middle;}
-.cornerimage .fa-stack-2x {font-size:3em;} 
-.fa-circle {color:$White;}
+
+.cornerimage {
+    border: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    top: 0.25em;
+    left: 0.5em;
+}
+
+.permitted {
+    color: #31B255;
+    font-size: 2em;
+    line-height: 1.5em;
+    left: 0.15em;
+}
+
+.prohibited {
+    color: #FF0000;
+    font-size: 2em;
+    line-height: 1.5em;
+    left: 0.15em;
+}
+
+.cornerimage .fa-stack {
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+.cornerimage .fa-stack-2x {
+    font-size: 3em;
+}
+
+.fa-circle {
+    color: $White;
+}
 
 
-#RecyclingList 
-{
-    section#Search {border-bottom:none;padding:16px 15px;}
-    .input-group {width:99%;}
-    .PopularItems {margin:20px 0;padding:0;width:100%;list-style:none;-webkit-columns:4;-moz-columns:4;}
-    .PopularItems li {text-align:center;}
-    .PopularItems li a {background:$Lightest-grey;color:$Red;padding:22px 0;display:block;font-size:1.25em;font-weight:bold;}
-    .RecylingItems {margin:0;padding:20px 0 0;}
-    .RecylingItems > li {display:block;margin:0;padding:10px;}
-    ul.list {padding:0;margin:0;-webkit-columns:4;-moz-columns:4;}
-    ul.list li {list-style-type:none;padding:0;margin:0;}
-    ul.list li a {color:#1D1D1D;font-size:0.85em;}
-    ul.list li a:hover {color:$Red;}
-    ul.list li.letter {font-weight:700;font-size:x-large;padding:15px 0 3px 0;}
-    ul.list li:first-child.letter {padding:0 0 3px 0;}
+#RecyclingList {
+    #Popular {
+        padding-top: 20px;
+    }
+    section#Search {
+        border-bottom: none;
+        padding: 16px 15px;
+    }
+
+    .input-group {
+        width: 99%;
+    }
+
+    .PopularItems {
+        margin: 20px 0;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        -webkit-columns: 4;
+        -moz-columns: 4;
+        column-count: 4;
+    }
+
+    .PopularItems li {
+        text-align: center;
+    }
+
+    .PopularItems li a {
+        background: $Lightest-grey;
+        color: $Red;
+        padding: 22px 0;
+        display: block;
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+
+    .RecylingItems {
+        margin: 0;
+        padding: 20px 0 0;
+    }
+
+    .RecylingItems>li {
+        display: block;
+        margin: 0;
+        padding: 10px;
+    }
+
+    ul.list {
+        padding: 0;
+        margin: 0;
+        -webkit-columns: 4;
+        -moz-columns: 4;
+        column-count: 4;
+    }
+
+    ul.list li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    ul.list li a {
+        color: #1D1D1D;
+        font-size: 0.85em;
+    }
+
+    ul.list li a:hover {
+        color: $Red;
+    }
+
+    ul.list li.letter {
+        font-weight: 700;
+        font-size: x-large;
+        padding: 15px 0 3px 0;
+    }
+
+    ul.list li:first-child.letter {
+        padding: 0 0 3px 0;
+    }
+
     @media (max-width:$screen-tablet) {
-        section#Search {border-bottom:none;padding:0;margin:0;background:none;}
-        ul.list {-webkit-columns:1;-moz-columns:1;}
-        .PopularItems {-webkit-columns:1;-moz-columns:1;}
-        .PopularItems li {text-align:inherit;}
-        .PopularItems li a {background:inherit;color:$Red;padding:0;display:inherit;}
-        section#SearchMobile {margin:0 0 20px 0;}
-        section#SearchMobile label {font-size:1.5em;font-weight:700;}
-        section#SearchMobile .col-sm-12.search {background:$Lightest-grey;padding:10px;}
+        section#Search {
+            border-bottom: none;
+            padding: 0;
+            margin: 0;
+            background: none;
+        }
+
+        ul.list {
+            -webkit-columns: 1;
+            -moz-columns: 1;
+        }
+
+        .PopularItems {
+            -webkit-columns: 1;
+            -moz-columns: 1;
+        }
+
+        .PopularItems li {
+            text-align: inherit;
+        }
+
+        .PopularItems li a {
+            background: inherit;
+            color: $Red;
+            padding: 0;
+            display: inherit;
+        }
+
+        section#SearchMobile {
+            margin: 0 0 20px 0;
+        }
+
+        section#SearchMobile label {
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        section#SearchMobile .col-sm-12.search {
+            background: $Lightest-grey;
+            padding: 10px;
+        }
     }
 }
+
+#recycling {
+    aside#sideBar {
+      h1, h3, h4 {
+        color: green;
+      }
+    }
+    .pagecontent h3 {
+      background-color: green;
+      color: white;
+      padding: 15px;
+    }
+    h3 i.fa {
+      margin-right: 12px;
+    }
+    .banner h2 {
+      color: white;
+    }
+    .contentPanel ul {
+      padding-left: 1em;
+    }
+    .smallIndent ul {
+      padding-left: 2em;
+    }
+  .row.green {
+    background: green;
+    margin-left: 0;
+    margin-right: 0;
+    .banner {
+      width: 100%;
+      .col-md-6, h2 {
+        color: white;
+      }
+    }
+  }
+  }
+  
+  .contentPanel.green {
+    border-left-color: green;
+    border-left-width: 10px;
+    img {
+      border: 0;
+      float: right;
+      margin-top: -20px;
+    }
+  }
+  
+  .col-md-6.image {
+    padding: 0;
+  }
+  
+  ul.icons {
+    margin: 20px 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    -webkit-columns: 4;
+    -moz-columns: 4;
+    columns: 4;
+  }
+  
+  .icons .col-md-3 .icon {
+    background-color: green;
+    text-align: center;
+    padding: 15px 5px;
+    height: 180px;
+    margin-top: 20px;
+  }
+  
+  article.pagecontent div.icons {
+    a {
+      background-color: green;
+      color: white;
+      &:hover {
+        background-color: green;
+        color: #b60011;
+      }
+    }
+    img {
+      margin-bottom: 5px;
+    }
+  }
+  
+  #recycling .green .banner .bannerText {
+    padding: 75px 20px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 1295px) {
+    .icons .col-md-3 .icon {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .green .banner {
+      padding: 20px;
+    }
+    .banner .image {
+      display: none;
+    }
+    .icons .col-md-3 .icon {
+      height: auto;
+    }
+  }

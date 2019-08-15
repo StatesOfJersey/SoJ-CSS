@@ -1,6 +1,15 @@
 ﻿section.homepage-accordion {
     margin-bottom: 20px;
-    .panel {
+    .card-group {
+        flex-direction: column;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+        & > .card {
+            margin-bottom: 5px;
+        }
+    }
+    .card {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         border-style: none;
@@ -8,7 +17,7 @@
         -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
         box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     }
-    .panel-heading {
+    .card-header {
         background-color: $Red;
         color: $White;
         border-top-left-radius: 0;
@@ -17,6 +26,7 @@
         h2 {
             line-height: 2em;
             padding-left: 10px;
+            margin-bottom: 0px;
             a {
                 display: block;
                 text-decoration: none;
@@ -47,16 +57,14 @@
                     text-decoration: none;
                 }
             }
-            a.opened {
-                &:after {
-                    content: "\f056";
-                    font-family: FontAwesome;
-                    font-size: 18px;
-                    position: absolute;
-                    right: 30px;
-                    display: inline-block;
-                    text-decoration: none;
-                }
+            a:after {
+                content: "\f056";
+                font-family: FontAwesome;
+                font-size: 18px;
+                position: absolute;
+                right: 30px;
+                display: inline-block;
+                text-decoration: none;
             }
         }
         a {
@@ -70,7 +78,7 @@
             }
         }
     }
-    .panel-body {
+    .card-body {
         h3 {
             margin-bottom: 0;
             a {
@@ -85,7 +93,7 @@
             }
         }
     }
-    .panel-collapse {
+    .card-collapse {
         background-color: $Lightest-grey;
         ul {
             list-style-type: none;

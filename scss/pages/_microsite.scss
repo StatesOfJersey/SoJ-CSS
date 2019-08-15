@@ -662,6 +662,7 @@ aside#sideBar.ms-SideBar {
                 {
                     border:0;
                     color:#fff;
+                    padding-left:50px;
                 }
             }
             } 
@@ -927,7 +928,7 @@ aside#sideBar .vcm-sideMenu li.hasChild> a.moreSection {
     text-align:right;
     padding-right:20px;
     }
-  aside#sideBar .vcm-sideMenu li.hasChild> a.moreSection:after, {
+  aside#sideBar .vcm-sideMenu li.hasChild> a.moreSection:after {
     font-family: "FontAwesome";
     content: "\f054";
     color:$White;
@@ -1010,8 +1011,11 @@ aside#sideBar .vcm-sideMenu .vcmSection li .sub-menu ul {
 #PeopleList section#SearchPeople {
     background-color: #eef0f0;
     border-bottom: none;
-    padding: 16px 15px;
+    padding: 10px 15px 30px 15px;
     margin-bottom: 30px;
+}
+#PeopleList #SearchPeople #Filter1 {
+    float: left;
 }
 
 #People {
@@ -1025,6 +1029,11 @@ aside#sideBar .vcm-sideMenu .vcmSection li .sub-menu ul {
 
     div.clearfix.visible-xs-block {
         display: block; margin: 20px 0;
+    }
+
+    .pagecontent .row.list .col-md-12.col-12.nopadding div {
+        display: inline-block;
+        vertical-align: top;
     }
 }
 

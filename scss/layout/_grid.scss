@@ -1,4 +1,8 @@
 
+.hide {
+    display: none !important;
+}
+
 .hidemobile {
     display: block;
     @media (max-width: $screen-phone) {
@@ -27,4 +31,8 @@ textarea {
 
 .noleftpadding {
     padding-left: 0;
+}
+
+select.Listbox {
+    height: auto;
 }

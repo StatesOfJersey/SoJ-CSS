@@ -8,6 +8,7 @@ section#SearchResult,
 section#statesreports {
     padding: 5px 0 5px 0;
     margin-bottom: 20px;
+    width: 100%;
     a.removelink {
         display: inline-block;
         padding-right: 20px;
@@ -348,9 +349,8 @@ section#statesreports {
         }
     }
     .input-group-btn {
-        background-color: $Lightest-grey;
+        background-color: transparent;
         position: absolute;
-        right: 80px;
         top: 0;
         height: 38px;
         @media (max-width: $screen-tablet) {
@@ -370,6 +370,7 @@ section#statesreports {
                 position: absolute;
                 top: 10%;
                 left: 25%;
+                pointer-events: none;
             }
         }
     }
@@ -407,7 +408,6 @@ section#statesreports {
         border-radius: 0;
         font-size: 16px;
         height: 38px;
-        padding-right: 90px;
         line-height: 28px;
         @media (max-width: $screen-tablet) {
             padding-right: 40px;
