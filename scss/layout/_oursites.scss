@@ -3,7 +3,43 @@ section.ourSites {
     background-color: $Dark-grey;
     color: white;
     padding: 10px 0 10px 0;
-
+    .col-lg-4.footerlogos {
+        border-right: solid 1px white;
+        @media (max-width: $screen-tablet) {
+            border: none;
+        }
+    }
+    .footerlogos {
+        margin: 20px 0 15px 0;
+        h3 {
+            color: white;
+            margin: 0 0 20px 0;
+            font-size: 1.5em;
+        }
+        img {
+            width:35px;
+            height:25px;
+            margin: 10px 0;
+        }
+        a {
+            color:white;
+            text-decoration: none;
+            margin: 10px 0;
+            vertical-align: middle;
+            font-size: 1.15em;
+            &:hover {
+                color: #ffffff;
+                text-decoration: underline;
+            }
+        }
+        
+    }
+    .border-spacer {
+        margin-left: 3%;
+        @media (max-width: $screen-tablet) {
+            margin-left: 0;
+        }
+    }
 
     div.title {
     width:110px;

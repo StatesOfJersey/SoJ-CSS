@@ -11,6 +11,32 @@ footer {
         @media (max-width: $screen-tablet) {
             padding-bottom: 0;
         }
+        &.homepage {
+            dt {
+                display: none;
+            }
+            dd {
+                a {
+                    .fa-circle {
+                        color: transparent;
+                    }
+                    &:hover {
+                        .fa-circle {
+                            color: $Red
+                        }
+                        .fa-inverse {
+                            @media(hover: none) {
+                                color: $Charcoal;
+                            }
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .fa-inverse {
+                color: $Charcoal
+            }
+        }
         dt {
             display: inline-block;
             padding-right: 10px;
@@ -35,6 +61,9 @@ footer {
                 }
                 &:hover {
                     .fa-circle {
+                        @media(hover: none) {
+                            color: transparent
+                        }
                         color: $Red !important;
                     }
                 }
@@ -77,6 +106,12 @@ footer {
             &:visited {
                 color: $Charcoal;
             }
+        }
+    }
+    dl.homepage {
+        margin-left: -10px;
+        .fa-lg {
+            font-size: 1.5em;
         }
     }
 }
