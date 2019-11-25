@@ -23,6 +23,12 @@
         width:100%;
     }
     .row{
+        @media (max-width: $screen-phone) {
+            margin-bottom: 0;
+        }
+        @media (max-width: $screen-tablet) {
+            margin-bottom: 0;
+        }
         margin-bottom: 1.5em;
     }
     
@@ -130,11 +136,11 @@ aside#sideBar.ms-SideBar {
         font-weight: 600;
         @media (max-width: $screen-tablet) {
             font-size: 22px;
-            margin-bottom: 0;
+            margin-bottom: 10px;
         }
         @media (max-width:$screen-phone) {
             font-size: 22px;
-            margin-bottom: 0;
+            margin-bottom: 10px;
         }
     }
     h3 {
@@ -196,6 +202,12 @@ aside#sideBar.ms-SideBar {
 }
 
 .ms-date {
+    @media (max-width: $screen-phone) {
+        margin-bottom: 0.5em;
+    }
+    @media (max-width: $screen-tablet) {
+        margin-bottom: 0.5em;
+    }
     font-size: 14px;
 }
 
