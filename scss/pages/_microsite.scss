@@ -23,6 +23,12 @@
         width:100%;
     }
     .row{
+        @media (max-width: $screen-phone) {
+            margin-bottom: 0;
+        }
+        @media (max-width: $screen-tablet) {
+            margin-bottom: 0;
+        }
         margin-bottom: 1.5em;
     }
     
@@ -116,25 +122,25 @@ aside#sideBar.ms-SideBar {
         }
     }
     p {
-        font-size: em(18px, 18px);
+        font-size: em(12px);
     }
     img {
         max-width: 100%;
     }
     h2 {
         color: $foster;
-        margin: 30px 0 10px 0;
+        margin: 15px 0 10px 0;
         font-size: 28px;
         text-decoration: none;
         font-family: proxima-nova, sans-serif;
         font-weight: 600;
         @media (max-width: $screen-tablet) {
             font-size: 22px;
-            margin-bottom: 0;
+            margin-bottom: 10px;
         }
         @media (max-width:$screen-phone) {
             font-size: 22px;
-            margin-bottom: 0;
+            margin-bottom: 10px;
         }
     }
     h3 {
@@ -196,6 +202,12 @@ aside#sideBar.ms-SideBar {
 }
 
 .ms-date {
+    @media (max-width: $screen-phone) {
+        margin-bottom: 0.5em;
+    }
+    @media (max-width: $screen-tablet) {
+        margin-bottom: 0.5em;
+    }
     font-size: 14px;
 }
 
