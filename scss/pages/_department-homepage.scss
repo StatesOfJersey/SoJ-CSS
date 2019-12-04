@@ -200,7 +200,7 @@
         }
     }
 }
-.dh-Sidebar {
+#sideBar.dh-Sidebar {
     i {
         font-size: 28px;
         padding-right: 10px;
@@ -213,9 +213,12 @@
         padding-left:0px !important;
     }
     a {
-        color: $department !important;
+        color: $department;
         &:hover {
-            color: $Black !important;            
+            color: $Black;            
+        }
+        &.btn-dept{
+            color:$white;
         }
     }
     h1 {

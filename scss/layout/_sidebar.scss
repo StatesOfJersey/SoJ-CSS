@@ -8,6 +8,9 @@ aside#sideBar {
     .scrollable .fixed-column {
         display: none;
     }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
     @media (max-width:$screen-phone) {
         background: $Lightest-grey;
         overflow: hidden;
