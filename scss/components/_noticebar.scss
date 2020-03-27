@@ -3,6 +3,22 @@ section#noticeBar {
     width: 100%;
     padding: 9px 0;
     color: white;
+    margin-bottom: 0px;
+    &.GovAnnouncement {
+        background-color: #f9d648;
+        p {
+            color: #35475D;
+        }
+        p.publicNotice {
+            color: #35475D;
+        }
+        a {
+            &:visited, &:hover {
+                color: #35475D;
+            }
+            color: #35475D;
+        }
+    }
     a {
         font-family: proxima-nova, sans-serif;
         text-decoration: underline;
