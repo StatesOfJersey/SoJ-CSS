@@ -1,0 +1,255 @@
+.campaign {
+    a {
+        &.purple-bg-yellow-lborder-tile  {
+            color: #2B2151;
+            &:visited {
+                color: #2B2151;
+            }
+        }
+        &:hover {
+            color: $Red
+        }
+        &.text-red{
+            &:visited {
+                color: $Red;
+            }
+        }
+    }
+    h1 {
+        @media screen and (max-width: 991.98px) {
+            font-size: 2em;
+        }
+        font-weight: 600;
+    }
+    h3 {
+        @media screen and (max-width: 991.98px) {
+            font-size: 1.2em;
+        }
+        &.text-yellow {
+            color: #F9DA4A;
+        }
+    }
+    li {
+        @media screen and (max-width: 991.98px) {
+            font-size: 0.9em;
+            line-height: 1.6em;
+        }
+    }
+    ul {
+        font-size: 1.3em;
+    }
+    .accordion {
+        h3 {
+            &.link {
+                a {
+                    color: $Red;
+                    text-decoration: underline;
+                    margin-left: 30px;
+                }
+            }
+            a {
+                &.collapsed {
+                    &:before {
+                        content: "\f055";
+                        font-family: FontAwesome;
+                        font-size: 0.9em;
+                        position: absolute;
+                        left: 15px;
+                        display: inline-block;
+                        text-decoration: none;
+                        color:  $Red;
+                    }
+                }
+                &:before {
+                    content: "\f056";
+                    font-family: FontAwesome;
+                    font-size: 0.9em;
+                    position: absolute;
+                    left: 15px;
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $Red
+                }
+            }
+        }
+    }
+    .accordion-content {
+        margin-left: 30px;
+    }
+    .articleLink {
+        &:hover {
+            h3 {
+                color: $Red;
+            }
+            p {
+                color: $Red;
+            }
+            span {
+                color: $Red;
+            }
+        }
+        h3 {
+            font-size: 1.3em;
+            margin-top: 5px;
+            text-decoration: underline;
+        }
+        p {
+            font-size: 1.2em;
+        }
+    }
+    .bg-grey-mobile {
+        @media screen and (max-width: 991.98px) {
+            background-color: $Lightest-grey;
+        }
+    }
+    .campaign-tile {
+        @media screen and (max-width: 991.98px) {
+            min-height: 7rem;
+        }
+        min-height: 11rem;
+        &:hover {
+            text-decoration: none;
+        };
+        h3 {
+            @media screen and (max-width: 991.98px) {
+                font-size: 1.7em;
+                text-decoration: none;
+            }
+            font-size: 1.7em;
+            text-decoration: none;
+            margin-bottom: 3px;
+        }
+        p {
+            &:hover {
+                text-decoration: none;
+            }
+            font-size: 1.17em;
+            text-decoration: underline
+        }
+        &.col-lg-12 {
+            @media screen and (min-width: 992px) {
+                max-width: 31%;
+                flex-basis: 31%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+        }
+        &.col-lg-6 {
+            @media screen and (min-width: 992px) {
+                max-width: 47.4%;
+                flex-basis: 47.4%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+        }
+        &.col-lg-12 {
+            @media screen and (min-width: 992px) {
+                max-width: 96.5%;
+                flex-basis: 96.5%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+        }
+    }
+    .external-link-content {
+        font-size: 1.2em;
+    }
+    .most-popular-section {
+        h4 {
+            &:after {
+                @media screen and (max-width: 991.98px) {
+                    content: "\f056";
+                    font-family: FontAwesome;
+                    font-size: 18px;
+                    position: absolute;
+                    right: 30px;
+                    display: inline-block;
+                    text-decoration: none;
+                }
+            }
+            &.collapsed {
+                &:after {
+                    @media screen and (max-width: 991.98px) {
+                        content: "\f055";
+                        font-family: FontAwesome;
+                        font-size: 18px;
+                        position: absolute;
+                        right: 30px;
+                        display: inline-block;
+                        text-decoration: none;
+                    }
+                }
+            }
+            @media screen and (max-width: 991.98px) {
+                background-color: #2B2151;
+                color: white;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                margin-bottom: 0px;
+            }
+            font-weight: 600;
+        }
+        ul {
+            list-style: none;
+        }
+    }
+    #most-popular-section-content {
+        @media screen and (max-width: 991.98px) {
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right:15px;
+            background-color: #eef0f0;
+        }
+        hr {
+            @media screen and (max-width: 991.98px) {
+                width: 100%
+            }
+        }
+    }
+    .purple-bg-yellow-lborder-tile {
+        background-color: #2B2151;
+        border-style: solid;
+        border-left-color: #F9DA4A;
+        border-width: 0px;
+        border-left-width: 8px;
+    }
+    .purple-bg-yellow-lborder-title {
+        background-color: #2B2151;
+    }
+    .purple-bg {
+        background-color: #2B2151;
+        h2 {
+            font-size: 2em;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+    }
+    .yellow-lborder {
+        border-style: solid;
+        border-left-color: #F9DA4A;
+        border-width: 0px;
+        border-left-width: 8px;
+    }
+    .bg-grey {
+        background-color: #eef0f0;
+    }
+    .text-yellow {
+        color: #F9DA4A;
+        > * {
+            color: #F9DA4A;
+        }
+    }
+    .text-purple {
+        color: #2b2151;
+    }
+    .text-red {
+        color: $Red;
+    }
+}
