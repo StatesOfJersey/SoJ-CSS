@@ -13,13 +13,15 @@
             &:visited {
                 color: $Red;
             }
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
     h1 {
         @media screen and (max-width: 991.98px) {
             font-size: 2em;
         }
-        font-weight: 600;
     }
     h3 {
         @media screen and (max-width: 991.98px) {
@@ -45,6 +47,7 @@
                     color: $Red;
                     text-decoration: underline;
                     margin-left: 30px;
+                    display: block;
                 }
             }
             a {
@@ -90,15 +93,16 @@
         }
         h3 {
             font-size: 1.3em;
-            margin-top: 5px;
+            margin-top: 0px;
             text-decoration: underline;
+            margin-bottom: 1rem;
         }
         p {
             font-size: 1.2em;
         }
     }
     .bg-grey-mobile {
-        @media screen and (max-width: 991.98px) {
+        @media screen and (max-width: 767.98px) {
             background-color: $Lightest-grey;
         }
     }
@@ -110,10 +114,11 @@
         &:hover {
             text-decoration: none;
         };
-        h3 {
+        h2 {
             @media screen and (max-width: 991.98px) {
                 font-size: 1.7em;
                 text-decoration: none;
+                margin: 20px 0 10px;
             }
             font-size: 1.7em;
             text-decoration: none;
@@ -126,7 +131,7 @@
             font-size: 1.17em;
             text-decoration: underline
         }
-        &.col-lg-12 {
+        &.col-lg-4 {
             @media screen and (min-width: 992px) {
                 max-width: 31%;
                 flex-basis: 31%;
@@ -161,7 +166,7 @@
         font-size: 1.2em;
     }
     .most-popular-section {
-        h4 {
+        h2 {
             &:after {
                 @media screen and (max-width: 991.98px) {
                     content: "\f056";
@@ -202,15 +207,20 @@
     }
     #most-popular-section-content {
         @media screen and (max-width: 991.98px) {
-            padding-top: 15px;
-            padding-left: 15px;
-            padding-right:15px;
+            padding: 15px;
             background-color: #eef0f0;
         }
         hr {
             @media screen and (max-width: 991.98px) {
                 width: 100%
             }
+        }
+    }
+    #promoted-announcements-row {
+        min-height: 13rem;
+        max-height: 13rem;
+        @media screen and (max-width: 991.98px) {
+            max-height: none;
         }
     }
     .purple-bg-yellow-lborder-tile {
